@@ -1,0 +1,33 @@
+.lock-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 4px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.pill:hover .lock-btn {
+    opacity: 1;
+}
+
+.pill.locked .lock-btn {
+    opacity: 1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#brief {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* NEW CSS FOR TOGGLE SWITCH VISUALS */
+input:checked~.dot {
+    transform: translateX(100%);
+    background-color: #4f46e5;
+    /* Indigo color to match buttons */
+}
