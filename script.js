@@ -497,11 +497,8 @@ const copyBtn = document.getElementById('copyBtn');
 const modeToggle = document.getElementById('modeToggle');
 const inspirationModeContainer = document.getElementById('inspirationModeContainer'); // ADD THIS
 const creationModeContainer = document.getElementById('creationModeContainer');
-const constraintBtn = document.getElementById('constraintBtn'); // ADD THIS
-const constraintOutput = document.getElementById('constraintOutput'); // ADD THIS
 
 let currentSeed = null;
-let currentConstraint = null;
 let lockedComponents = {};
 let currentComponents = {};
 let currentFormat = 'brief';
@@ -513,6 +510,7 @@ function getRandomElement(arr, randomFunc) {
 }
 
 const keyToDisplayName = {
+    designerPersonas: 'Designer Persona', // ADD THIS
     subject: 'Subject', subject_2: 'Subject 2',
     style: 'Style', style_2: 'Style 2',
     emotionTone: 'Emotion/Tone',
@@ -520,7 +518,8 @@ const keyToDisplayName = {
     actionProcess: 'Process',
     contextComposition: 'Composition',
     conceptualMetaphorical: 'Concept',
-    graphicEffects: 'Graphic Effect'
+    graphicEffects: 'Graphic Effect',
+    creativeConstraints: 'Creative Constraint'
 };
 
 // --- EVENT LISTENERS ---
@@ -766,7 +765,7 @@ async function generateBrief() { // Note: We make the function async
             return null;
         };
 
-        const componentKeysInOrder = ['subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects'];
+        const componentKeysInOrder = ['designerPersonas', 'subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects', 'creativeConstraints'];
         const ideasToSave = []; // <-- NEW: Array to hold ideas we need to save
 
         componentKeysInOrder.forEach(key => {
