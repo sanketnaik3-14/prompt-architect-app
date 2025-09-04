@@ -843,24 +843,21 @@
             inputEl.classList.toggle('hidden');
         });
 
-        function generateBrief() {
+        async function generateBrief() { // Note: We make the function async
             const newComponents = {};
 
             if (currentMode === 'inspiration') {
                 // --- INSPIRATION MODE (RANDOM) LOGIC ---
-                // This part is working perfectly and remains the same.
                 const seedValue = seedInput.value.trim();
                 currentSeed = seedValue === '' ? Math.floor(Math.random() * 1000000) : parseInt(seedValue, 10);
                 if (isNaN(currentSeed)) {
                     currentSeed = Math.floor(Math.random() * 1000000);
                 }
                 seedInput.value = currentSeed;
-
                 const randomFunc = mulberry32(currentSeed);
                 const architecture = architectureSelect.value;
                 const novelty = noveltySelect.value;
                 const modifier = modifierSelect.value;
-
                 const filteredFramework = {};
                 if (novelty === 'chaos') {
                     Object.assign(filteredFramework, stylesData.masterFramework);
@@ -872,7 +869,6 @@
                         filteredFramework[key] = filterByTier(stylesData.masterFramework[key]);
                     }
                 }
-
                 let componentKeys = [];
                 if (modifier !== 'none') {
                     switch (modifier) {
@@ -898,7 +894,6 @@
                             componentKeys = allKeys.sort(() => 0.5 - randomFunc()).slice(0, numComponents);
                     }
                 }
-
                 const getSubjectComponent = (randomFunc, categoryFilter = null) => {
                     let subjectPool = filteredFramework.subject;
                     if (categoryFilter) { subjectPool = subjectPool.filter(cat => categoryFilter.includes(cat.categoryName)); }
@@ -907,10 +902,8 @@
                     const example = category.examples[Math.floor(randomFunc() * category.examples.length)];
                     return { name: example, novelty_tier: category.novelty_tier, category: category.categoryName, example: example };
                 };
-
                 let style_count = 0;
                 let subject_count = 0;
-
                 if (modifier === 'symbiotic-fusion') {
                     newComponents['subject'] = lockedComponents['subject'] || getSubjectComponent(randomFunc, ["Nature & Animals"]);
                     newComponents['subject_2'] = lockedComponents['subject_2'] || getSubjectComponent(randomFunc, ["Technology & The Future"]);
@@ -921,7 +914,6 @@
                         let unique_key = key;
                         if (key === 'style') { style_count++; if (style_count > 1) unique_key = `${key}_${style_count}`; }
                         if (key === 'subject') { subject_count++; if (subject_count > 1) unique_key = `${key}_${subject_count}`; }
-
                         if (lockedComponents[unique_key]) {
                             newComponents[unique_key] = currentComponents[unique_key];
                         } else {
@@ -942,40 +934,42 @@
                     if (!name) return null;
                     const items = stylesData.masterFramework[categoryKey];
                     if (categoryKey === 'subject') {
-                        for (const category of items) {
-                            if (category.examples.includes(name)) {
-                                return { name: name, novelty_tier: category.novelty_tier, category: category.categoryName, example: name };
-                            }
-                        }
-                    } else {
-                        return items.find(item => item.name === name) || null;
-                    }
+                        for (const category of items) { if (category.examples.includes(name)) { return { name: name, novelty_tier: category.novelty_tier, category: category.categoryName, example: name }; } }
+                    } else { return items.find(item => item.name === name) || null; }
                     return null;
                 };
 
-                const componentKeysInOrder = [
-                    'subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess',
-                    'contextComposition', 'conceptualMetaphorical', 'graphicEffects'
-                ];
+                const componentKeysInOrder = ['subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects'];
+                const ideasToSave = []; // <-- NEW: Array to hold ideas we need to save
 
                 componentKeysInOrder.forEach(key => {
                     const capKey = key.charAt(0).toUpperCase() + key.slice(1);
                     const customInput = document.getElementById(`custom${capKey}`);
                     const manualSelect = document.getElementById(`manual${capKey}`);
-
                     let selectedValue = '';
                     let isCustom = !customInput.classList.contains('hidden') && customInput.value.trim() !== '';
 
                     if (isCustom) {
                         selectedValue = customInput.value.trim();
                         newComponents[key] = { name: selectedValue, novelty_tier: 'Custom', category: 'Custom' };
+                        ideasToSave.push({ component_key: key, value: selectedValue }); // NEW: Add custom idea to our save list
                     } else {
                         selectedValue = manualSelect.value;
-                        if (selectedValue) {
-                            newComponents[key] = findComponentByName(key, selectedValue);
-                        }
+                        if (selectedValue) { newComponents[key] = findComponentByName(key, selectedValue); }
                     }
                 });
+
+                // NEW: Logic to save the collected custom ideas to Supabase
+                if (ideasToSave.length > 0) {
+                    try {
+                        const { error } = await supabase.from('ideas').upsert(ideasToSave, { onConflict: 'component_key, value' });
+                        if (error) throw error;
+                        console.log('Successfully saved custom ideas to Supabase!');
+                        await populateCreationDropdowns(); // Re-populate dropdowns to show the new idea immediately
+                    } catch (error) {
+                        console.error('Failed to save idea to Supabase:', error.message);
+                    }
+                }
             }
 
             currentComponents = newComponents;
