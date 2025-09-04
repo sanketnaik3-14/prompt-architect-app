@@ -54,7 +54,7 @@
             </header>
 
             <div class="flex justify-center items-center my-6">
-                <span class="mr-3 font-medium text-gray-300">Inspiration Mode</span>
+                <span id="inspirationLabel" class="mr-3 font-medium text-gray-300">Inspiration Mode</span>
                 <label for="modeToggle" class="flex items-center cursor-pointer">
                     <div class="relative">
                         <input type="checkbox" id="modeToggle" class="sr-only">
@@ -62,7 +62,7 @@
                         <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
                     </div>
                 </label>
-                <span class="ml-3 font-medium text-gray-400">Creation Mode</span>
+                <span id="creationLabel" class="ml-3 font-medium text-gray-400">Creation Mode</span>
             </div>
 
             <div id="inspirationModeContainer">
@@ -289,7 +289,7 @@
         <p>Built for creative exploration. All components sourced from the internal database.</p>
     </footer>
 
-    <script>
+    <script type="module">
         const stylesData = {
             "databaseInfo": { "name": "Unified Design & Prompt Framework", "version": "4.0-integrated" },
             "masterFramework": {
@@ -860,8 +860,8 @@
 
         // --- NEW EVENT LISTENERS FOR MODE SWITCHING ---
         modeToggle.addEventListener('change', () => {
-            const inspirationLabel = modeToggle.closest('.flex').querySelector('span:first-of-type');
-            const creationLabel = modeToggle.closest('.flex').querySelector('span:last-of-type');
+            const inspirationLabel = document.getElementById('inspirationLabel');
+            const creationLabel = document.getElementById('creationLabel');
 
             if (modeToggle.checked) {
                 currentMode = 'creation';
@@ -895,12 +895,11 @@
             inputEl.classList.toggle('hidden');
         });
 
-        async function generateBrief() { // CHANGED: Made the function async
+        async function generateBrief() { // Note: We make the function async
             const newComponents = {};
 
             if (currentMode === 'inspiration') {
                 // --- INSPIRATION MODE (RANDOM) LOGIC ---
-                // ... (This entire block of code remains the same as your current file)
                 const seedValue = seedInput.value.trim();
                 currentSeed = seedValue === '' ? Math.floor(Math.random() * 1000000) : parseInt(seedValue, 10);
                 if (isNaN(currentSeed)) {
@@ -993,7 +992,7 @@
                 };
 
                 const componentKeysInOrder = ['subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects'];
-                const ideasToSave = [];
+                const ideasToSave = []; // <-- NEW: Array to hold ideas we need to save
 
                 componentKeysInOrder.forEach(key => {
                     const capKey = key.charAt(0).toUpperCase() + key.slice(1);
@@ -1005,21 +1004,20 @@
                     if (isCustom) {
                         selectedValue = customInput.value.trim();
                         newComponents[key] = { name: selectedValue, novelty_tier: 'Custom', category: 'Custom' };
-                        ideasToSave.push({ component_key: key, value: selectedValue }); // Add to our save list
+                        ideasToSave.push({ component_key: key, value: selectedValue }); // NEW: Add custom idea to our save list
                     } else {
                         selectedValue = manualSelect.value;
                         if (selectedValue) { newComponents[key] = findComponentByName(key, selectedValue); }
                     }
                 });
 
-                // CHANGED: Save all custom entries to Supabase
+                // NEW: Logic to save the collected custom ideas to Supabase
                 if (ideasToSave.length > 0) {
                     try {
                         const { error } = await supabase.from('ideas').upsert(ideasToSave, { onConflict: 'component_key, value' });
                         if (error) throw error;
                         console.log('Successfully saved custom ideas to Supabase!');
-                        // Optional: re-populate dropdowns to show the new idea immediately
-                        // populateCreationDropdowns(); 
+                        await populateCreationDropdowns(); // Re-populate dropdowns to show the new idea immediately
                     } catch (error) {
                         console.error('Failed to save idea to Supabase:', error.message);
                     }
@@ -1032,6 +1030,7 @@
             updateOutputContent();
             copyBtn.classList.remove('hidden');
         }
+
         function renderPills() {
             pillsContainer.innerHTML = '';
             for (const key in currentComponents) {
