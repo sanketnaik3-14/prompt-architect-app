@@ -19,16 +19,12 @@
                 <p class="text-gray-400 mt-2 text-lg">Your programmatic partner for creative exploration.</p>
             </header>
 
-            <div class="flex justify-center items-center my-6">
-                <span id="inspirationLabel" class="mr-3 font-medium text-gray-200">Inspiration Mode</span>
-                <label for="modeToggle" class="flex items-center cursor-pointer">
-                    <div class="relative">
-                        <input type="checkbox" id="modeToggle" class="sr-only">
-                        <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
-                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-                    </div>
-                </label>
-                <span id="creationLabel" class="ml-3 font-medium text-gray-400">Creation Mode</span>
+            <div class="flex justify-center my-6">
+                <div id="modeSwitcher" class="flex p-1 bg-gray-700 rounded-lg">
+                    <button class="mode-btn active" data-mode="inspiration">Inspiration</button>
+                    <button class="mode-btn" data-mode="creation">Creation</button>
+                    <button class="mode-btn" data-mode="fusion">Fusion</button>
+                </div>
             </div>
 
             <div id="inspirationModeContainer">
@@ -195,35 +191,60 @@
                 </div>
             </div>
 
-            <div class="my-8 text-center">
-                <button id="constraintBtn"
-                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-lg">
-                    Add a Creative Constraint
-                </button>
-                <div id="constraintOutput" class="mt-4 text-indigo-400 font-medium text-lg min-h-[28px]">
+        </div>
+        <div id="fusionModeContainer" class="hidden">
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                    <label class="text-gray-300 font-medium sm:text-right pt-2">Subjects:</label>
+                    <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                        <div id="fusionSubjectPills" class="flex flex-wrap gap-2"></div>
+                        <button class="add-component-btn" data-component="subject">+ Add Subject</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                    <label class="text-gray-300 font-medium sm:text-right pt-2">Styles:</label>
+                    <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                        <div id="fusionStylePills" class="flex flex-wrap gap-2"></div>
+                        <button class="add-component-btn" data-component="style">+ Add Style</button>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-4">
+                    <button id="fusionAssembleBtn"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">Assemble
+                        Fusion
+                        Brief</button>
                 </div>
             </div>
+        </div>
 
-            <div id="output" class="mt-8">
-                <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-gray-400 italic">Your creative components will appear here...</span>
-                </div>
+        <div class="my-8 text-center">
+            <button id="constraintBtn"
+                class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-lg">
+                Add a Creative Constraint
+            </button>
+            <div id="constraintOutput" class="mt-4 text-indigo-400 font-medium text-lg min-h-[28px]">
+            </div>
+        </div>
 
-                <div class="flex border-b border-gray-700 mb-4">
-                    <button class="format-btn active text-white border-indigo-500 py-2 px-4"
-                        data-format="brief">Creative Brief</button>
-                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
-                        data-format="ai">AI Prompt</button>
-                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
-                        data-format="keywords">Keywords</button>
-                    <button id="copyBtn"
-                        class="ml-auto bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-2 px-4 rounded-lg hidden">Copy</button>
-                </div>
+        <div id="output" class="mt-8">
+            <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
+                <span class="text-gray-400 italic">Your creative components will appear here...</span>
+            </div>
 
-                <div id="outputContentArea" class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 min-h-[120px]">
-                    <pre id="brief"
-                        class="text-gray-300 whitespace-pre-wrap text-base leading-relaxed">Click 'Forge New Prompt' to begin.</pre>
-                </div>
+            <div class="flex border-b border-gray-700 mb-4">
+                <button class="format-btn active text-white border-indigo-500 py-2 px-4" data-format="brief">Creative
+                    Brief</button>
+                <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                    data-format="ai">AI Prompt</button>
+                <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                    data-format="keywords">Keywords</button>
+                <button id="copyBtn"
+                    class="ml-auto bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-2 px-4 rounded-lg hidden">Copy</button>
+            </div>
+
+            <div id="outputContentArea" class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 min-h-[120px]">
+                <pre id="brief"
+                    class="text-gray-300 whitespace-pre-wrap text-base leading-relaxed">Click 'Forge New Prompt' to begin.</pre>
             </div>
         </div>
     </main>
@@ -231,6 +252,23 @@
     <footer class="text-center py-4 text-gray-500 text-sm">
         <p>Built for creative exploration.</p>
     </footer>
+
+    <div id="fusionModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-4 border-b border-gray-700">
+                <h3 id="modalTitle" class="text-xl font-bold text-white">Select Components</h3>
+            </div>
+            <div class="p-4">
+                <input type="text" id="modalSearch" class="w-full bg-gray-700 p-2 rounded mb-4" placeholder="Search...">
+            </div>
+            <div id="modalContent" class="p-4 max-h-64 overflow-y-auto">
+            </div>
+            <div class="p-4 border-t border-gray-700 flex justify-end">
+                <button id="modalCloseBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Done</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js" type="module"></script>
 </body>
