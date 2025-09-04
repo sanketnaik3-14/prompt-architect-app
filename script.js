@@ -36,62 +36,11 @@ const stylesData = {
             { "name": "Drop Shadow", "novelty_tier": 1 }, { "name": "Film Grain / Noise", "novelty_tier": 1 }, { "name": "Long Shadow (Flat Style)", "novelty_tier": 1 }, { "name": "Sticker Outline", "novelty_tier": 1 }, { "name": "Vignette", "novelty_tier": 1 }, { "name": "Anaglyph 3D", "novelty_tier": 2 }, { "name": "Color Halftone", "novelty_tier": 2 }, { "name": "Double Exposure", "novelty_tier": 2 }, { "name": "Duotone", "novelty_tier": 2 }, { "name": "Glassmorphism", "novelty_tier": 2 }, { "name": "Glow (Outer / Inner)", "novelty_tier": 2 }, { "name": "Gradient Map / Overlay", "novelty_tier": 2 }, { "name": "Grunge Texture", "novelty_tier": 2 }, { "name": "Ink Bleed / Smudge", "novelty_tier": 2 }, { "name": "Lens Distortion / Fisheye Effect", "novelty_tier": 2 }, { "name": "Neon Glow", "novelty_tier": 2 }, { "name": "Scan Lines / CRT Effect", "novelty_tier": 2 }, { "name": "Chromatic Aberration", "novelty_tier": 3 }, { "name": "Displacement Map Effect", "novelty_tier": 3 }, { "name": "Dispersion / Shatter", "novelty_tier": 3 }, { "name": "Fractal Noise", "novelty_tier": 3 }, { "name": "Generative Fill (AI)", "novelty_tier": 3 }, { "name": "Inversion / X-Ray Effect", "novelty_tier": 3 }, { "name": "Pixel Sorting", "novelty_tier": 3 }
         ],
         "creativeConstraints": [
-            { "name": "Use only two colors: black and one accent color." },
-            { "name": "The design must contain no text whatsoever." },
-            { "name": "The entire design must fit inside a perfect circle." },
-            { "name": "The subject must be shown in a completely unexpected context." },
-            { "name": "Create the design using only typography and geometric shapes." },
-            { "name": "The design's emotion must contradict its subject." },
-            { "name": "Use a symmetrical layout for a subject that is naturally asymmetrical." },
-            { "name": "The design must use a serif font for all text.", "novelty_tier": 1 },
-            { "name": "Use a triadic color scheme.", "novelty_tier": 2 },
-            { "name": "The design must be heavily off-center and unbalanced.", "novelty_tier": 2 },
-            { "name": "The design must tell a story in three distinct parts (triptych).", "novelty_tier": 2 },
-            { "name": "The design must look like it's made of a single, uniform material.", "novelty_tier": 2 }
+            { "name": "Use only two colors: black and one accent color." }, { "name": "The design must contain no text whatsoever." }, { "name": "The entire design must fit inside a perfect circle." }, { "name": "The subject must be shown in a completely unexpected context." }, { "name": "Create the design using only typography and geometric shapes." }, { "name": "The design's emotion must contradict its subject." }, { "name": "Use a symmetrical layout for a subject that is naturally asymmetrical." }, { "name": "The design must use a serif font for all text.", "novelty_tier": 1 }, { "name": "Use a triadic color scheme.", "novelty_tier": 2 }, { "name": "The design must be heavily off-center and unbalanced.", "novelty_tier": 2 }, { "name": "The design must tell a story in three distinct parts (triptych).", "novelty_tier": 2 }, { "name": "The design must look like it's made of a single, uniform material.", "novelty_tier": 2 }
         ],
         "designerPersonas": [
-            // --- By Medium/Technique ---
-            { "name": "Master Ink Illustrator", "category": "By Medium/Technique" },
-            { "name": "Seasoned Comic Book Artist", "category": "By Medium/Technique" },
-            { "name": "Expert Woodcut Printmaker", "category": "By Medium/Technique" },
-            { "name": "Professional Airbrush Artist", "category": "By Medium/Technique" },
-            { "name": "Modern Calligrapher", "category": "By Medium/Technique" },
-            { "name": "Zine Maker with a DIY Punk Aesthetic", "category": "By Medium/Technique" },
-            { "name": "Technical Illustrator for Manuals", "category": "By Medium/Technique" },
-            { "name": "RISOGRAPH Print Specialist", "category": "By Medium/Technique" },
-
-            // --- By Style/Genre/Era ---
-            { "name": "70s Psychedelic Rock Poster Artist", "category": "By Style/Genre/Era" },
-            { "name": "Minimalist Swiss Designer", "category": "By Style/Genre/Era" },
-            { "name": "90s Rave Flyer Designer", "category": "By Style/Genre/Era" },
-            { "name": "Tokyo Streetwear Designer", "category": "By Style/Genre/Era" },
-            { "name": "Fantasy TTRPG Illustrator", "category": "By Style/Genre/Era" },
-            { "name": "Bauhaus Instructor", "category": "By Style/Genre/Era" },
-            { "name": "Art Nouveau Illustrator like Alphonse Mucha", "category": "By Style/Genre/Era" },
-            { "name": "Soviet Constructivist Poster Artist", "category": "By Style/Genre/Era" },
-            { "name": "Art Director for a Vaporwave Music Label", "category": "By Style/Genre/Era" },
-            { "name": "Concept Artist for a Dark Fantasy Soulslike Game", "category": "By Style/Genre/Era" },
-
-            // --- By Commercial Role ---
-            { "name": "Successful Dropshipping Seller", "category": "By Commercial Role" },
-            { "name": "Luxury Fashion Brand Director", "category": "By Commercial Role" },
-            { "name": "Gritty Skate Company Illustrator", "category": "By Commercial Role" },
-            { "name": "Children's Book Illustrator", "category": "By Commercial Role" },
-            { "name": "Tour Merch Designer for a Metal Band", "category": "By Commercial Role" },
-            { "name": "Brand Designer for a Craft Brewery", "category": "By Commercial Role" },
-            { "name": "Mascot Designer for a Sports Team", "category": "By Commercial Role" },
-            { "name": "Infographic Designer for a Science Magazine", "category": "By Commercial Role" },
-            { "name": "Creative Director for a National Park Service", "category": "By Commercial Role" },
-
-            // --- NEW CATEGORY: By Artist's State & Tool ---
-            { "name": "A 5-year-old child with a big box of crayons", "category": "By Artist's State & Tool" },
-            { "name": "A student doodling with a ballpoint pen in their notebook", "category": "By Artist's State & Tool" },
-            { "name": "A street artist using a spray paint can and stencils", "category": "By Artist's State & Tool" },
-            { "name": "A master calligrapher practicing with a brush pen", "category": "By Artist's State & Tool" },
-            { "name": "An architect drafting with a technical pencil", "category": "By Artist's State & Tool" },
-            { "name": "A medieval monk illuminating a manuscript with gold leaf", "category": "By Artist's State & Tool" },
-            { "name": "An exhausted artist frantically sketching in charcoal", "category": "By Artist's State & Tool" },
-            { "name": "A rogue AI developing its first sense of artistic style", "category": "By Artist's State & Tool" }
+            { "name": "Master Ink Illustrator", "category": "By Medium/Technique" }, { "name": "Seasoned Comic Book Artist", "category": "By Medium/Technique" }, { "name": "Expert Woodcut Printmaker", "category": "By Medium/Technique" }, { "name": "Professional Airbrush Artist", "category": "By Medium/Technique" }, { "name": "Modern Calligrapher", "category": "By Medium/Technique" }, { "name": "Zine Maker with a DIY Punk Aesthetic", "category": "By Medium/Technique" }, { "name": "Technical Illustrator for Manuals", "category": "By Medium/Technique" }, { "name": "RISOGRAPH Print Specialist", "category": "By Medium/Technique" }, { "name": "70s Psychedelic Rock Poster Artist", "category": "By Style/Genre/Era" }, { "name": "Minimalist Swiss Designer", "category": "By Style/Genre/Era" }, { "name": "90s Rave Flyer Designer", "category": "By Style/Genre/Era" }, { "name": "Tokyo Streetwear Designer", "category": "By Style/Genre/Era" }, { "name": "Fantasy TTRPG Illustrator", "category": "By Style/Genre/Era" }, { "name": "Bauhaus Instructor", "category": "By Style/Genre/Era" }, { "name": "Art Nouveau Illustrator like Alphonse Mucha", "category": "By Style/Genre/Era" }, { "name": "Soviet Constructivist Poster Artist", "category": "By Style/Genre/Era" }, { "name": "Art Director for a Vaporwave Music Label", "category": "By Style/Genre/Era" }, { "name": "Concept Artist for a Dark Fantasy Soulslike Game", "category": "By Style/Genre/Era" }, { "name": "Successful Dropshipping Seller", "category": "By Commercial Role" }, { "name": "Luxury Fashion Brand Director", "category": "By Commercial Role" }, { "name": "Gritty Skate Company Illustrator", "category": "By Commercial Role" }, { "name": "Children's Book Illustrator", "category": "By Commercial Role" }, { "name": "Tour Merch Designer for a Metal Band", "category": "By Commercial Role" }, { "name": "Brand Designer for a Craft Brewery", "category": "By Commercial Role" }, { "name": "Mascot Designer for a Sports Team", "category": "By Commercial Role" }, { "name": "Infographic Designer for a Science Magazine", "category": "By Commercial Role" }, { "name": "Creative Director for a National Park Service", "category": "By Commercial Role" },
+            { "name": "A 5-year-old child with a big box of crayons", "category": "By Artist's State & Tool" }, { "name": "A student doodling with a ballpoint pen in their notebook", "category": "By Artist's State & Tool" }, { "name": "A street artist using a spray paint can and stencils", "category": "By Artist's State & Tool" }, { "name": "A master calligrapher practicing with a brush pen", "category": "By Artist's State & Tool" }, { "name": "An architect drafting with a technical pencil", "category": "By Artist's State & Tool" }, { "name": "A medieval monk illuminating a manuscript with gold leaf", "category": "By Artist's State & Tool" }, { "name": "An exhausted artist frantically sketching in charcoal", "category": "By Artist's State & Tool" }, { "name": "A rogue AI developing its first sense of artistic style", "category": "By Artist's State & Tool" }
         ]
     }
 };
@@ -132,6 +81,7 @@ let currentComponents = {};
 let currentFormat = 'brief';
 let currentMode = 'inspiration';
 
+// --- HELPER FUNCTIONS ---
 function mulberry32(a) {
     return function () {
         var t = a += 0x6D2B79F5;
@@ -163,7 +113,6 @@ const keyToDisplayName = {
 modeToggle.addEventListener('change', () => {
     const inspirationLabel = document.getElementById('inspirationLabel');
     const creationLabel = document.getElementById('creationLabel');
-
     if (modeToggle.checked) {
         currentMode = 'creation';
         inspirationModeContainer.classList.add('hidden');
@@ -186,11 +135,9 @@ assembleBtn.addEventListener('click', generateBrief);
 creationModeContainer.addEventListener('click', (e) => {
     const button = e.target.closest('.custom-toggle-btn');
     if (!button) return;
-
     const component = button.dataset.component;
     const selectEl = document.getElementById(`manual${component}`);
     const inputEl = document.getElementById(`custom${component}`);
-
     selectEl.classList.toggle('hidden');
     inputEl.classList.toggle('hidden');
 });
@@ -201,12 +148,44 @@ constraintBtn.addEventListener('click', () => {
         const randomFunc = Math.random;
         const selectedConstraint = constraints[Math.floor(randomFunc() * constraints.length)];
         currentConstraint = selectedConstraint.name;
-
         constraintOutput.innerHTML = `<strong>Constraint:</strong> ${currentConstraint}`;
         updateOutputContent();
     }
 });
 
+generateBtn.addEventListener('click', generateBrief);
+
+pillsContainer.addEventListener('click', (e) => {
+    const button = e.target.closest('.lock-btn');
+    if (button) {
+        const key = button.dataset.key;
+        lockedComponents[key] = !lockedComponents[key];
+        renderPills();
+    }
+});
+
+formatBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        formatBtns.forEach(b => b.classList.remove('active', 'text-white', 'border-indigo-500'));
+        btn.classList.add('active', 'text-white', 'border-indigo-500');
+        currentFormat = btn.dataset.format;
+        updateOutputContent();
+    });
+});
+
+copyBtn.addEventListener('click', () => {
+    const textToCopy = briefPre.textContent;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
+    }, (err) => {
+        console.error('Async: Could not copy text: ', err);
+        copyBtn.textContent = 'Error';
+        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
+    });
+});
+
+// --- CORE FUNCTIONS ---
 async function populateCreationDropdowns() {
     let savedIdeas = {};
     try {
@@ -214,9 +193,7 @@ async function populateCreationDropdowns() {
         if (error) throw error;
         if (ideas) {
             ideas.forEach(idea => {
-                if (!savedIdeas[idea.component_key]) {
-                    savedIdeas[idea.component_key] = [];
-                }
+                if (!savedIdeas[idea.component_key]) { savedIdeas[idea.component_key] = []; }
                 savedIdeas[idea.component_key].push(idea.value);
             });
         }
@@ -276,9 +253,7 @@ async function populateCreationDropdowns() {
         manualPersonaSelect.innerHTML = '<option value="">-- Optional --</option>';
         const categories = {};
         personas.forEach(persona => {
-            if (!categories[persona.category]) {
-                categories[persona.category] = [];
-            }
+            if (!categories[persona.category]) { categories[persona.category] = []; }
             categories[persona.category].push(persona.name);
         });
         for (const category in categories) {
@@ -314,9 +289,13 @@ async function generateBrief() {
         } else {
             const tierMap = { classic: [1], creative: [2], experimental: [3, 4], balanced: [1, 2, 3, 4] };
             const allowedTiers = tierMap[novelty];
-            const filterByTier = (arr) => arr.filter(item => allowedTiers.includes(item.novelty_tier));
+            const filterByTier = (arr) => arr.filter(item => 'novelty_tier' in item && allowedTiers.includes(item.novelty_tier));
             for (const key in stylesData.masterFramework) {
-                filteredFramework[key] = filterByTier(stylesData.masterFramework[key]);
+                if (key === 'creativeConstraints' || key === 'designerPersonas') {
+                    filteredFramework[key] = stylesData.masterFramework[key];
+                } else {
+                    filteredFramework[key] = filterByTier(stylesData.masterFramework[key]);
+                }
             }
         }
         let componentKeys = [];
@@ -562,69 +541,18 @@ function formatAsKeywords() {
         .join(', ');
 }
 
-generateBtn.addEventListener('click', generateBrief);
-
-pillsContainer.addEventListener('click', (e) => {
-    const button = e.target.closest('.lock-btn');
-    if (button) {
-        const key = button.dataset.key;
-        lockedComponents[key] = !lockedComponents[key];
-        renderPills();
-    }
-});
-
-formatBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        formatBtns.forEach(b => b.classList.remove('active', 'text-white', 'border-indigo-500'));
-        btn.classList.add('active', 'text-white', 'border-indigo-500');
-        currentFormat = btn.dataset.format;
-        updateOutputContent();
-    });
-});
-
-copyBtn.addEventListener('click', () => {
-    const textToCopy = briefPre.textContent;
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        copyBtn.textContent = 'Copied!';
-        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
-    }, (err) => {
-        console.error('Async: Could not copy text: ', err);
-        copyBtn.textContent = 'Error';
-        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-    // NEW: Populate Inspiration Mode Dropdowns
     const inspirationSelects = {
         architecture: [
-            { value: "high-impact", text: "High-Impact / Concept (Recommended)" },
-            { value: "minimalist", text: "Minimalist / Icon" },
-            { value: "maximalist", text: "Maximalist / Hero" },
-            { value: "wildcard", text: "Wildcard / Experimental" },
-            { value: "effects-focused", text: "Effects-Focused / Technical" }
+            { value: "high-impact", text: "High-Impact / Concept (Recommended)" }, { value: "minimalist", text: "Minimalist / Icon" }, { value: "maximalist", text: "Maximalist / Hero" }, { value: "wildcard", text: "Wildcard / Experimental" }, { value: "effects-focused", text: "Effects-Focused / Technical" }
         ],
         novelty: [
-            { value: "classic", text: "Tier 1: Classic & Established" },
-            { value: "creative", text: "Tier 2: Creative & Fused" },
-            { value: "experimental", text: "Tier 3: Hypothesized & Experimental" },
-            { value: "balanced", text: "Balanced Mix (All Tiers)" },
-            { value: "chaos", text: "Unrestricted Chaos" }
+            { value: "classic", text: "Tier 1: Classic & Established" }, { value: "creative", text: "Tier 2: Creative & Fused" }, { value: "experimental", text: "Tier 3: Hypothesized & Experimental" }, { value: "balanced", text: "Balanced Mix (All Tiers)" }, { value: "chaos", text: "Unrestricted Chaos" }
         ],
         modifier: [
-            { value: "none", text: "None (Standard)" },
-            { value: "narrative-badge", text: "+Narrative Badge" },
-            { value: "dynamic-layout", text: "+Dynamic Layout" },
-            { value: "typographic-play", text: "+Typographic Play" },
-            { value: "expressive-collage", text: "+Expressive Collage" },
-            { value: "hybrid-asset-collage", text: "+HybridAssetCollage" },
-            { value: "symbiotic-fusion", text: "+SymbioticFusion" },
-            { value: "multi-style-fusion", text: "+Multi-Style Fusion" },
-            { value: "thematic-clash", text: "+Thematic Clash" },
-            { value: "maximalist", text: "+Maximalist" }
+            { value: "none", text: "None (Standard)" }, { value: "narrative-badge", text: "+Narrative Badge" }, { value: "dynamic-layout", text: "+Dynamic Layout" }, { value: "typographic-play", text: "+Typographic Play" }, { value: "expressive-collage", text: "+Expressive Collage" }, { value: "hybrid-asset-collage", text: "+HybridAssetCollage" }, { value: "symbiotic-fusion", text: "+SymbioticFusion" }, { value: "multi-style-fusion", text: "+Multi-Style Fusion" }, { value: "thematic-clash", text: "+Thematic Clash" }, { value: "maximalist", text: "+Maximalist" }
         ]
     };
-
     for (const id in inspirationSelects) {
         const selectEl = document.getElementById(id);
         inspirationSelects[id].forEach(opt => {
@@ -634,10 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
             selectEl.appendChild(option);
         });
     }
-
-    // This populates the Creation Mode dropdowns
     populateCreationDropdowns();
-
     pillsContainer.innerHTML = `<span class="text-gray-400 italic">Your creative components will appear here...</span>`;
     briefPre.textContent = "Click 'Forge New Prompt' to begin.";
 });
