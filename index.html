@@ -66,7 +66,6 @@
 
             <div id="creationModeContainer" class="hidden">
                 <div class="space-y-6">
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Designer Persona:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -79,7 +78,6 @@
                                 data-component="DesignerPersonas">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Subject:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -91,7 +89,6 @@
                             <button class="custom-toggle-btn text-2xl" data-component="Subject">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Style:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -103,7 +100,6 @@
                             <button class="custom-toggle-btn text-2xl" data-component="Style">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Emotion/Tone:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -115,7 +111,6 @@
                             <button class="custom-toggle-btn text-2xl" data-component="EmotionTone">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Materiality:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -128,7 +123,6 @@
                                 data-component="MediumMateriality">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Process:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -140,7 +134,6 @@
                             <button class="custom-toggle-btn text-2xl" data-component="ActionProcess">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Composition:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -153,7 +146,6 @@
                                 data-component="ContextComposition">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Concept:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -166,7 +158,6 @@
                                 data-component="ConceptualMetaphorical">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Graphic Effect:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -178,7 +169,6 @@
                             <button class="custom-toggle-btn text-2xl" data-component="GraphicEffects">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label class="text-gray-300 font-medium sm:text-right">Creative Constraint:</label>
                         <div class="sm:col-span-2 flex items-center gap-2">
@@ -191,14 +181,12 @@
                                 data-component="CreativeConstraints">&#9998;</button>
                         </div>
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label for="manualModifier" class="text-gray-300 font-medium sm:text-right">Creative
                             Modifier:</label>
                         <select id="manualModifier"
                             class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
                     </div>
-
                     <div class="flex justify-center pt-4">
                         <button id="assembleBtn"
                             class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">Assemble
@@ -207,9 +195,35 @@
                 </div>
             </div>
 
-
+            <div class="my-8 text-center">
+                <button id="constraintBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-lg">
+                    Add a Creative Constraint
+                </button>
+                <div id="constraintOutput" class="mt-4 text-indigo-400 font-medium text-lg min-h-[28px]">
+                </div>
+            </div>
 
             <div id="output" class="mt-8">
+                <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-gray-400 italic">Your creative components will appear here...</span>
+                </div>
+
+                <div class="flex border-b border-gray-700 mb-4">
+                    <button class="format-btn active text-white border-indigo-500 py-2 px-4"
+                        data-format="brief">Creative Brief</button>
+                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                        data-format="ai">AI Prompt</button>
+                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                        data-format="keywords">Keywords</button>
+                    <button id="copyBtn"
+                        class="ml-auto bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-2 px-4 rounded-lg hidden">Copy</button>
+                </div>
+
+                <div id="outputContentArea" class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 min-h-[120px]">
+                    <pre id="brief"
+                        class="text-gray-300 whitespace-pre-wrap text-base leading-relaxed">Click 'Forge New Prompt' to begin.</pre>
+                </div>
             </div>
         </div>
     </main>

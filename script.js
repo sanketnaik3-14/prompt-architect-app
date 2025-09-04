@@ -978,4 +978,52 @@ function formatAsKeywords() {
         .join(', ');
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    // NEW: Populate Inspiration Mode Dropdowns
+    const inspirationSelects = {
+        architecture: [
+            { value: "high-impact", text: "High-Impact / Concept (Recommended)" },
+            { value: "minimalist", text: "Minimalist / Icon" },
+            { value: "maximalist", text: "Maximalist / Hero" },
+            { value: "wildcard", text: "Wildcard / Experimental" },
+            { value: "effects-focused", text: "Effects-Focused / Technical" }
+        ],
+        novelty: [
+            { value: "classic", text: "Tier 1: Classic & Established" },
+            { value: "creative", text: "Tier 2: Creative & Fused" },
+            { value: "experimental", text: "Tier 3: Hypothesized & Experimental" },
+            { value: "balanced", text: "Balanced Mix (All Tiers)" },
+            { value: "chaos", text: "Unrestricted Chaos" }
+        ],
+        modifier: [
+            { value: "none", text: "None (Standard)" },
+            { value: "narrative-badge", text: "+Narrative Badge" },
+            { value: "dynamic-layout", text: "+Dynamic Layout" },
+            { value: "typographic-play", text: "+Typographic Play" },
+            { value: "expressive-collage", text: "+Expressive Collage" },
+            { value: "hybrid-asset-collage", text: "+HybridAssetCollage" },
+            { value: "symbiotic-fusion", text: "+SymbioticFusion" },
+            { value: "multi-style-fusion", text: "+Multi-Style Fusion" },
+            { value: "thematic-clash", text: "+Thematic Clash" },
+            { value: "maximalist", text: "+Maximalist" }
+        ]
+    };
+
+    for (const id in inspirationSelects) {
+        const selectEl = document.getElementById(id);
+        inspirationSelects[id].forEach(opt => {
+            const option = document.createElement('option');
+            option.value = opt.value;
+            option.textContent = opt.text;
+            selectEl.appendChild(option);
+        });
+    }
+
+    // This populates the Creation Mode dropdowns
+    populateCreationDropdowns();
+
+    pillsContainer.innerHTML = `<span class="text-gray-400 italic">Your creative components will appear here...</span>`;
+    briefPre.textContent = "Click 'Forge New Prompt' to begin.";
+});
+
 
