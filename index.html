@@ -253,6 +253,14 @@
             </div>
         </div>
 
+        <div class="flex justify-center pt-4">
+            <button id="assembleBtn"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">
+                Assemble Brief
+            </button>
+        </div>
+        </div>
+        </div>
         <div id="output" class="mt-8">
             <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
                 <span class="text-gray-400 italic">Your creative components will appear here...</span>
@@ -720,7 +728,18 @@
                     { "name": "Pixel Sorting", "novelty_tier": 3 }
                 ]
             }
+
+
         };
+
+        // --- SUPABASE SETUP ---
+        // We are importing the Supabase library directly into the browser
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+        // IMPORTANT: Replace these with your actual Supabase URL and Key
+        const supabaseUrl = 'https://qvdtjaydpvemgpyplwei.supabase.co';
+        const supabaseKey = 'sb_publishable_ZkEZc0rBKg5B0i-1_Lkt6w_d5hRrZBQ';
+        const supabase = createClient(supabaseUrl, supabaseKey);
 
         function mulberry32(a) {
             return function () {
@@ -770,17 +789,48 @@
         };
 
         // --- NEW FUNCTION TO POPULATE DROPDOWNS ---
-        function populateCreationDropdowns() {
-            // This part populates the 8 component dropdowns (existing logic)
+        async function populateCreationDropdowns() {
+            // Fetch saved ideas from your Supabase database
+            let savedIdeas = {};
+            try {
+                // CHANGED: This now uses the Supabase client
+                const { data: ideas, error } = await supabase.from('ideas').select('component_key, value');
+                if (error) throw error;
+
+                if (ideas) {
+                    ideas.forEach(idea => {
+                        if (!savedIdeas[idea.component_key]) {
+                            savedIdeas[idea.component_key] = [];
+                        }
+                        savedIdeas[idea.component_key].push(idea.value);
+                    });
+                }
+            } catch (error) {
+                console.warn("Could not fetch ideas from Supabase:", error.message);
+            }
+
+            // The rest of this function populates the dropdowns as before
             for (const key in stylesData.masterFramework) {
                 const selectElement = document.getElementById(`manual${key.charAt(0).toUpperCase() + key.slice(1)}`);
                 if (selectElement) {
-                    selectElement.innerHTML = '<option value="">-- Optional --</option>'; // Changed default text
+                    selectElement.innerHTML = '<option value="">-- Optional --</option>';
+
+                    if (savedIdeas[key] && savedIdeas[key].length > 0) {
+                        const savedOptgroup = document.createElement('optgroup');
+                        savedOptgroup.label = "--- Your Saved Ideas ---";
+                        savedIdeas[key].forEach(value => {
+                            const option = document.createElement('option');
+                            option.value = value;
+                            option.textContent = value;
+                            savedOptgroup.appendChild(option);
+                        });
+                        selectElement.appendChild(savedOptgroup);
+                    }
 
                     if (key === 'subject') {
                         stylesData.masterFramework[key].forEach(category => {
                             const optgroup = document.createElement('optgroup');
-                            optgroup.label = category.categoryName;
+                            optgroup.label = `--- ${category.categoryName} ---`;
                             category.examples.forEach(example => {
                                 const option = document.createElement('option');
                                 option.value = example;
@@ -790,20 +840,22 @@
                             selectElement.appendChild(optgroup);
                         });
                     } else {
+                        const premadeOptgroup = document.createElement('optgroup');
+                        premadeOptgroup.label = "--- Premade Ideas ---";
                         stylesData.masterFramework[key].forEach(item => {
                             const option = document.createElement('option');
                             option.value = item.name;
                             option.textContent = item.name;
-                            selectElement.appendChild(option);
+                            premadeOptgroup.appendChild(option);
                         });
+                        selectElement.appendChild(premadeOptgroup);
                     }
                 }
             }
 
-            // NEW LOGIC: This part populates the new modifier dropdown
             const manualModifierSelect = document.getElementById('manualModifier');
             const inspirationModifierSelect = document.getElementById('modifier');
-            manualModifierSelect.innerHTML = inspirationModifierSelect.innerHTML; // Simple copy
+            manualModifierSelect.innerHTML = inspirationModifierSelect.innerHTML;
         }
 
         // --- NEW EVENT LISTENERS FOR MODE SWITCHING ---
@@ -843,11 +895,12 @@
             inputEl.classList.toggle('hidden');
         });
 
-        async function generateBrief() { // Note: We make the function async
+        async function generateBrief() { // CHANGED: Made the function async
             const newComponents = {};
 
             if (currentMode === 'inspiration') {
                 // --- INSPIRATION MODE (RANDOM) LOGIC ---
+                // ... (This entire block of code remains the same as your current file)
                 const seedValue = seedInput.value.trim();
                 currentSeed = seedValue === '' ? Math.floor(Math.random() * 1000000) : parseInt(seedValue, 10);
                 if (isNaN(currentSeed)) {
@@ -940,7 +993,7 @@
                 };
 
                 const componentKeysInOrder = ['subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects'];
-                const ideasToSave = []; // <-- NEW: Array to hold ideas we need to save
+                const ideasToSave = [];
 
                 componentKeysInOrder.forEach(key => {
                     const capKey = key.charAt(0).toUpperCase() + key.slice(1);
@@ -952,20 +1005,21 @@
                     if (isCustom) {
                         selectedValue = customInput.value.trim();
                         newComponents[key] = { name: selectedValue, novelty_tier: 'Custom', category: 'Custom' };
-                        ideasToSave.push({ component_key: key, value: selectedValue }); // NEW: Add custom idea to our save list
+                        ideasToSave.push({ component_key: key, value: selectedValue }); // Add to our save list
                     } else {
                         selectedValue = manualSelect.value;
                         if (selectedValue) { newComponents[key] = findComponentByName(key, selectedValue); }
                     }
                 });
 
-                // NEW: Logic to save the collected custom ideas to Supabase
+                // CHANGED: Save all custom entries to Supabase
                 if (ideasToSave.length > 0) {
                     try {
                         const { error } = await supabase.from('ideas').upsert(ideasToSave, { onConflict: 'component_key, value' });
                         if (error) throw error;
                         console.log('Successfully saved custom ideas to Supabase!');
-                        await populateCreationDropdowns(); // Re-populate dropdowns to show the new idea immediately
+                        // Optional: re-populate dropdowns to show the new idea immediately
+                        // populateCreationDropdowns(); 
                     } catch (error) {
                         console.error('Failed to save idea to Supabase:', error.message);
                     }
