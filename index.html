@@ -317,6 +317,27 @@
         </div>
     </main>
 
+    <div id="refinementPanel" class="hidden container mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-8">
+        <div class="bg-gray-800 rounded-2xl shadow-2xl p-4 max-w-4xl mx-auto">
+            <h3 class="text-center text-lg font-semibold text-white mb-4">Refine Current Design</h3>
+            <div id="refinementBtns" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button id="refineSimplifyBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Simplify /
+                    Deconstruct</button>
+                <button id="refineElaborateBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Elaborate /
+                    Embellish</button>
+                <button id="refinePerspectiveBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Shift
+                    Perspective</button>
+                <button id="refinePaletteBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Suggest Color
+                    Palette</button>
+            </div>
+            <div id="paletteOutput" class="mt-4 text-center text-sm"></div>
+        </div>
+    </div>
+
     <footer class="text-center py-4 text-gray-500 text-sm">
         <p>Built for creative exploration.</p>
     </footer>

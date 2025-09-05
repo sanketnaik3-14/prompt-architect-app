@@ -45,6 +45,22 @@ const stylesData = {
     }
 };
 
+const colorPalettes = {
+    // Style Keywords
+    "80s Retro": ["#FF00FF", "#00FFFF", "#FFFF00"], // Magenta, Cyan, Yellow
+    "Cyberpunk": ["#EC4899", "#A855F7", "#3B82F6"], // Pink, Purple, Blue
+    "Art Deco": ["#000000", "#D4AF37", "#EAEAEA"], // Black, Gold, Silver
+    "Cottagecore": ["#A3B18A", "#F4A261", "#E76F51"], // Sage, Sandy Brown, Burnt Sienna
+    "Solarpunk": ["#2A9D8F", "#E9C46A", "#FFFFFF"], // Teal, Gold, White
+    "Vaporwave": ["#FF71CE", "#01CDFE", "#05FFA1"], // Pink, Blue, Green
+    // Emotion Keywords
+    "Serene / Tranquil / Zen": ["#A8DADC", "#457B9D", "#1D3557"], // Light Blue, Mid Blue, Dark Blue
+    "Energetic / Dynamic / Vibrant": ["#F94144", "#F8961E", "#F9C74F"], // Red, Orange, Yellow
+    "Gothic / Dark": ["#2B2D42", "#8D99AE", "#EF233C"], // Dark Gray, Light Gray, Red
+    "Hopeful / Optimistic": ["#FFD166", "#06D6A0", "#118AB2"], // Yellow, Green, Blue
+    "Nostalgic / Retro": ["#E07A5F", "#3D405B", "#81B29A"], // Terracotta, Dark Blue, Sage
+};
+
 // --- SUPABASE SETUP ---
 // We are importing the Supabase library directly into the browser
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
@@ -90,6 +106,10 @@ const audienceInputs = {
     interests: document.getElementById('audienceInterests'),
     media: document.getElementById('audienceMedia')
 };
+
+const refinementPanel = document.getElementById('refinementPanel');
+const refinementBtns = document.getElementById('refinementBtns');
+const paletteOutput = document.getElementById('paletteOutput');
 
 // --- STATE ---
 let currentSeed = null;
@@ -373,6 +393,8 @@ async function populateCreationDropdowns() {
 }
 
 async function generateBrief() {
+    refinementPanel.classList.add('hidden'); // Hide panel at start of new generation
+    paletteOutput.innerHTML = ''; // Clear old palette suggestions
     const newComponents = {};
 
     if (currentMode === 'inspiration') {
@@ -604,6 +626,7 @@ async function generateBrief() {
     renderPills();
     updateOutputContent();
     copyBtn.classList.remove('hidden');
+    refinementPanel.classList.remove('hidden'); // Show panel after generation is complete
 }
 
 function renderPills() {
@@ -974,6 +997,91 @@ modalSearch.addEventListener('keyup', () => {
         allOptions = stylesData.masterFramework[currentFusionComponent].map(item => item.name);
     }
     renderModalContent(allOptions);
+});
+
+// --- DESIGN ITERATION & REFINEMENT SYSTEM ---
+
+function generateBriefFromComponents(newComponents) {
+    currentComponents = newComponents;
+    renderPills();
+    updateOutputContent();
+}
+
+function refineSimplify() {
+    let newComponents = { ...currentComponents };
+    // Rule-based simplification
+    if (newComponents.conceptualMetaphorical) delete newComponents.conceptualMetaphorical;
+    else if (newComponents.actionProcess) delete newComponents.actionProcess;
+    else if (newComponents.mediumMateriality) delete newComponents.mediumMateriality;
+    else if (newComponents.graphicEffects) delete newComponents.graphicEffects;
+
+    generateBriefFromComponents(newComponents);
+}
+
+function refineElaborate() {
+    let newComponents = { ...currentComponents };
+    if (!newComponents.graphicEffects) {
+        newComponents.graphicEffects = getRandomElement(stylesData.masterFramework.graphicEffects, Math.random);
+    } else if (!newComponents.conceptualMetaphorical) {
+        newComponents.conceptualMetaphorical = getRandomElement(stylesData.masterFramework.conceptualMetaphorical, Math.random);
+    }
+    generateBriefFromComponents(newComponents);
+}
+
+function refineShiftPerspective() {
+    let newComponents = { ...currentComponents };
+    // Rule-based perspective shift on composition
+    const compositions = stylesData.masterFramework.contextComposition;
+    let currentCompName = newComponents.contextComposition?.name || "Centered / Iconic Layout";
+    let newComp = getRandomElement(compositions, Math.random);
+    // Ensure we get a different one
+    while (newComp.name === currentCompName) {
+        newComp = getRandomElement(compositions, Math.random);
+    }
+    newComponents.contextComposition = newComp;
+    generateBriefFromComponents(newComponents);
+}
+
+function refineSuggestPalette() {
+    paletteOutput.innerHTML = ''; // Clear previous
+    const keywords = Object.values(currentComponents).map(c => c.name).join(' ');
+    let suggestedPalette = null;
+
+    for (const key in colorPalettes) {
+        if (keywords.toLowerCase().includes(key.toLowerCase().split(' / ')[0])) {
+            suggestedPalette = colorPalettes[key];
+            break;
+        }
+    }
+
+    if (suggestedPalette) {
+        const paletteHtml = suggestedPalette.map(color =>
+            `<span class="inline-block px-3 py-1 rounded-full text-sm font-semibold text-white mr-2" style="background-color: ${color};">${color}</span>`
+        ).join('');
+        paletteOutput.innerHTML = `<strong>Suggested Palette:</strong> ${paletteHtml}`;
+    } else {
+        paletteOutput.innerHTML = `<span class="text-gray-400">No direct palette match found for this concept.</span>`;
+    }
+}
+
+refinementBtns.addEventListener('click', (e) => {
+    const button = e.target.closest('button');
+    if (!button) return;
+
+    switch (button.id) {
+        case 'refineSimplifyBtn':
+            refineSimplify();
+            break;
+        case 'refineElaborateBtn':
+            refineElaborate();
+            break;
+        case 'refinePerspectiveBtn':
+            refineShiftPerspective();
+            break;
+        case 'refinePaletteBtn':
+            refineSuggestPalette();
+            break;
+    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
