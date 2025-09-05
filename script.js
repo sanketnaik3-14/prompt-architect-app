@@ -61,6 +61,10 @@ const colorPalettes = {
     "Nostalgic / Retro": ["#E07A5F", "#3D405B", "#81B29A"], // Terracotta, Dark Blue, Sage
 };
 
+const ALL_COUNTRY_CODES = ["AF", "AX", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BM", "BT", "BO", "BQ", "BA", "BW", "BV", "BR", "IO", "BN", "BG", "BF", "BI", "CV", "KH", "CM", "CA", "KY", "CF", "TD", "CL", "CN", "CX", "CC", "CO", "KM", "CG", "CD", "CK", "CR", "CI", "HR", "CU", "CW", "CY", "CZ", "DK", "DJ", "DM", "DO", "EC", "EG", "SV", "GQ", "ER", "EE", "SZ", "ET", "FK", "FO", "FJ", "FI", "FR", "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", "GD", "GP", "GU", "GT", "GG", "GN", "GW", "GY", "HT", "HM", "VA", "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IM", "IL", "IT", "JM", "JP", "JE", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", "MX", "FM", "MD", "MC", "MN", "ME", "MS", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MK", "MP", "NO", "OM", "PK", "PW", "PS", "PA", "PG", "PY", "PE", "PH", "PN", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "RW", "BL", "SH", "KN", "LC", "MF", "PM", "VC", "WS", "SM", "ST", "SA", "SN", "RS", "SC", "SL", "SG", "SX", "SK", "SI", "SB", "SO", "ZA", "GS", "SS", "ES", "LK", "SD", "SR", "SJ", "SE", "CH", "SY", "TW", "TJ", "TZ", "TH", "TL", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", "UG", "UA", "AE", "GB", "US", "UM", "UY", "UZ", "VU", "VE", "VN", "VG", "VI", "WF", "EH", "YE", "ZM", "ZW"];
+
+const ALL_LANGUAGE_CODES = ["aa", "ab", "ae", "af", "ak", "am", "an", "ar", "as", "av", "ay", "az", "ba", "be", "bg", "bh", "bi", "bm", "bn", "bo", "br", "bs", "ca", "ce", "ch", "co", "cr", "cs", "cu", "cv", "cy", "da", "de", "dv", "dz", "ee", "el", "en", "eo", "es", "et", "eu", "fa", "ff", "fi", "fj", "fo", "fr", "fy", "ga", "gd", "gl", "gn", "gu", "gv", "ha", "he", "hi", "ho", "hr", "ht", "hu", "hy", "hz", "ia", "id", "ie", "ig", "ii", "ik", "io", "is", "it", "iu", "ja", "jv", "ka", "kg", "ki", "kj", "kk", "kl", "km", "kn", "ko", "kr", "ks", "ku", "kv", "kw", "ky", "la", "lb", "lg", "li", "ln", "lo", "lt", "lu", "lv", "mg", "mh", "mi", "mk", "ml", "mn", "mr", "ms", "mt", "my", "na", "nb", "nd", "ne", "ng", "nl", "nn", "no", "nr", "nv", "ny", "oc", "oj", "om", "or", "os", "pa", "pi", "pl", "ps", "pt", "qu", "rm", "rn", "ro", "ru", "rw", "sa", "sc", "sd", "se", "sg", "si", "sk", "sl", "sm", "sn", "so", "sq", "sr", "ss", "st", "su", "sv", "sw", "ta", "te", "tg", "th", "ti", "tk", "tl", "tn", "to", "tr", "ts", "tt", "tw", "ty", "ug", "uk", "ur", "uz", "ve", "vi", "vo", "wa", "wo", "xh", "yi", "yo", "za", "zh", "zu"];
+
 // --- SUPABASE SETUP ---
 // We are importing the Supabase library directly into the browser
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
@@ -172,28 +176,43 @@ async function populateAudienceDropdowns(savedProfile = {}) {
         staticOptions[key].forEach(opt => select.add(new Option(opt, opt)));
     }
 
-    // Populate dynamic country and language lists
+    // --- NEW: Populate COMPLETE country and language lists programmatically ---
     try {
-        const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
         const countrySelect = document.getElementById('audienceMarket');
-        // A curated list of ISO 3166-1 alpha-2 codes
-        const countryCodes = ["US", "GB", "CA", "AU", "DE", "FR", "ES", "IT", "JP", "IN", "BR", "MX", "CN", "RU", "ZA"];
-        countryCodes.sort((a, b) => regionNames.of(a).localeCompare(regionNames.of(b)));
-        countrySelect.innerHTML = '<option value="Universal">Universal</option>';
-        countryCodes.forEach(code => countrySelect.add(new Option(regionNames.of(code), code)));
-
-        const languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
         const languageSelect = document.getElementById('audienceLanguage');
-        // A curated list of ISO 639-1 codes
-        const langCodes = ["en", "es", "fr", "de", "it", "pt", "ja", "zh", "hi", "ar", "ru", "mr"];
-        langCodes.sort((a, b) => languageNames.of(a).localeCompare(languageNames.of(b)));
+        countrySelect.innerHTML = '<option value="Universal">Universal</option>';
         languageSelect.innerHTML = '';
-        langCodes.forEach(code => languageSelect.add(new Option(languageNames.of(code), code)));
-        languageSelect.value = 'en'; // Default to English
-    } catch (e) { console.error("Intl API not fully supported:", e); }
+
+        // Generate country names from codes
+        const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+        const countries = ALL_COUNTRY_CODES.map(code => ({
+            code: code,
+            name: regionNames.of(code)
+        })).sort((a, b) => a.name.localeCompare(b.name));
+
+        countries.forEach(country => {
+            countrySelect.add(new Option(country.name, country.code));
+        });
+
+        // Generate language names from codes
+        const languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
+        const languages = ALL_LANGUAGE_CODES.map(code => ({
+            code: code,
+            name: languageNames.of(code)
+        })).sort((a, b) => a.name.localeCompare(b.name));
+
+        languages.forEach(lang => {
+            languageSelect.add(new Option(lang.name, lang.code));
+        });
+
+        // Set defaults
+        countrySelect.value = 'Universal';
+        languageSelect.value = 'en';
+
+    } catch (e) { console.error("Intl API not fully supported or list failed:", e); }
 
 
-    // Fetch saved ideas for dynamic fields
+    // Fetch and populate saved ideas for dynamic fields (this logic remains the same)
     let savedIdeas = {};
     const audienceComponentKeys = audienceFields.map(f => `audience_${f.key}`);
     const { data: ideas } = await supabase.from('ideas').select('component_key, value').in('component_key', audienceComponentKeys);
@@ -204,7 +223,6 @@ async function populateAudienceDropdowns(savedProfile = {}) {
         });
     }
 
-    // Populate dynamic dropdowns
     audienceFields.forEach(field => {
         const select = document.getElementById(`audience${field.key.charAt(0).toUpperCase() + field.key.slice(1)}Select`);
         if (!select) return;
@@ -214,7 +232,6 @@ async function populateAudienceDropdowns(savedProfile = {}) {
         } else {
             select.innerHTML = `<option value="">-- Select a saved ${field.key} --</option>`;
         }
-
         const saved = savedIdeas[`audience_${field.key}`];
         if (saved && saved.length > 0) {
             const optgroup = document.createElement('optgroup');
@@ -224,9 +241,11 @@ async function populateAudienceDropdowns(savedProfile = {}) {
         }
     });
 
-    // Set selected values from loaded profile
+    // Set selected values from the loaded profile
     for (const key in savedProfile) {
-        const el = document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}`) || document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}Select`);
+        // This logic now correctly maps snake_case from DB to camelCase in our IDs
+        const camelKey = key.replace(/_([a-z])/g, g => g[1].toUpperCase());
+        const el = document.getElementById(`audience${camelKey.charAt(0).toUpperCase() + camelKey.slice(1)}`) || document.getElementById(`audience${camelKey.charAt(0).toUpperCase() + camelKey.slice(1)}Select`);
         if (el) el.value = savedProfile[key];
     }
 }
