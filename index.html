@@ -83,6 +83,7 @@
                                 class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
                                 placeholder="Enter custom subject...">
                             <button class="custom-toggle-btn text-2xl" data-component="Subject">&#9998;</button>
+                            <button id="findTrendBtn" class="text-2xl text-indigo-400" title="Find a Trend">⚡️</button>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
@@ -267,6 +268,21 @@
             <div class="p-4 border-t border-gray-700 flex justify-end">
                 <button id="modalCloseBtn"
                     class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="trendModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-lg">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-xl font-bold text-white">Trending Topics</h3>
+                <button id="trendModalCloseBtn" class="text-2xl">&times;</button>
+            </div>
+            <div class="p-4 flex gap-4">
+                <select id="trendCategory" class="w-full bg-gray-700 p-2 rounded"></select>
+                <select id="trendCountry" class="w-full bg-gray-700 p-2 rounded"></select>
+            </div>
+            <div id="trendList" class="p-4 max-h-80 overflow-y-auto">
             </div>
         </div>
     </div>
