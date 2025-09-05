@@ -71,6 +71,25 @@ const inspirationModeContainer = document.getElementById('inspirationModeContain
 const creationModeContainer = document.getElementById('creationModeContainer');
 const constraintBtn = document.getElementById('constraintBtn');
 const constraintOutput = document.getElementById('constraintOutput');
+// Add to DOM ELEMENTS section
+const audienceBtn = document.getElementById('audienceBtn');
+const audienceModal = document.getElementById('audienceModal');
+const audienceModalCloseBtn = document.getElementById('audienceModalCloseBtn');
+const audienceModalSaveBtn = document.getElementById('audienceModalSaveBtn');
+const audienceModalClearBtn = document.getElementById('audienceModalClearBtn');
+const activeAudienceDisplay = document.getElementById('activeAudienceDisplay');
+const audienceInputs = {
+    gender: document.getElementById('audienceGender'),
+    age: document.getElementById('audienceAge'),
+    lifeStage: document.getElementById('audienceLifeStage'),
+    occupation: document.getElementById('audienceOccupation'),
+    market: document.getElementById('audienceMarket'),
+    language: document.getElementById('audienceLanguage'),
+    culture: document.getElementById('audienceCulture'),
+    values: document.getElementById('audienceValues'),
+    interests: document.getElementById('audienceInterests'),
+    media: document.getElementById('audienceMedia')
+};
 
 // --- STATE ---
 let currentSeed = null;
@@ -81,7 +100,7 @@ let currentFormat = 'brief';
 let currentMode = 'inspiration';
 // Add this line in the STATE section
 let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [], mediumMateriality: [], actionProcess: [], contextComposition: [], conceptualMetaphorical: [], creativeConstraints: [] };
-
+let currentAudience = {};
 // --- HELPER FUNCTIONS ---
 function mulberry32(a) {
     return function () {
@@ -109,6 +128,75 @@ const keyToDisplayName = {
     graphicEffects: 'Graphic Effect',
     creativeConstraints: 'Creative Constraint'
 };
+
+// --- AUDIENCE PROFILE FEATURE ---
+
+function populateAudienceDropdowns() {
+    const options = {
+        gender: ['Universal / Gender-Neutral', 'Male-Targeted', 'Female-Targeted'],
+        age: ['Any Age', '13-17', '18-24', '25-34', '35-44', '45+'],
+        lifeStage: ['Any Stage', 'Student', 'Young Professional', 'Parent', 'Retiree'],
+        market: ['Universal', 'USA', 'UK', 'Canada', 'Australia', 'Germany', 'India', 'Japan'],
+        language: ['English', 'Spanish', 'French', 'German', 'Japanese', 'Hindi', 'Marathi']
+    };
+
+    for (const key in options) {
+        const select = audienceInputs[key];
+        select.innerHTML = '';
+        options[key].forEach(opt => {
+            const option = document.createElement('option');
+            option.value = opt;
+            option.textContent = opt;
+            select.appendChild(option);
+        });
+    }
+}
+
+function updateAudienceDisplay() {
+    if (Object.keys(currentAudience).length === 0 || Object.values(currentAudience).every(v => !v || v.startsWith('Any'))) {
+        activeAudienceDisplay.classList.add('hidden');
+        currentAudience = {}; // Ensure it's empty
+        return;
+    }
+
+    let summary = Object.entries(currentAudience)
+        .filter(([key, value]) => value && !value.startsWith('Any'))
+        .map(([key, value]) => `<strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${value}`)
+        .join(' &bull; ');
+
+    activeAudienceDisplay.innerHTML = `👤 Targeting: ${summary}`;
+    activeAudienceDisplay.classList.remove('hidden');
+}
+
+function saveAudienceProfile() {
+    currentAudience = {};
+    for (const key in audienceInputs) {
+        if (audienceInputs[key].value) {
+            currentAudience[key] = audienceInputs[key].value.trim();
+        }
+    }
+    updateAudienceDisplay();
+    audienceModal.classList.add('hidden');
+}
+
+function clearAudienceProfile() {
+    for (const key in audienceInputs) {
+        if (audienceInputs[key].tagName === 'SELECT') {
+            audienceInputs[key].selectedIndex = 0;
+        } else {
+            audienceInputs[key].value = '';
+        }
+    }
+    currentAudience = {};
+    updateAudienceDisplay();
+    audienceModal.classList.add('hidden');
+}
+
+// Event Listeners for Audience Modal
+audienceBtn.addEventListener('click', () => audienceModal.classList.remove('hidden'));
+audienceModalCloseBtn.addEventListener('click', () => audienceModal.classList.add('hidden'));
+audienceModalSaveBtn.addEventListener('click', saveAudienceProfile);
+audienceModalClearBtn.addEventListener('click', clearAudienceProfile);
 
 // --- EVENT LISTENERS ---
 
@@ -351,6 +439,13 @@ async function generateBrief() {
                     break;
                 case 'conceptual-surrealism':
                     componentKeys = ['subject', 'conceptualMetaphorical', 'style'];
+                    break;
+                // --- FINAL ALCHEMY MODIFIERS ---
+                case 'kinetic-typography':
+                    componentKeys = ['subject', 'actionProcess'];
+                    break;
+                case 'sensory-swap':
+                    componentKeys = ['subject', 'emotionTone', 'style'];
                     break;
             }
         } else {
@@ -603,6 +698,27 @@ function formatAsBrief() {
 }
 
 function formatAsAIPrompt() {
+    // --- NEW: Audience Preamble Builder ---
+    let audiencePreamble = '';
+    if (Object.keys(currentAudience).length > 0) {
+        const profileParts = [];
+        if (currentAudience.gender && currentAudience.gender !== 'Universal / Gender-Neutral') profileParts.push(currentAudience.gender);
+        if (currentAudience.age && currentAudience.age !== 'Any Age') profileParts.push(`${currentAudience.age} age group`);
+        if (currentAudience.lifeStage && currentAudience.lifeStage !== 'Any Stage') profileParts.push(currentAudience.lifeStage);
+        if (currentAudience.occupation) profileParts.push(`who works as a ${currentAudience.occupation}`);
+        if (currentAudience.market && currentAudience.market !== 'Universal') profileParts.push(`from ${currentAudience.market}`);
+        if (currentAudience.values) profileParts.push(`values ${currentAudience.values}`);
+        if (currentAudience.interests) profileParts.push(`is interested in ${currentAudience.interests}`);
+        if (currentAudience.media) profileParts.push(`and consumes media like ${currentAudience.media}`);
+
+        if (profileParts.length > 0) {
+            audiencePreamble = `The target customer for this design is: ${profileParts.join(', ')}. `;
+        }
+        if (currentAudience.culture) {
+            audiencePreamble += `\n**Important Cultural Context:** ${currentAudience.culture}\n\n`;
+        }
+    }
+
     const persona = currentComponents.designerPersonas;
     let personaPreamble = '';
     if (persona && persona.name) {
@@ -613,8 +729,12 @@ function formatAsAIPrompt() {
     const c = currentComponents;
     const baseVectorInstructions = "Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.";
 
+    // Prepend the audience preamble to the persona preamble
+    const fullPreamble = audiencePreamble ? `${personaPreamble}With that target customer in mind, create the following design. ${audiencePreamble}` : personaPreamble;
+
+    // The rest of the function logic remains the same as the last version...
     if (currentMode === 'fusion' && c._subjects) {
-        // ... (FUSION LOGIC REMAINS THE SAME) ...
+        // ... (FUSION LOGIC) ...
         const { _subjects, _styles, _emotions, _effects, _materials, _processes, _compositions, _concepts, _constraints, _modifier } = c;
         let clauses = [];
         if (_subjects.length > 0) clauses.push(`The core subjects are a fusion of: "${_subjects.join('", "')}".`);
@@ -629,29 +749,29 @@ function formatAsAIPrompt() {
         if (_modifier && _modifier.value !== 'none') {
             mainBody = `The entire conceptual fusion must be presented within the structure of a "${_modifier.text}" design. ${mainBody}`;
         }
-        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic. The design is a complex conceptual fusion. ${mainBody} The final output must be a single, cohesive, and harmonious design. ${baseVectorInstructions}`;
+        finalPrompt = `${fullPreamble}A masterpiece T-shirt graphic. The design is a complex conceptual fusion. ${mainBody} The final output must be a single, cohesive, and harmonious design. ${baseVectorInstructions}`;
         if (_constraints.length > 0) {
             finalPrompt += ` \n\n**Important Constraints:** ${_constraints.join('. ')}.`;
         }
-
-    } else { // --- UPGRADED LOGIC for Inspiration/Creation ---
+    } else {
+        // ... (INSPIRATION/CREATION LOGIC) ...
         let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;
-
-        // --- NEW ALCHEMY MODIFIER PROMPT STRUCTURES ---
         if (modifierValue === 'generative-system') {
-            finalPrompt = `${personaPreamble}A t-shirt design presented as a generative system in 3-4 sequential frames or panels. The design illustrates the process of "${c.actionProcess.name}" progressively transforming the subject of "${c.subject.name}". The visual style must be clear and diagrammatic. ${baseVectorInstructions}`;
+            finalPrompt = `${fullPreamble}A t-shirt design presented as a generative system in 3-4 sequential frames or panels. The design illustrates the process of "${c.actionProcess.name}" progressively transforming the subject of "${c.subject.name}". The visual style must be clear and diagrammatic. ${baseVectorInstructions}`;
         } else if (modifierValue === 'dataviz-mythology') {
-            finalPrompt = `${personaPreamble}A t-shirt design in the style of a clean, modern data visualization or infographic, in a ${c.style.name} style. The subject, "${c.subject.name}", must be rendered as a diagram that visually explains the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
+            finalPrompt = `${fullPreamble}A t-shirt design in the style of a clean, modern data visualization or infographic, in a ${c.style.name} style. The subject, "${c.subject.name}", must be rendered as a diagram that visually explains the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
         } else if (modifierValue === 'material-inversion') {
-            finalPrompt = `${personaPreamble}A high-impact, minimalist t-shirt design featuring a material inversion. The entire background is composed of "${c.mediumMateriality.name}". The subject, "${c.subject.name}", is defined ONLY by the negative space cut out from this background. ${baseVectorInstructions}`;
+            finalPrompt = `${fullPreamble}A high-impact, minimalist t-shirt design featuring a material inversion. The entire background is composed of "${c.mediumMateriality.name}". The subject, "${c.subject.name}", is defined ONLY by the negative space cut out from this background. ${baseVectorInstructions}`;
         } else if (modifierValue === 'conceptual-surrealism') {
-            finalPrompt = `${personaPreamble}A t-shirt design in the style of a surrealist painting, rendered in a ${c.style.name} style. The scene must be a dream-like and bizarre depiction of the subject, "${c.subject.name}", acting as a character to embody the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
-
-            // --- EXISTING MODIFIER & STANDARD LOGIC ---
+            finalPrompt = `${fullPreamble}A t-shirt design in the style of a surrealist painting, rendered in a ${c.style.name} style. The scene must be a dream-like and bizarre depiction of the subject, "${c.subject.name}", acting as a character to embody the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
+        } else if (modifierValue === 'kinetic-typography') {
+            finalPrompt = `${fullPreamble}A t-shirt design focused on kinetic typography where the text is the primary artwork. The words "${c.subject.name}" must be depicted as if they are physically undergoing the process of "${c.actionProcess.name}". ${baseVectorInstructions}`;
+        } else if (modifierValue === 'sensory-swap') {
+            finalPrompt = `${fullPreamble}A highly conceptual t-shirt design based on a sensory swap, rendered in a ${c.style.name} style. The prompt must visualize the subject, "${c.subject.name}", as if it were the physical embodiment of the sensory experience of "${c.emotionTone.name}". ${baseVectorInstructions}`;
         } else if (modifierValue && modifierValue !== 'none') {
             const selectedModText = (currentMode === 'inspiration' ? modifierSelect.options[modifierSelect.selectedIndex].text : document.getElementById('manualModifier').options[document.getElementById('manualModifier').selectedIndex].text);
             let keywords = formatAsKeywords();
-            finalPrompt = `${personaPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. ${baseVectorInstructions}`;
+            finalPrompt = `${fullPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. ${baseVectorInstructions}`;
         } else {
             const subject = c.subject?.name || 'an abstract concept';
             const style = c.style?.name ? `in a ${c.style.name} style` : 'in a unique visual style';
@@ -662,7 +782,7 @@ function formatAsAIPrompt() {
             const composition = c.contextComposition?.name ? `, presented as a ${c.contextComposition.name}` : '';
             const concept = c.conceptualMetaphorical?.name ? `. The design explores the concept of "${c.conceptualMetaphorical.name}"` : '';
             let prompt = `A masterpiece T-shirt graphic design of "${subject}" ${style}${materiality}${emotion}${effect}. The design is ${process}${composition}${concept}. Clean vector art, isolated on a plain white background, high detail, sharp focus.`;
-            finalPrompt = personaPreamble + prompt;
+            finalPrompt = fullPreamble + prompt;
         }
     }
 
@@ -880,11 +1000,13 @@ document.addEventListener('DOMContentLoaded', () => {
             { value: "clean-tech", text: "+CleanTech" },
             { value: "punk-zine", text: "+PunkZine" },
             { value: "ornate-elegance", text: "+OrnateElegance" },
-            // --- NEW ALCHEMY MODIFIERS ---
+            // ALCHEMY MODIFIERS
             { value: "generative-system", text: "ALCHEMY: Generative System" },
             { value: "dataviz-mythology", text: "ALCHEMY: DataViz Mythology" },
             { value: "material-inversion", text: "ALCHEMY: Material Inversion" },
-            { value: "conceptual-surrealism", text: "ALCHEMY: Conceptual Surrealism" }
+            { value: "conceptual-surrealism", text: "ALCHEMY: Conceptual Surrealism" },
+            { value: "kinetic-typography", text: "ALCHEMY: Kinetic Typography" },
+            { value: "sensory-swap", text: "ALCHEMY: Sensory Swap" }
         ]
     };
     for (const id in inspirationSelects) {
@@ -899,5 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
     populateCreationDropdowns();
     pillsContainer.innerHTML = `<span class="text-gray-400 italic">Your creative components will appear here...</span>`;
     briefPre.textContent = "Click 'Forge New Prompt' to begin.";
+    // Add this line inside the DOMContentLoaded listener
+    populateAudienceDropdowns();
 });
 // --- THE END OF THE SCRIPT ---

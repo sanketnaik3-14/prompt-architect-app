@@ -25,6 +25,11 @@
                     <button class="mode-btn" data-mode="creation">Creation</button>
                     <button class="mode-btn" data-mode="fusion">Fusion</button>
                 </div>
+                <button id="audienceBtn"
+                    class="flex items-center gap-2 p-1 px-3 bg-gray-700 rounded-lg ml-4 text-gray-300 hover:bg-gray-600">
+                    <span class="text-xl">👤</span>
+                    <span>Define Audience</span>
+                </button>
             </div>
 
             <div id="inspirationModeContainer">
@@ -285,6 +290,9 @@
             </div>
 
             <div id="output" class="mt-8">
+                <div id="activeAudienceDisplay"
+                    class="mb-4 p-3 bg-gray-900/50 rounded-lg text-center text-sm text-indigo-300 border border-gray-700 hidden">
+                </div>
                 <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
                     <span class="text-gray-400 italic">Your creative components will appear here...</span>
                 </div>
@@ -336,7 +344,46 @@
         </div>
     </div>
 
-
+    <div id="audienceModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-xl font-bold text-white">👤 Target Audience Profile</h3>
+                <button id="audienceModalCloseBtn" class="text-2xl">&times;</button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <select id="audienceGender" class="bg-gray-700 p-2 rounded w-full" title="Gender"></select>
+                    <select id="audienceAge" class="bg-gray-700 p-2 rounded w-full" title="Age Group"></select>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <select id="audienceLifeStage" class="bg-gray-700 p-2 rounded w-full" title="Life Stage"></select>
+                    <input type="text" id="audienceOccupation" class="bg-gray-700 p-2 rounded w-full"
+                        placeholder="Assumed Occupation (e.g., Software Developer)">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <select id="audienceMarket" class="bg-gray-700 p-2 rounded w-full" title="Target Market"></select>
+                    <select id="audienceLanguage" class="bg-gray-700 p-2 rounded w-full"
+                        title="Language for Text"></select>
+                </div>
+                <textarea id="audienceCulture" class="bg-gray-700 p-2 rounded w-full h-24"
+                    placeholder="Cultural Context (e.g., specific holidays, food, slang like 'jugaad', local art styles)"></textarea>
+                <input type="text" id="audienceValues" class="bg-gray-700 p-2 rounded w-full"
+                    placeholder="Core Values (e.g., Authenticity, Humor, Innovation)">
+                <input type="text" id="audienceInterests" class="bg-gray-700 p-2 rounded w-full"
+                    placeholder="Key Interests (e.g., Vintage sci-fi, bonsai gardening)">
+                <input type="text" id="audienceMedia" class="bg-gray-700 p-2 rounded w-full"
+                    placeholder="Media Diet (e.g., Listens to 90s hip-hop, follows history podcasts)">
+            </div>
+            <div class="p-4 border-t border-gray-700 flex justify-end gap-4">
+                <button id="audienceModalClearBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Clear
+                    Profile</button>
+                <button id="audienceModalSaveBtn"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg">Save
+                    Profile</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js" type="module"></script>
 </body>
 
