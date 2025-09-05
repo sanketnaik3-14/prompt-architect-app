@@ -80,7 +80,7 @@ let currentComponents = {};
 let currentFormat = 'brief';
 let currentMode = 'inspiration';
 // Add this line in the STATE section
-let fusionSelections = { subject: [], style: [] };
+let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [] };
 
 // --- HELPER FUNCTIONS ---
 function mulberry32(a) {
@@ -413,9 +413,10 @@ async function generateBrief() {
 
     }
     // --- THIS IS THE NEW BLOCK YOU NEED TO ADD ---
+    // --- THIS IS THE UPDATED FUSION BLOCK ---
     else if (currentMode === 'fusion') {
-        if (fusionSelections.subject.length === 0 && fusionSelections.style.length === 0) {
-            alert("Please select at least one Subject or Style for Fusion Mode.");
+        if (Object.values(fusionSelections).every(arr => arr.length === 0)) {
+            alert("Please select at least one component for Fusion Mode.");
             return; // Stop the function here
         }
 
@@ -424,6 +425,8 @@ async function generateBrief() {
 
         const subjects = fusionSelections.subject;
         const styles = fusionSelections.style;
+        const emotions = fusionSelections.emotionTone; // New
+        const effects = fusionSelections.graphicEffects;   // New
 
         currentSeed = 'fusion';
         seedInput.value = 'N/A (Fusion)';
@@ -433,9 +436,13 @@ async function generateBrief() {
             designerPersonas: persona,
             subject: { name: subjects.join(' + ') }, // Join for pill display
             style: { name: styles.join(' + ') },   // Join for pill display
+            emotionTone: { name: emotions.join(' + ') }, // New
+            graphicEffects: { name: effects.join(' + ') },  // New
             // Store the raw arrays which are needed for the AI prompt formatter
             _subjects: subjects,
-            _styles: styles
+            _styles: styles,
+            _emotions: emotions, // New
+            _effects: effects   // New
         };
 
         currentComponents = fusionComponents;
@@ -552,10 +559,12 @@ function formatAsAIPrompt() {
 
     let finalPrompt = '';
 
-    // --- NEW LOGIC FOR FUSION MODE PROMPTS ---
+    // --- UPDATED LOGIC FOR ADVANCED FUSION MODE ---
     if (currentMode === 'fusion' && currentComponents._subjects) {
         const subjects = currentComponents._subjects;
         const styles = currentComponents._styles;
+        const emotions = currentComponents._emotions; // New
+        const effects = currentComponents._effects;   // New
 
         let subjectClause = '';
         if (subjects.length > 0) {
@@ -567,9 +576,20 @@ function formatAsAIPrompt() {
             styleClause = `The visual aesthetic is a hybrid, blending the key characteristics of these styles: "${styles.join('", "')}".`;
         }
 
-        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic design featuring a complex conceptual fusion. ${subjectClause} ${styleClause} The final output must be a single, cohesive, and harmonious design. Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.`;
+        let emotionClause = ''; // New
+        if (emotions.length > 0) {
+            emotionClause = `The overall emotional tone should be a complex mix, evoking a sense of: "${emotions.join('", "')}".`;
+        }
+
+        let effectClause = ''; // New
+        if (effects.length > 0) {
+            effectClause = `The design should prominently feature a combination of these graphic effects: "${effects.join('", "')}".`;
+        }
+
+        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic design featuring a complex conceptual fusion. ${subjectClause} ${styleClause} ${emotionClause} ${effectClause} The final output must be a single, cohesive, and harmonious design. Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.`;
 
     } else { // --- EXISTING LOGIC for Inspiration/Creation ---
+        // (This part remains unchanged)
         let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;
         if (modifierValue && modifierValue !== 'none') {
             const selectedModText = (currentMode === 'inspiration' ? modifierSelect.options[modifierSelect.selectedIndex].text : document.getElementById('manualModifier').options[document.getElementById('manualModifier').selectedIndex].text);
