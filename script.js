@@ -80,7 +80,7 @@ let currentComponents = {};
 let currentFormat = 'brief';
 let currentMode = 'inspiration';
 // Add this line in the STATE section
-let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [] };
+let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [], mediumMateriality: [], actionProcess: [], contextComposition: [], conceptualMetaphorical: [], creativeConstraints: [] };
 
 // --- HELPER FUNCTIONS ---
 function mulberry32(a) {
@@ -251,6 +251,10 @@ async function populateCreationDropdowns() {
                 selectElement.appendChild(premadeOptgroup);
             }
         }
+
+        // Add these lines at the end of the populateCreationDropdowns function
+        const fusionModifierSelect = document.getElementById('fusionModifier');
+        fusionModifierSelect.innerHTML = inspirationModifierSelect.innerHTML;
     }
 
     const manualModifierSelect = document.getElementById('manualModifier');
@@ -322,6 +326,32 @@ async function generateBrief() {
                 case 'multi-style-fusion': componentKeys = ['subject', 'style', 'style', 'emotionTone', 'conceptualMetaphorical']; break;
                 case 'thematic-clash': componentKeys = ['subject', 'subject', 'style', 'actionProcess', 'conceptualMetaphorical']; break;
                 case 'maximalist': componentKeys = ['subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects']; break;
+                // --- NEW MODIFIER LOGIC STARTS HERE ---
+                case 'vintage-authentic':
+                    componentKeys = ['subject', 'style', 'mediumMateriality', 'contextComposition'];
+                    break;
+                case 'clean-tech':
+                    componentKeys = ['subject', 'style', 'contextComposition', 'graphicEffects'];
+                    break;
+                case 'punk-zine':
+                    componentKeys = ['subject', 'style', 'actionProcess', 'emotionTone'];
+                    break;
+                case 'ornate-elegance':
+                    componentKeys = ['subject', 'style', 'mediumMateriality', 'graphicEffects'];
+                    break;
+                // --- NEW ALCHEMY MODIFIER LOGIC ---
+                case 'generative-system':
+                    componentKeys = ['subject', 'actionProcess'];
+                    break;
+                case 'dataviz-mythology':
+                    componentKeys = ['conceptualMetaphorical', 'subject', 'style'];
+                    break;
+                case 'material-inversion':
+                    componentKeys = ['subject', 'mediumMateriality'];
+                    break;
+                case 'conceptual-surrealism':
+                    componentKeys = ['subject', 'conceptualMetaphorical', 'style'];
+                    break;
             }
         } else {
             switch (architecture) {
@@ -414,19 +444,30 @@ async function generateBrief() {
     }
     // --- THIS IS THE NEW BLOCK YOU NEED TO ADD ---
     // --- THIS IS THE UPDATED FUSION BLOCK ---
+    // --- THIS IS THE FINAL, FULLY EXPANDED FUSION BLOCK ---
     else if (currentMode === 'fusion') {
         if (Object.values(fusionSelections).every(arr => arr.length === 0)) {
             alert("Please select at least one component for Fusion Mode.");
             return; // Stop the function here
         }
 
-        // We assign a default persona for fusion prompts to keep them high quality
         const persona = { name: "Master Conceptual Artist", category: "By Artist's State & Tool" };
+        const fusionModifierSelect = document.getElementById('fusionModifier');
 
+        // Gather all selections
         const subjects = fusionSelections.subject;
         const styles = fusionSelections.style;
-        const emotions = fusionSelections.emotionTone; // New
-        const effects = fusionSelections.graphicEffects;   // New
+        const emotions = fusionSelections.emotionTone;
+        const effects = fusionSelections.graphicEffects;
+        const materials = fusionSelections.mediumMateriality;
+        const processes = fusionSelections.actionProcess;
+        const compositions = fusionSelections.contextComposition;
+        const concepts = fusionSelections.conceptualMetaphorical;
+        const constraints = fusionSelections.creativeConstraints;
+        const modifier = {
+            value: fusionModifierSelect.value,
+            text: fusionModifierSelect.value !== 'none' ? fusionModifierSelect.options[fusionModifierSelect.selectedIndex].text : ''
+        };
 
         currentSeed = 'fusion';
         seedInput.value = 'N/A (Fusion)';
@@ -434,15 +475,26 @@ async function generateBrief() {
         // Create a new set of components for the output
         const fusionComponents = {
             designerPersonas: persona,
-            subject: { name: subjects.join(' + ') }, // Join for pill display
-            style: { name: styles.join(' + ') },   // Join for pill display
-            emotionTone: { name: emotions.join(' + ') }, // New
-            graphicEffects: { name: effects.join(' + ') },  // New
-            // Store the raw arrays which are needed for the AI prompt formatter
+            subject: { name: subjects.join(' + ') },
+            style: { name: styles.join(' + ') },
+            emotionTone: { name: emotions.join(' + ') },
+            graphicEffects: { name: effects.join(' + ') },
+            mediumMateriality: { name: materials.join(' + ') },
+            actionProcess: { name: processes.join(' + ') },
+            contextComposition: { name: compositions.join(' + ') },
+            conceptualMetaphorical: { name: concepts.join(' + ') },
+            creativeConstraints: { name: constraints.join(' + ') },
+            // Store raw arrays and modifier for the AI prompt formatter
             _subjects: subjects,
             _styles: styles,
-            _emotions: emotions, // New
-            _effects: effects   // New
+            _emotions: emotions,
+            _effects: effects,
+            _materials: materials,
+            _processes: processes,
+            _compositions: compositions,
+            _concepts: concepts,
+            _constraints: constraints,
+            _modifier: modifier
         };
 
         currentComponents = fusionComponents;
@@ -558,45 +610,49 @@ function formatAsAIPrompt() {
     }
 
     let finalPrompt = '';
+    const c = currentComponents;
+    const baseVectorInstructions = "Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.";
 
-    // --- UPDATED LOGIC FOR ADVANCED FUSION MODE ---
-    if (currentMode === 'fusion' && currentComponents._subjects) {
-        const subjects = currentComponents._subjects;
-        const styles = currentComponents._styles;
-        const emotions = currentComponents._emotions; // New
-        const effects = currentComponents._effects;   // New
-
-        let subjectClause = '';
-        if (subjects.length > 0) {
-            subjectClause = `The design must expertly fuse the concepts of: "${subjects.join('", "')}".`;
+    if (currentMode === 'fusion' && c._subjects) {
+        // ... (FUSION LOGIC REMAINS THE SAME) ...
+        const { _subjects, _styles, _emotions, _effects, _materials, _processes, _compositions, _concepts, _constraints, _modifier } = c;
+        let clauses = [];
+        if (_subjects.length > 0) clauses.push(`The core subjects are a fusion of: "${_subjects.join('", "')}".`);
+        if (_styles.length > 0) clauses.push(`The visual style is a hybrid of: "${_styles.join('", "')}".`);
+        if (_emotions.length > 0) clauses.push(`The emotional tone is a complex blend of: "${_emotions.join('", "')}".`);
+        if (_materials.length > 0) clauses.push(`The design should appear crafted from: "${_materials.join('", "')}".`);
+        if (_processes.length > 0) clauses.push(`The subjects are depicted undergoing these processes: "${_processes.join('", "')}".`);
+        if (_compositions.length > 0) clauses.push(`The composition is a unique synthesis of: "${_compositions.join('", "')}".`);
+        if (_concepts.length > 0) clauses.push(`The design explores these abstract concepts: "${_concepts.join('", "')}".`);
+        if (_effects.length > 0) clauses.push(`It features a combination of graphic effects: "${_effects.join('", "')}".`);
+        let mainBody = clauses.join(' ');
+        if (_modifier && _modifier.value !== 'none') {
+            mainBody = `The entire conceptual fusion must be presented within the structure of a "${_modifier.text}" design. ${mainBody}`;
+        }
+        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic. The design is a complex conceptual fusion. ${mainBody} The final output must be a single, cohesive, and harmonious design. ${baseVectorInstructions}`;
+        if (_constraints.length > 0) {
+            finalPrompt += ` \n\n**Important Constraints:** ${_constraints.join('. ')}.`;
         }
 
-        let styleClause = '';
-        if (styles.length > 0) {
-            styleClause = `The visual aesthetic is a hybrid, blending the key characteristics of these styles: "${styles.join('", "')}".`;
-        }
-
-        let emotionClause = ''; // New
-        if (emotions.length > 0) {
-            emotionClause = `The overall emotional tone should be a complex mix, evoking a sense of: "${emotions.join('", "')}".`;
-        }
-
-        let effectClause = ''; // New
-        if (effects.length > 0) {
-            effectClause = `The design should prominently feature a combination of these graphic effects: "${effects.join('", "')}".`;
-        }
-
-        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic design featuring a complex conceptual fusion. ${subjectClause} ${styleClause} ${emotionClause} ${effectClause} The final output must be a single, cohesive, and harmonious design. Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.`;
-
-    } else { // --- EXISTING LOGIC for Inspiration/Creation ---
-        // (This part remains unchanged)
+    } else { // --- UPGRADED LOGIC for Inspiration/Creation ---
         let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;
-        if (modifierValue && modifierValue !== 'none') {
+
+        // --- NEW ALCHEMY MODIFIER PROMPT STRUCTURES ---
+        if (modifierValue === 'generative-system') {
+            finalPrompt = `${personaPreamble}A t-shirt design presented as a generative system in 3-4 sequential frames or panels. The design illustrates the process of "${c.actionProcess.name}" progressively transforming the subject of "${c.subject.name}". The visual style must be clear and diagrammatic. ${baseVectorInstructions}`;
+        } else if (modifierValue === 'dataviz-mythology') {
+            finalPrompt = `${personaPreamble}A t-shirt design in the style of a clean, modern data visualization or infographic, in a ${c.style.name} style. The subject, "${c.subject.name}", must be rendered as a diagram that visually explains the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
+        } else if (modifierValue === 'material-inversion') {
+            finalPrompt = `${personaPreamble}A high-impact, minimalist t-shirt design featuring a material inversion. The entire background is composed of "${c.mediumMateriality.name}". The subject, "${c.subject.name}", is defined ONLY by the negative space cut out from this background. ${baseVectorInstructions}`;
+        } else if (modifierValue === 'conceptual-surrealism') {
+            finalPrompt = `${personaPreamble}A t-shirt design in the style of a surrealist painting, rendered in a ${c.style.name} style. The scene must be a dream-like and bizarre depiction of the subject, "${c.subject.name}", acting as a character to embody the abstract concept of "${c.conceptualMetaphorical.name}". ${baseVectorInstructions}`;
+
+            // --- EXISTING MODIFIER & STANDARD LOGIC ---
+        } else if (modifierValue && modifierValue !== 'none') {
             const selectedModText = (currentMode === 'inspiration' ? modifierSelect.options[modifierSelect.selectedIndex].text : document.getElementById('manualModifier').options[document.getElementById('manualModifier').selectedIndex].text);
             let keywords = formatAsKeywords();
-            finalPrompt = `${personaPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. Strict 2D vector art, high-impact, printable graphic, clean lines, no 3D rendering.`;
+            finalPrompt = `${personaPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. ${baseVectorInstructions}`;
         } else {
-            const c = currentComponents;
             const subject = c.subject?.name || 'an abstract concept';
             const style = c.style?.name ? `in a ${c.style.name} style` : 'in a unique visual style';
             const emotion = c.emotionTone?.name ? `, evoking a sense of ${c.emotionTone.name}` : '';
@@ -611,7 +667,7 @@ function formatAsAIPrompt() {
     }
 
     const constraint = currentComponents.creativeConstraints;
-    if (constraint && constraint.name) {
+    if (constraint && constraint.name && currentMode !== 'fusion') {
         finalPrompt += ` \n\n**Important Constraint:** ${constraint.name}`;
     }
     return finalPrompt.replace(/ ,/g, ',').replace(/ \./g, '.').replace(/  +/g, ' ').trim();
@@ -809,7 +865,26 @@ document.addEventListener('DOMContentLoaded', () => {
             { value: "classic", text: "Tier 1: Classic & Established" }, { value: "creative", text: "Tier 2: Creative & Fused" }, { value: "experimental", text: "Tier 3: Hypothesized & Experimental" }, { value: "balanced", text: "Balanced Mix (All Tiers)" }, { value: "chaos", text: "Unrestricted Chaos" }
         ],
         modifier: [
-            { value: "none", text: "None (Standard)" }, { value: "narrative-badge", text: "+Narrative Badge" }, { value: "dynamic-layout", text: "+Dynamic Layout" }, { value: "typographic-play", text: "+Typographic Play" }, { value: "expressive-collage", text: "+Expressive Collage" }, { value: "hybrid-asset-collage", text: "+HybridAssetCollage" }, { value: "symbiotic-fusion", text: "+SymbioticFusion" }, { value: "multi-style-fusion", text: "+Multi-Style Fusion" }, { value: "thematic-clash", text: "+Thematic Clash" }, { value: "maximalist", text: "+Maximalist" }
+            // Standard Modifiers
+            { value: "none", text: "None (Standard)" },
+            { value: "narrative-badge", text: "+Narrative Badge" },
+            { value: "dynamic-layout", text: "+Dynamic Layout" },
+            { value: "typographic-play", text: "+Typographic Play" },
+            { value: "expressive-collage", text: "+Expressive Collage" },
+            { value: "hybrid-asset-collage", text: "+HybridAssetCollage" },
+            { value: "symbiotic-fusion", text: "+SymbioticFusion" },
+            { value: "multi-style-fusion", text: "+Multi-Style Fusion" },
+            { value: "thematic-clash", text: "+Thematic Clash" },
+            { value: "maximalist", text: "+Maximalist" },
+            { value: "vintage-authentic", text: "+VintageAuthentic" },
+            { value: "clean-tech", text: "+CleanTech" },
+            { value: "punk-zine", text: "+PunkZine" },
+            { value: "ornate-elegance", text: "+OrnateElegance" },
+            // --- NEW ALCHEMY MODIFIERS ---
+            { value: "generative-system", text: "ALCHEMY: Generative System" },
+            { value: "dataviz-mythology", text: "ALCHEMY: DataViz Mythology" },
+            { value: "material-inversion", text: "ALCHEMY: Material Inversion" },
+            { value: "conceptual-surrealism", text: "ALCHEMY: Conceptual Surrealism" }
         ]
     };
     for (const id in inspirationSelects) {
