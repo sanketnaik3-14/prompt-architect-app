@@ -110,6 +110,103 @@ const keyToDisplayName = {
 };
 
 // --- EVENT LISTENERS ---
+
+modeToggle.addEventListener('change', () => {
+    // This is a placeholder for your 3-way switch logic
+});
+
+const modeSwitcher = document.getElementById('modeSwitcher');
+if (modeSwitcher) {
+    modeSwitcher.addEventListener('click', (e) => {
+        const button = e.target.closest('.mode-btn');
+        if (!button) return;
+
+        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        currentMode = button.dataset.mode;
+
+        inspirationModeContainer.classList.add('hidden');
+        creationModeContainer.classList.add('hidden');
+        fusionModeContainer.classList.add('hidden');
+
+        if (currentMode === 'inspiration') {
+            inspirationModeContainer.classList.remove('hidden');
+        } else if (currentMode === 'creation') {
+            creationModeContainer.classList.remove('hidden');
+        } else if (currentMode === 'fusion') {
+            fusionModeContainer.classList.remove('hidden');
+        }
+    });
+}
+
+
+assembleBtn.addEventListener('click', generateBrief);
+
+// Add listener for the new fusion assemble button
+const fusionAssembleBtn = document.getElementById('fusionAssembleBtn');
+if (fusionAssembleBtn) {
+    fusionAssembleBtn.addEventListener('click', generateBrief);
+}
+
+
+creationModeContainer.addEventListener('click', (e) => {
+    const button = e.target.closest('.custom-toggle-btn');
+    if (!button) return;
+
+    const component = button.dataset.component;
+    const selectEl = document.getElementById(`manual${component}`);
+    const inputEl = document.getElementById(`custom${component}`);
+
+    selectEl.classList.toggle('hidden');
+    inputEl.classList.toggle('hidden');
+});
+
+constraintBtn.addEventListener('click', () => {
+    const constraints = stylesData.masterFramework.creativeConstraints;
+    if (constraints && constraints.length > 0) {
+        const randomFunc = Math.random;
+        const selectedConstraint = constraints[Math.floor(randomFunc() * constraints.length)];
+        currentConstraint = selectedConstraint.name;
+
+        constraintOutput.innerHTML = `<strong>Constraint:</strong> ${currentConstraint}`;
+        updateOutputContent();
+    }
+});
+
+generateBtn.addEventListener('click', generateBrief);
+
+pillsContainer.addEventListener('click', (e) => {
+    const button = e.target.closest('.lock-btn');
+    if (button) {
+        const key = button.dataset.key;
+        lockedComponents[key] = !lockedComponents[key];
+        renderPills();
+    }
+});
+
+formatBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        formatBtns.forEach(b => b.classList.remove('active', 'text-white', 'border-indigo-500'));
+        btn.classList.add('active', 'text-white', 'border-indigo-500');
+        currentFormat = btn.dataset.format;
+        updateOutputContent();
+    });
+});
+
+copyBtn.addEventListener('click', () => {
+    const textToCopy = briefPre.textContent;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
+    }, (err) => {
+        console.error('Async: Could not copy text: ', err);
+        copyBtn.textContent = 'Error';
+        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
+    });
+});
+
+// --- EVENT LISTENERS ---
 modeToggle.addEventListener('change', () => {
     const inspirationLabel = document.getElementById('inspirationLabel');
     const creationLabel = document.getElementById('creationLabel');
