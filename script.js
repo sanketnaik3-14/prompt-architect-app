@@ -444,56 +444,47 @@ async function populateCreationDropdowns() {
         console.warn("Could not fetch ideas from Supabase:", error.message);
     }
 
+    // --- MAIN LOOP TO POPULATE DROPDOWNS ---
     for (const key in stylesData.masterFramework) {
-        if (key === 'designerPersonas') continue;
+        if (key === 'designerPersonas') continue; // Handled separately
+
         const selectElement = document.getElementById(`manual${key.charAt(0).toUpperCase() + key.slice(1)}`);
         if (selectElement) {
             selectElement.innerHTML = '<option value="">-- Optional --</option>';
+
+            // Add saved ideas
             if (savedIdeas[key] && savedIdeas[key].length > 0) {
                 const savedOptgroup = document.createElement('optgroup');
                 savedOptgroup.label = "--- Your Saved Ideas ---";
-                savedIdeas[key].forEach(value => {
-                    const option = document.createElement('option');
-                    option.value = value;
-                    option.textContent = value;
-                    savedOptgroup.appendChild(option);
-                });
+                savedIdeas[key].forEach(value => savedOptgroup.appendChild(new Option(value, value)));
                 selectElement.appendChild(savedOptgroup);
             }
+
+            // Add premade ideas
             if (key === 'subject') {
                 stylesData.masterFramework[key].forEach(category => {
                     const optgroup = document.createElement('optgroup');
                     optgroup.label = `--- ${category.categoryName} ---`;
-                    category.examples.forEach(example => {
-                        const option = document.createElement('option');
-                        option.value = example;
-                        option.textContent = example;
-                        optgroup.appendChild(option);
-                    });
+                    category.examples.forEach(example => optgroup.appendChild(new Option(example, example)));
                     selectElement.appendChild(optgroup);
                 });
             } else {
                 const premadeOptgroup = document.createElement('optgroup');
                 premadeOptgroup.label = "--- Premade Ideas ---";
-                stylesData.masterFramework[key].forEach(item => {
-                    const option = document.createElement('option');
-                    option.value = item.name;
-                    option.textContent = item.name;
-                    premadeOptgroup.appendChild(option);
-                });
+                stylesData.masterFramework[key].forEach(item => premadeOptgroup.appendChild(new Option(item.name, item.name)));
                 selectElement.appendChild(premadeOptgroup);
             }
         }
+    } // --- END OF THE MAIN LOOP ---
 
-        // Add these lines at the end of the populateCreationDropdowns function
-        const fusionModifierSelect = document.getElementById('fusionModifier');
-        fusionModifierSelect.innerHTML = inspirationModifierSelect.innerHTML;
-    }
-
+    // --- POPULATE MODIFIERS AND PERSONAS (MOVED TO CORRECT LOCATION) ---
     const manualModifierSelect = document.getElementById('manualModifier');
-    const inspirationModifierSelect = document.getElementById('modifier');
-    manualModifierSelect.innerHTML = inspirationModifierSelect.innerHTML;
+    const fusionModifierSelect = document.getElementById('fusionModifier');
+    // Use the correct variable name 'modifierSelect' (not 'inspirationModifierSelect')
+    manualModifierSelect.innerHTML = modifierSelect.innerHTML;
+    fusionModifierSelect.innerHTML = modifierSelect.innerHTML;
 
+    // Populate Personas
     const manualPersonaSelect = document.getElementById('manualDesignerPersonas');
     if (manualPersonaSelect) {
         const personas = stylesData.masterFramework.designerPersonas;
@@ -506,12 +497,7 @@ async function populateCreationDropdowns() {
         for (const category in categories) {
             const optgroup = document.createElement('optgroup');
             optgroup.label = `--- ${category} ---`;
-            categories[category].forEach(name => {
-                const option = document.createElement('option');
-                option.value = name;
-                option.textContent = name;
-                optgroup.appendChild(option);
-            });
+            categories[category].forEach(name => optgroup.appendChild(new Option(name, name)));
             manualPersonaSelect.appendChild(optgroup);
         }
     }
