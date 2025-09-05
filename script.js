@@ -67,7 +67,6 @@ const outputContentArea = document.getElementById('outputContentArea');
 const formatBtns = document.querySelectorAll('.format-btn');
 const briefPre = document.getElementById('brief');
 const copyBtn = document.getElementById('copyBtn');
-const modeToggle = document.getElementById('modeToggle');
 const inspirationModeContainer = document.getElementById('inspirationModeContainer');
 const creationModeContainer = document.getElementById('creationModeContainer');
 const constraintBtn = document.getElementById('constraintBtn');
@@ -110,10 +109,6 @@ const keyToDisplayName = {
 };
 
 // --- EVENT LISTENERS ---
-
-modeToggle.addEventListener('change', () => {
-    // This is a placeholder for your 3-way switch logic
-});
 
 const modeSwitcher = document.getElementById('modeSwitcher');
 if (modeSwitcher) {
@@ -206,26 +201,7 @@ copyBtn.addEventListener('click', () => {
     });
 });
 
-// --- EVENT LISTENERS ---
-modeToggle.addEventListener('change', () => {
-    const inspirationLabel = document.getElementById('inspirationLabel');
-    const creationLabel = document.getElementById('creationLabel');
-    if (modeToggle.checked) {
-        currentMode = 'creation';
-        inspirationModeContainer.classList.add('hidden');
-        creationModeContainer.classList.remove('hidden');
-        creationLabel.classList.remove('text-gray-400');
-        creationLabel.classList.add('text-gray-200');
-        inspirationLabel.classList.add('text-gray-400');
-    } else {
-        currentMode = 'inspiration';
-        inspirationModeContainer.classList.remove('hidden');
-        creationModeContainer.classList.add('hidden');
-        creationLabel.classList.add('text-gray-400');
-        inspirationLabel.classList.remove('text-gray-400');
-        inspirationLabel.classList.add('text-gray-200');
-    }
-});
+// --- EVENT LISTENERS --
 
 assembleBtn.addEventListener('click', generateBrief);
 
