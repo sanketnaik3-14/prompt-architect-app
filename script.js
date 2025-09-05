@@ -79,6 +79,8 @@ let lockedComponents = {};
 let currentComponents = {};
 let currentFormat = 'brief';
 let currentMode = 'inspiration';
+// Add this line in the STATE section
+let fusionSelections = { subject: [], style: [] };
 
 // --- HELPER FUNCTIONS ---
 function mulberry32(a) {
@@ -360,7 +362,9 @@ async function populateCreationDropdowns() {
 
 async function generateBrief() {
     const newComponents = {};
+
     if (currentMode === 'inspiration') {
+        // --- THIS IS YOUR EXISTING INSPIRATION LOGIC (NO CHANGES NEEDED HERE) ---
         const seedValue = seedInput.value.trim();
         currentSeed = seedValue === '' ? Math.floor(Math.random() * 1000000) : parseInt(seedValue, 10);
         if (isNaN(currentSeed)) {
@@ -442,7 +446,10 @@ async function generateBrief() {
                 }
             });
         }
-    } else {
+        Object.assign(currentComponents, newComponents); // Merge new components
+
+    } else if (currentMode === 'creation') {
+        // --- THIS IS YOUR EXISTING CREATION LOGIC (NO CHANGES NEEDED HERE) ---
         currentSeed = 'manual';
         seedInput.value = 'N/A (Manual)';
         const findComponentByName = (categoryKey, name) => {
@@ -480,18 +487,46 @@ async function generateBrief() {
             }
         });
         if (ideasToSave.length > 0) {
-            try {
-                const { error } = await supabase.from('ideas').upsert(ideasToSave, { onConflict: 'component_key, value' });
-                if (error) throw error;
-                console.log('Successfully saved custom ideas to Supabase!');
-                await populateCreationDropdowns();
-            } catch (error) {
-                console.error('Failed to save idea to Supabase:', error.message);
-            }
+            saveIdeaToSupabase(ideasToSave); // Using the helper function now
         }
+        Object.assign(currentComponents, newComponents); // Merge new components
+
     }
-    currentComponents = newComponents;
-    lockedComponents = {};
+    // --- THIS IS THE NEW BLOCK YOU NEED TO ADD ---
+    else if (currentMode === 'fusion') {
+        if (fusionSelections.subject.length === 0 && fusionSelections.style.length === 0) {
+            alert("Please select at least one Subject or Style for Fusion Mode.");
+            return; // Stop the function here
+        }
+
+        // We assign a default persona for fusion prompts to keep them high quality
+        const persona = { name: "Master Conceptual Artist", category: "By Artist's State & Tool" };
+
+        const subjects = fusionSelections.subject;
+        const styles = fusionSelections.style;
+
+        currentSeed = 'fusion';
+        seedInput.value = 'N/A (Fusion)';
+
+        // Create a new set of components for the output
+        const fusionComponents = {
+            designerPersonas: persona,
+            subject: { name: subjects.join(' + ') }, // Join for pill display
+            style: { name: styles.join(' + ') },   // Join for pill display
+            // Store the raw arrays which are needed for the AI prompt formatter
+            _subjects: subjects,
+            _styles: styles
+        };
+
+        currentComponents = fusionComponents;
+        renderPills();
+        updateOutputContent();
+        copyBtn.classList.remove('hidden');
+        return; // IMPORTANT: We stop the function here for fusion mode
+    }
+
+    // This part runs for Inspiration and Creation modes, but is skipped by Fusion mode's 'return'
+    lockedComponents = {}; // Reset locks after generation
     renderPills();
     updateOutputContent();
     copyBtn.classList.remove('hidden');
@@ -596,24 +631,45 @@ function formatAsAIPrompt() {
     }
 
     let finalPrompt = '';
-    let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;
-    if (modifierValue && modifierValue !== 'none') {
-        const selectedModText = (currentMode === 'inspiration' ? modifierSelect.options[modifierSelect.selectedIndex].text : document.getElementById('manualModifier').options[document.getElementById('manualModifier').selectedIndex].text);
-        let keywords = formatAsKeywords();
-        finalPrompt = `${personaPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. Strict 2D vector art, high-impact, printable graphic, clean lines, no 3D rendering.`;
-    } else {
-        const c = currentComponents;
-        const subject = c.subject?.name || 'an abstract concept';
-        const style = c.style?.name ? `in a ${c.style.name} style` : 'in a unique visual style';
-        const emotion = c.emotionTone?.name ? `, evoking a sense of ${c.emotionTone.name}` : '';
-        const effect = c.graphicEffects?.name ? `, with a prominent ${c.graphicEffects.name} effect` : '';
-        const materiality = c.mediumMateriality?.name ? `, appearing as if made of ${c.mediumMateriality.name}` : '';
-        const process = c.actionProcess?.name ? `, the subject is ${c.actionProcess.name}` : '';
-        const composition = c.contextComposition?.name ? `, presented as a ${c.contextComposition.name}` : '';
-        const concept = c.conceptualMetaphorical?.name ? `. The design explores the concept of "${c.conceptualMetaphorical.name}"` : '';
-        let prompt = `A masterpiece T-shirt graphic design of "${subject}" ${style}${materiality}${emotion}${effect}. The design is ${process}${composition}${concept}. Clean vector art, isolated on a plain white background, high detail, sharp focus.`;
-        finalPrompt = personaPreamble + prompt;
+
+    // --- NEW LOGIC FOR FUSION MODE PROMPTS ---
+    if (currentMode === 'fusion' && currentComponents._subjects) {
+        const subjects = currentComponents._subjects;
+        const styles = currentComponents._styles;
+
+        let subjectClause = '';
+        if (subjects.length > 0) {
+            subjectClause = `The design must expertly fuse the concepts of: "${subjects.join('", "')}".`;
+        }
+
+        let styleClause = '';
+        if (styles.length > 0) {
+            styleClause = `The visual aesthetic is a hybrid, blending the key characteristics of these styles: "${styles.join('", "')}".`;
+        }
+
+        finalPrompt = `${personaPreamble}A masterpiece T-shirt graphic design featuring a complex conceptual fusion. ${subjectClause} ${styleClause} The final output must be a single, cohesive, and harmonious design. Strict 2D vector art, high-impact, printable graphic, clean bold outlines, isolated on a plain white background, no 3D rendering, no shadows.`;
+
+    } else { // --- EXISTING LOGIC for Inspiration/Creation ---
+        let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;
+        if (modifierValue && modifierValue !== 'none') {
+            const selectedModText = (currentMode === 'inspiration' ? modifierSelect.options[modifierSelect.selectedIndex].text : document.getElementById('manualModifier').options[document.getElementById('manualModifier').selectedIndex].text);
+            let keywords = formatAsKeywords();
+            finalPrompt = `${personaPreamble}A high-impact, complex T-shirt graphic. The design is a "${selectedModText}" concept, incorporating the following themes: ${keywords}. Strict 2D vector art, high-impact, printable graphic, clean lines, no 3D rendering.`;
+        } else {
+            const c = currentComponents;
+            const subject = c.subject?.name || 'an abstract concept';
+            const style = c.style?.name ? `in a ${c.style.name} style` : 'in a unique visual style';
+            const emotion = c.emotionTone?.name ? `, evoking a sense of ${c.emotionTone.name}` : '';
+            const effect = c.graphicEffects?.name ? `, with a prominent ${c.graphicEffects.name} effect` : '';
+            const materiality = c.mediumMateriality?.name ? `, appearing as if made of ${c.mediumMateriality.name}` : '';
+            const process = c.actionProcess?.name ? `, the subject is ${c.actionProcess.name}` : '';
+            const composition = c.contextComposition?.name ? `, presented as a ${c.contextComposition.name}` : '';
+            const concept = c.conceptualMetaphorical?.name ? `. The design explores the concept of "${c.conceptualMetaphorical.name}"` : '';
+            let prompt = `A masterpiece T-shirt graphic design of "${subject}" ${style}${materiality}${emotion}${effect}. The design is ${process}${composition}${concept}. Clean vector art, isolated on a plain white background, high detail, sharp focus.`;
+            finalPrompt = personaPreamble + prompt;
+        }
     }
+
     const constraint = currentComponents.creativeConstraints;
     if (constraint && constraint.name) {
         finalPrompt += ` \n\n**Important Constraint:** ${constraint.name}`;
@@ -628,7 +684,181 @@ function formatAsKeywords() {
         .filter(Boolean)
         .join(', ');
 }
+async function saveIdeaToSupabase(ideas) {
+    // Make sure 'ideas' is an array
+    const ideasToSave = Array.isArray(ideas) ? ideas : [ideas];
 
+    if (ideasToSave.length === 0) return;
+
+    try {
+        // The 'upsert' method can handle an array of objects perfectly.
+        const { error } = await supabase.from('ideas').upsert(ideasToSave, { onConflict: 'component_key, value' });
+        if (error) throw error;
+
+        console.log(`Saved ${ideasToSave.length} idea(s) to Supabase.`);
+
+        // Repopulate dropdowns in the background so new ideas are available everywhere.
+        // This is a small improvement to ensure dropdowns are always fresh.
+        await populateCreationDropdowns();
+
+    } catch (error) {
+        console.error('Failed to save idea(s) to Supabase:', error.message);
+    }
+}
+
+// --- FUSION MODE FEATURE ---
+// Add these at the top of the Fusion Mode section
+const modalCustomInput = document.getElementById('modalCustomInput');
+const modalAddCustomBtn = document.getElementById('modalAddCustomBtn');
+const fusionModeContainer = document.getElementById('fusionModeContainer');
+const fusionModal = document.getElementById('fusionModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalContent = document.getElementById('modalContent');
+const modalSearch = document.getElementById('modalSearch');
+const modalCloseBtn = document.getElementById('modalCloseBtn');
+let currentFusionComponent = null;
+
+// Function to open and populate the modal
+function openFusionModal(componentType) {
+    currentFusionComponent = componentType;
+    modalTitle.textContent = `Select ${componentType.charAt(0).toUpperCase() + componentType.slice(1)}s`;
+
+    // Get all possible options for this component type
+    let allOptions = [];
+    if (componentType === 'subject') {
+        stylesData.masterFramework.subject.forEach(cat => allOptions.push(...cat.examples));
+    } else {
+        allOptions = stylesData.masterFramework[componentType].map(item => item.name);
+    }
+
+    renderModalContent(allOptions);
+    fusionModal.classList.remove('hidden');
+}
+
+// Function to render the items inside the modal
+function renderModalContent(options) {
+    modalContent.innerHTML = '';
+    const currentSelections = new Set(fusionSelections[currentFusionComponent]);
+
+    options.forEach(option => {
+        if (modalSearch.value && !option.toLowerCase().includes(modalSearch.value.toLowerCase())) {
+            return; // Skip if it doesn't match search
+        }
+        const item = document.createElement('div');
+        item.className = 'p-2 rounded-lg cursor-pointer hover:bg-gray-700';
+        item.textContent = option;
+        item.dataset.value = option;
+
+        if (currentSelections.has(option)) {
+            item.classList.add('bg-indigo-600', 'font-bold');
+        }
+        modalContent.appendChild(item);
+    });
+}
+
+// Function to render the selected pills on the main screen
+function renderFusionPills() {
+    for (const componentType in fusionSelections) {
+        const container = document.getElementById(`fusion${componentType.charAt(0).toUpperCase() + componentType.slice(1)}Pills`);
+        container.innerHTML = '';
+        fusionSelections[componentType].forEach(value => {
+            const pill = document.createElement('div');
+            pill.className = 'flex items-center bg-gray-700 rounded-full px-3 py-1 text-sm font-medium text-gray-300';
+            pill.innerHTML = `
+                <span>${value}</span>
+                <button class="ml-2 text-red-400 font-bold" data-type="${componentType}" data-value="${value}">&times;</button>
+            `;
+            container.appendChild(pill);
+        });
+    }
+}
+
+// Function to handle adding a custom item from the modal
+function addCustomFusionItem() {
+    const value = modalCustomInput.value.trim();
+    if (!value || !currentFusionComponent) return;
+
+    // Add to our current selections if not already there
+    if (!fusionSelections[currentFusionComponent].includes(value)) {
+        fusionSelections[currentFusionComponent].push(value);
+    }
+
+    // Save to Supabase in the background
+    saveIdeaToSupabase({ component_key: currentFusionComponent, value: value });
+
+    // Re-render the modal content to show the new item as selected
+    let allOptions = [];
+    if (currentFusionComponent === 'subject') {
+        stylesData.masterFramework.subject.forEach(cat => allOptions.push(...cat.examples));
+    } else {
+        allOptions = stylesData.masterFramework[currentFusionComponent].map(item => item.name);
+    }
+    // Add the new custom value to the list of options for immediate display
+    if (!allOptions.includes(value)) {
+        allOptions.unshift(value);
+    }
+    renderModalContent(allOptions);
+
+    // Clear the input field for the next entry
+    modalCustomInput.value = '';
+}
+
+
+// --- Event Listeners for Fusion Mode ---
+
+// Add these new listeners for the custom input
+modalAddCustomBtn.addEventListener('click', addCustomFusionItem);
+modalCustomInput.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        addCustomFusionItem();
+    }
+});
+
+fusionModeContainer.addEventListener('click', (e) => {
+    // Handle "+ Add" button clicks
+    if (e.target.matches('.add-component-btn')) {
+        openFusionModal(e.target.dataset.component);
+    }
+    // Handle "x" button clicks on pills to remove items
+    if (e.target.matches('[data-value]')) {
+        const { type, value } = e.target.dataset;
+        if (type && value) {
+            fusionSelections[type] = fusionSelections[type].filter(item => item !== value);
+            renderFusionPills();
+        }
+    }
+});
+
+modalContent.addEventListener('click', (e) => {
+    if (e.target.dataset.value) {
+        const value = e.target.dataset.value;
+        const currentSelections = new Set(fusionSelections[currentFusionComponent]);
+
+        if (currentSelections.has(value)) {
+            currentSelections.delete(value);
+            e.target.classList.remove('bg-indigo-600', 'font-bold');
+        } else {
+            currentSelections.add(value);
+            e.target.classList.add('bg-indigo-600', 'font-bold');
+        }
+        fusionSelections[currentFusionComponent] = Array.from(currentSelections);
+    }
+});
+
+modalCloseBtn.addEventListener('click', () => {
+    fusionModal.classList.add('hidden');
+    renderFusionPills();
+});
+
+modalSearch.addEventListener('keyup', () => {
+    let allOptions = [];
+    if (currentFusionComponent === 'subject') {
+        stylesData.masterFramework.subject.forEach(cat => allOptions.push(...cat.examples));
+    } else {
+        allOptions = stylesData.masterFramework[currentFusionComponent].map(item => item.name);
+    }
+    renderModalContent(allOptions);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const inspirationSelects = {
