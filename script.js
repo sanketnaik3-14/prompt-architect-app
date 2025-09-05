@@ -138,6 +138,21 @@ if (modeSwitcher) {
 
 assembleBtn.addEventListener('click', generateBrief);
 
+// EVENT LISTENER FOR THE CUSTOM INPUT PENCIL BUTTONS
+creationModeContainer.addEventListener('click', (e) => {
+    const button = e.target.closest('.custom-toggle-btn');
+    if (!button) return;
+
+    const component = button.dataset.component;
+    const selectEl = document.getElementById(`manual${component}`);
+    const inputEl = document.getElementById(`custom${component}`);
+
+    if (selectEl && inputEl) {
+        selectEl.classList.toggle('hidden');
+        inputEl.classList.toggle('hidden');
+    }
+});
+
 // Add listener for the new fusion assemble button
 const fusionAssembleBtn = document.getElementById('fusionAssembleBtn');
 if (fusionAssembleBtn) {
