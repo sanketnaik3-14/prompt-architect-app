@@ -644,8 +644,26 @@ const manualSubjectSelect = document.getElementById('manualSubject');
 // --- Populate Filter Dropdowns ---
 // As per NewsAPI documentation
 const categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology'];
-const countries = { 'United States': 'us', 'United Kingdom': 'gb', 'Canada': 'ca', 'Australia': 'au', 'India': 'in' };
-
+// Replace the old 'countries' object with this one
+const countries = {
+    'United States': 'us',
+    'United Kingdom': 'gb',
+    'Canada': 'ca',
+    'Australia': 'au',
+    'India': 'in',
+    'Ireland': 'ie',
+    'New Zealand': 'nz',
+    'South Africa': 'za',
+    'Germany': 'de',
+    'France': 'fr',
+    'Italy': 'it',
+    'Spain': 'es',
+    'Japan': 'jp',
+    'Brazil': 'br',
+    'Mexico': 'mx',
+    'Philippines': 'ph',
+    'Singapore': 'sg'
+};
 categories.forEach(cat => {
     const option = document.createElement('option');
     option.value = cat;
