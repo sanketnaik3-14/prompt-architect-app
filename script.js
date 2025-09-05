@@ -151,72 +151,197 @@ const keyToDisplayName = {
 
 // --- AUDIENCE PROFILE FEATURE ---
 
-function populateAudienceDropdowns() {
-    const options = {
+const audienceFields = [
+    { key: 'lifeStage', defaultOptions: ['Any Stage', 'Student', 'Young Professional', 'Parent', 'Retiree'] },
+    { key: 'occupation', defaultOptions: [] },
+    { key: 'culture', defaultOptions: [] },
+    { key: 'values', defaultOptions: [] },
+    { key: 'interests', defaultOptions: [] },
+    { key: 'media', defaultOptions: [] }
+];
+
+async function populateAudienceDropdowns(savedProfile = {}) {
+    // Populate static dropdowns
+    const staticOptions = {
         gender: ['Universal / Gender-Neutral', 'Male-Targeted', 'Female-Targeted'],
         age: ['Any Age', '13-17', '18-24', '25-34', '35-44', '45+'],
-        lifeStage: ['Any Stage', 'Student', 'Young Professional', 'Parent', 'Retiree'],
-        market: ['Universal', 'USA', 'UK', 'Canada', 'Australia', 'Germany', 'India', 'Japan'],
-        language: ['English', 'Spanish', 'French', 'German', 'Japanese', 'Hindi', 'Marathi']
     };
-
-    for (const key in options) {
-        const select = audienceInputs[key];
+    for (const key in staticOptions) {
+        const select = document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}`);
         select.innerHTML = '';
-        options[key].forEach(opt => {
-            const option = document.createElement('option');
-            option.value = opt;
-            option.textContent = opt;
-            select.appendChild(option);
+        staticOptions[key].forEach(opt => select.add(new Option(opt, opt)));
+    }
+
+    // Populate dynamic country and language lists
+    try {
+        const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+        const countrySelect = document.getElementById('audienceMarket');
+        // A curated list of ISO 3166-1 alpha-2 codes
+        const countryCodes = ["US", "GB", "CA", "AU", "DE", "FR", "ES", "IT", "JP", "IN", "BR", "MX", "CN", "RU", "ZA"];
+        countryCodes.sort((a, b) => regionNames.of(a).localeCompare(regionNames.of(b)));
+        countrySelect.innerHTML = '<option value="Universal">Universal</option>';
+        countryCodes.forEach(code => countrySelect.add(new Option(regionNames.of(code), code)));
+
+        const languageNames = new Intl.DisplayNames(['en'], { type: 'language' });
+        const languageSelect = document.getElementById('audienceLanguage');
+        // A curated list of ISO 639-1 codes
+        const langCodes = ["en", "es", "fr", "de", "it", "pt", "ja", "zh", "hi", "ar", "ru", "mr"];
+        langCodes.sort((a, b) => languageNames.of(a).localeCompare(languageNames.of(b)));
+        languageSelect.innerHTML = '';
+        langCodes.forEach(code => languageSelect.add(new Option(languageNames.of(code), code)));
+        languageSelect.value = 'en'; // Default to English
+    } catch (e) { console.error("Intl API not fully supported:", e); }
+
+
+    // Fetch saved ideas for dynamic fields
+    let savedIdeas = {};
+    const audienceComponentKeys = audienceFields.map(f => `audience_${f.key}`);
+    const { data: ideas } = await supabase.from('ideas').select('component_key, value').in('component_key', audienceComponentKeys);
+    if (ideas) {
+        ideas.forEach(idea => {
+            if (!savedIdeas[idea.component_key]) savedIdeas[idea.component_key] = [];
+            savedIdeas[idea.component_key].push(idea.value);
         });
     }
+
+    // Populate dynamic dropdowns
+    audienceFields.forEach(field => {
+        const select = document.getElementById(`audience${field.key.charAt(0).toUpperCase() + field.key.slice(1)}Select`);
+        if (!select) return;
+        select.innerHTML = '';
+        if (field.defaultOptions.length > 0) {
+            field.defaultOptions.forEach(opt => select.add(new Option(opt, opt)));
+        } else {
+            select.innerHTML = `<option value="">-- Select a saved ${field.key} --</option>`;
+        }
+
+        const saved = savedIdeas[`audience_${field.key}`];
+        if (saved && saved.length > 0) {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = '--- Your Saved Ideas ---';
+            saved.forEach(value => optgroup.appendChild(new Option(value, value)));
+            select.appendChild(optgroup);
+        }
+    });
+
+    // Set selected values from loaded profile
+    for (const key in savedProfile) {
+        const el = document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}`) || document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}Select`);
+        if (el) el.value = savedProfile[key];
+    }
 }
+
 
 function updateAudienceDisplay() {
     if (Object.keys(currentAudience).length === 0 || Object.values(currentAudience).every(v => !v || v.startsWith('Any'))) {
         activeAudienceDisplay.classList.add('hidden');
-        currentAudience = {}; // Ensure it's empty
+        currentAudience = {};
         return;
     }
-
     let summary = Object.entries(currentAudience)
-        .filter(([key, value]) => value && !value.startsWith('Any'))
-        .map(([key, value]) => `<strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${value}`)
+        .filter(([key, value]) => value && !value.startsWith('Any') && value !== 'Universal')
+        .map(([key, value]) => {
+            const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+            return `<strong>${formattedKey}:</strong> ${value}`;
+        })
         .join(' &bull; ');
-
     activeAudienceDisplay.innerHTML = `👤 Targeting: ${summary}`;
     activeAudienceDisplay.classList.remove('hidden');
 }
 
-function saveAudienceProfile() {
+async function saveAudienceProfile() {
     currentAudience = {};
-    for (const key in audienceInputs) {
-        if (audienceInputs[key].value) {
-            currentAudience[key] = audienceInputs[key].value.trim();
+    const newIdeasToSave = [];
+
+    // Handle static fields
+    ['gender', 'age', 'market', 'language'].forEach(key => {
+        const el = document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}`);
+        if (el) currentAudience[key] = el.value;
+    });
+
+    // Handle dynamic fields with custom input
+    audienceFields.forEach(field => {
+        const key = field.key;
+        const capKey = key.charAt(0).toUpperCase() + key.slice(1);
+        const selectEl = document.getElementById(`audience${capKey}Select`);
+        const customEl = document.getElementById(`audience${capKey}Custom`);
+        let value = '';
+
+        if (customEl && !customEl.classList.contains('hidden') && customEl.value.trim() !== '') {
+            value = customEl.value.trim();
+            newIdeasToSave.push({ component_key: `audience_${key}`, value: value });
+        } else if (selectEl) {
+            value = selectEl.value;
         }
+        currentAudience[key] = value;
+    });
+
+    // Save new custom ideas to the 'ideas' table
+    if (newIdeasToSave.length > 0) {
+        await saveIdeaToSupabase(newIdeasToSave);
     }
+
+    // Save the entire profile to the 'audience_profiles' table
+    try {
+        const { error } = await supabase.from('audience_profiles').upsert({ id: 1, ...currentAudience });
+        if (error) throw error;
+        console.log("Audience profile saved.");
+    } catch (e) { console.error("Could not save audience profile:", e.message); }
+
     updateAudienceDisplay();
     audienceModal.classList.add('hidden');
 }
 
+
 function clearAudienceProfile() {
-    for (const key in audienceInputs) {
-        if (audienceInputs[key].tagName === 'SELECT') {
-            audienceInputs[key].selectedIndex = 0;
-        } else {
-            audienceInputs[key].value = '';
+    for (const key in currentAudience) {
+        const el = document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}`) || document.getElementById(`audience${key.charAt(0).toUpperCase() + key.slice(1)}Select`);
+        if (el) {
+            if (el.tagName === 'SELECT') el.selectedIndex = 0;
+            else el.value = '';
         }
     }
     currentAudience = {};
     updateAudienceDisplay();
+    // Also clear from DB
+    supabase.from('audience_profiles').delete().eq('id', 1).then();
     audienceModal.classList.add('hidden');
 }
+
+async function loadAudienceProfile() {
+    try {
+        const { data, error } = await supabase.from('audience_profiles').select('*').limit(1).single();
+        if (error) throw error;
+        if (data) {
+            currentAudience = data;
+            // The populate function will now handle setting the values
+            await populateAudienceDropdowns(currentAudience);
+            updateAudienceDisplay();
+        } else {
+            await populateAudienceDropdowns();
+        }
+    } catch (e) {
+        console.warn("Could not load audience profile, starting fresh.", e.message);
+        await populateAudienceDropdowns();
+    }
+}
+
 
 // Event Listeners for Audience Modal
 audienceBtn.addEventListener('click', () => audienceModal.classList.remove('hidden'));
 audienceModalCloseBtn.addEventListener('click', () => audienceModal.classList.add('hidden'));
 audienceModalSaveBtn.addEventListener('click', saveAudienceProfile);
 audienceModalClearBtn.addEventListener('click', clearAudienceProfile);
+
+audienceModal.addEventListener('click', (e) => {
+    const button = e.target.closest('.custom-audience-toggle-btn');
+    if (!button) return;
+    const component = button.dataset.component;
+    const selectEl = document.getElementById(`${component}Select`);
+    const inputEl = document.getElementById(`${component}Custom`);
+    selectEl.classList.toggle('hidden');
+    inputEl.classList.toggle('hidden');
+});
 
 // --- EVENT LISTENERS ---
 
@@ -1084,7 +1209,7 @@ refinementBtns.addEventListener('click', (e) => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const inspirationSelects = {
         architecture: [
             { value: "high-impact", text: "High-Impact / Concept (Recommended)" }, { value: "minimalist", text: "Minimalist / Icon" }, { value: "maximalist", text: "Maximalist / Hero" }, { value: "wildcard", text: "Wildcard / Experimental" }, { value: "effects-focused", text: "Effects-Focused / Technical" }
@@ -1093,7 +1218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { value: "classic", text: "Tier 1: Classic & Established" }, { value: "creative", text: "Tier 2: Creative & Fused" }, { value: "experimental", text: "Tier 3: Hypothesized & Experimental" }, { value: "balanced", text: "Balanced Mix (All Tiers)" }, { value: "chaos", text: "Unrestricted Chaos" }
         ],
         modifier: [
-            // Standard Modifiers
+            // ... (your full modifier list is here) ...
             { value: "none", text: "None (Standard)" },
             { value: "narrative-badge", text: "+Narrative Badge" },
             { value: "dynamic-layout", text: "+Dynamic Layout" },
@@ -1108,7 +1233,6 @@ document.addEventListener('DOMContentLoaded', () => {
             { value: "clean-tech", text: "+CleanTech" },
             { value: "punk-zine", text: "+PunkZine" },
             { value: "ornate-elegance", text: "+OrnateElegance" },
-            // ALCHEMY MODIFIERS
             { value: "generative-system", text: "ALCHEMY: Generative System" },
             { value: "dataviz-mythology", text: "ALCHEMY: DataViz Mythology" },
             { value: "material-inversion", text: "ALCHEMY: Material Inversion" },
@@ -1126,10 +1250,11 @@ document.addEventListener('DOMContentLoaded', () => {
             selectEl.appendChild(option);
         });
     }
-    populateCreationDropdowns();
+
+    await populateCreationDropdowns();
+    await loadAudienceProfile(); // This will also call populateAudienceDropdowns
+
     pillsContainer.innerHTML = `<span class="text-gray-400 italic">Your creative components will appear here...</span>`;
     briefPre.textContent = "Click 'Forge New Prompt' to begin.";
-    // Add this line inside the DOMContentLoaded listener
-    populateAudienceDropdowns();
 });
 // --- THE END OF THE SCRIPT ---
