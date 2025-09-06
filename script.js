@@ -1223,41 +1223,49 @@ document.addEventListener('DOMContentLoaded', async () => {
             { value: "classic", text: "Tier 1: Classic & Established" }, { value: "creative", text: "Tier 2: Creative & Fused" }, { value: "experimental", text: "Tier 3: Hypothesized & Experimental" }, { value: "balanced", text: "Balanced Mix (All Tiers)" }, { value: "chaos", text: "Unrestricted Chaos" }
         ],
         modifier: [
-            // ... (your full modifier list is here) ...
-            { value: "none", text: "None (Standard)" },
-            { value: "narrative-badge", text: "+Narrative Badge" },
-            { value: "dynamic-layout", text: "+Dynamic Layout" },
-            { value: "typographic-play", text: "+Typographic Play" },
-            { value: "expressive-collage", text: "+Expressive Collage" },
-            { value: "hybrid-asset-collage", text: "+HybridAssetCollage" },
-            { value: "symbiotic-fusion", text: "+SymbioticFusion" },
-            { value: "multi-style-fusion", text: "+Multi-Style Fusion" },
-            { value: "thematic-clash", text: "+Thematic Clash" },
-            { value: "maximalist", text: "+Maximalist" },
-            { value: "vintage-authentic", text: "+VintageAuthentic" },
-            { value: "clean-tech", text: "+CleanTech" },
-            { value: "punk-zine", text: "+PunkZine" },
-            { value: "ornate-elegance", text: "+OrnateElegance" },
-            { value: "generative-system", text: "ALCHEMY: Generative System" },
-            { value: "dataviz-mythology", text: "ALCHEMY: DataViz Mythology" },
-            { value: "material-inversion", text: "ALCHEMY: Material Inversion" },
-            { value: "conceptual-surrealism", text: "ALCHEMY: Conceptual Surrealism" },
-            { value: "kinetic-typography", text: "ALCHEMY: Kinetic Typography" },
-            { value: "sensory-swap", text: "ALCHEMY: Sensory Swap" }
+            { value: "none", text: "None (Standard)" }, { value: "narrative-badge", text: "+Narrative Badge" }, { value: "dynamic-layout", text: "+Dynamic Layout" }, { value: "typographic-play", text: "+Typographic Play" }, { value: "expressive-collage", text: "+Expressive Collage" }, { value: "hybrid-asset-collage", text: "+HybridAssetCollage" }, { value: "symbiotic-fusion", text: "+SymbioticFusion" }, { value: "multi-style-fusion", text: "+Multi-Style Fusion" }, { value: "thematic-clash", text: "+Thematic Clash" }, { value: "maximalist", text: "+Maximalist" }, { value: "vintage-authentic", text: "+VintageAuthentic" }, { value: "clean-tech", text: "+CleanTech" }, { value: "punk-zine", text: "+PunkZine" }, { value: "ornate-elegance", text: "+OrnateElegance" }, { value: "generative-system", text: "ALCHEMY: Generative System" }, { value: "dataviz-mythology", text: "ALCHEMY: DataViz Mythology" }, { value: "material-inversion", text: "ALCHEMY: Material Inversion" }, { value: "conceptual-surrealism", text: "ALCHEMY: Conceptual Surrealism" }, { value: "kinetic-typography", text: "ALCHEMY: Kinetic Typography" }, { value: "sensory-swap", text: "ALCHEMY: Sensory Swap" }
         ]
     };
+
+    // --- NEW: Descriptions for Modifiers ---
+    const modifierDescriptions = {
+        "narrative-badge": "Creates a structured, logo-like emblem with integrated text.",
+        "dynamic-layout": "Prioritizes energy, movement, and asymmetry in the composition.",
+        "typographic-play": "Makes the text itself the primary artwork, to be deconstructed and manipulated.",
+        "expressive-collage": "Creates a busy, layered, zine-page or sticker-bomb design.",
+        "hybrid-asset-collage": "Creates a Neo-Brutalist design by combining distinct assets in a grid.",
+        "symbiotic-fusion": "Fuses one Nature subject with one Technology subject.",
+        "multi-style-fusion": "Blends two distinct artistic styles into a new, hybrid aesthetic.",
+        "thematic-clash": "Emphasizes the opposition or conflict between two subjects.",
+        "maximalist": "Fills the entire canvas with intricate detail, avoiding negative space.",
+        "vintage-authentic": "Creates a design that feels like a genuine artifact from a past era.",
+        "clean-tech": "Forces a clean, minimalist, corporate-tech aesthetic.",
+        "punk-zine": "Commands a raw, DIY, cut-and-paste collage style.",
+        "ornate-elegance": "Prioritizes beauty, decoration, and intricate, flowing detail.",
+        "generative-system": "Illustrates a process transforming a subject over a sequence of 3-4 frames.",
+        "dataviz-mythology": "Renders a subject as a clean infographic that explains an abstract concept.",
+        "material-inversion": "Defines the subject using only negative space against a textured background.",
+        "conceptual-surrealism": "Creates a dream-like scene of a subject acting out an abstract concept.",
+        "kinetic-typography": "Shows the text itself physically undergoing a process (e.g., melting, shattering).",
+        "sensory-swap": "Visualizes a subject as if it were the embodiment of a non-visual sense (e.g., a sound or feeling)."
+    };
+
     for (const id in inspirationSelects) {
         const selectEl = document.getElementById(id);
         inspirationSelects[id].forEach(opt => {
             const option = document.createElement('option');
             option.value = opt.value;
             option.textContent = opt.text;
+            // --- NEW: Add the title attribute for the tooltip ---
+            if (id === 'modifier' && modifierDescriptions[opt.value]) {
+                option.title = modifierDescriptions[opt.value];
+            }
             selectEl.appendChild(option);
         });
     }
 
     await populateCreationDropdowns();
-    await loadAudienceProfile(); // This will also call populateAudienceDropdowns
+    await loadAudienceProfile();
 
     pillsContainer.innerHTML = `<span class="text-gray-400 italic">Your creative components will appear here...</span>`;
     briefPre.textContent = "Click 'Forge New Prompt' to begin.";
