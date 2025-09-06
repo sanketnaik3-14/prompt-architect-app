@@ -75,6 +75,12 @@ const supabaseKey = 'sb_publishable_ZkEZc0rBKg5B0i-1_Lkt6w_d5hRrZBQ';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // --- DOM ELEMENTS ---
+// Add to DOM ELEMENTS section
+const findHolidaysBtn = document.getElementById('findHolidaysBtn');
+const holidayModal = document.getElementById('holidayModal');
+const holidayModalTitle = document.getElementById('holidayModalTitle');
+const holidayModalCloseBtn = document.getElementById('holidayModalCloseBtn');
+const holidayList = document.getElementById('holidayList');
 const generateBtn = document.getElementById('generateBtn');
 const assembleBtn = document.getElementById('assembleBtn');
 const seedInput = document.getElementById('seed');
@@ -120,10 +126,11 @@ let currentSeed = null;
 let currentConstraint = null;
 let lockedComponents = {};
 let currentComponents = {};
+
 let currentFormat = 'brief';
 let currentMode = 'inspiration';
 // Add this line in the STATE section
-let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [], mediumMateriality: [], actionProcess: [], contextComposition: [], conceptualMetaphorical: [], creativeConstraints: [] };
+let fusionSelections = { subject: [], style: [], emotionTone: [], graphicEffects: [], mediumMateriality: [], actionProcess: [], contextComposition: [], conceptualMetaphorical: [], creativeConstraints: [], culturalAnchor: [] };
 let currentAudience = {};
 // --- HELPER FUNCTIONS ---
 function mulberry32(a) {
@@ -345,6 +352,69 @@ async function loadAudienceProfile() {
     }
 }
 
+// --- EVENT & CULTURE ENGINE ---
+
+async function fetchHolidays() {
+    const countrySelect = document.getElementById('audienceMarket');
+    const countryCode = countrySelect.value;
+    const countryName = countrySelect.options[countrySelect.selectedIndex].text;
+
+    if (!countryCode || countryCode === 'Universal') {
+        alert("Please select a specific country to find holidays.");
+        return;
+    }
+
+    holidayModalTitle.textContent = `Holidays in ${countryName}`;
+    holidayList.innerHTML = `<p class="text-gray-400">Fetching holidays...</p>`;
+    holidayModal.classList.remove('hidden');
+
+    try {
+        const year = new Date().getFullYear();
+        const response = await fetch(`/api/holidays?countryCode=${countryCode}&year=${year}`);
+        if (!response.ok) throw new Error('Failed to fetch holidays from server.');
+
+        const holidays = await response.json();
+        holidayList.innerHTML = '';
+        if (holidays.length > 0) {
+            holidays.forEach(holiday => {
+                const item = document.createElement('div');
+                item.className = 'p-3 hover:bg-gray-700 rounded-lg cursor-pointer';
+                item.textContent = holiday;
+                item.dataset.holiday = holiday;
+                holidayList.appendChild(item);
+            });
+        } else {
+            holidayList.innerHTML = `<p class="text-gray-400">No public holidays found for ${countryName} this year.</p>`;
+        }
+    } catch (e) {
+        holidayList.innerHTML = `<p class="text-red-400">Error fetching holidays: ${e.message}</p>`;
+    }
+}
+
+// Event Listeners for Holiday Finder
+findHolidaysBtn.addEventListener('click', fetchHolidays);
+holidayModalCloseBtn.addEventListener('click', () => holidayModal.classList.add('hidden'));
+
+holidayList.addEventListener('click', (e) => {
+    if (e.target.dataset.holiday) {
+        const holiday = e.target.dataset.holiday;
+        const culturalContextInput = document.getElementById('audienceCultureCustom');
+        const culturalContextSelect = document.getElementById('audienceCultureSelect');
+
+        // Switch to the custom input view in the audience modal
+        culturalContextSelect.classList.add('hidden');
+        culturalContextInput.classList.remove('hidden');
+
+        // Append the holiday to the cultural context field
+        if (culturalContextInput.value.trim() !== '') {
+            culturalContextInput.value += `, ${holiday}`;
+        } else {
+            culturalContextInput.value = holiday;
+        }
+
+        holidayModal.classList.add('hidden');
+    }
+});
 
 // Event Listeners for Audience Modal
 audienceBtn.addEventListener('click', () => audienceModal.classList.remove('hidden'));
@@ -666,7 +736,7 @@ async function generateBrief() {
             return null;
         };
 
-        const componentKeysInOrder = ['designerPersonas', 'subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects', 'creativeConstraints'];
+        const componentKeysInOrder = ['designerPersonas', 'subject', 'style', 'emotionTone', 'mediumMateriality', 'actionProcess', 'contextComposition', 'conceptualMetaphorical', 'graphicEffects', 'creativeConstraints', 'culturalAnchor'];
         const ideasToSave = [];
         componentKeysInOrder.forEach(key => {
             const capKey = key.charAt(0).toUpperCase() + key.slice(1);
@@ -692,6 +762,7 @@ async function generateBrief() {
     // --- THIS IS THE NEW BLOCK YOU NEED TO ADD ---
     // --- THIS IS THE UPDATED FUSION BLOCK ---
     // --- THIS IS THE FINAL, FULLY EXPANDED FUSION BLOCK ---
+    // --- UPDATED FUSION BLOCK ---
     else if (currentMode === 'fusion') {
         if (Object.values(fusionSelections).every(arr => arr.length === 0)) {
             alert("Please select at least one component for Fusion Mode.");
@@ -701,7 +772,7 @@ async function generateBrief() {
         const persona = { name: "Master Conceptual Artist", category: "By Artist's State & Tool" };
         const fusionModifierSelect = document.getElementById('fusionModifier');
 
-        // Gather all selections
+        // --- Gathers all selections, NOW INCLUDING culturalAnchor ---
         const subjects = fusionSelections.subject;
         const styles = fusionSelections.style;
         const emotions = fusionSelections.emotionTone;
@@ -711,6 +782,7 @@ async function generateBrief() {
         const compositions = fusionSelections.contextComposition;
         const concepts = fusionSelections.conceptualMetaphorical;
         const constraints = fusionSelections.creativeConstraints;
+        const culturalAnchors = fusionSelections.culturalAnchor; // <-- NEW
         const modifier = {
             value: fusionModifierSelect.value,
             text: fusionModifierSelect.value !== 'none' ? fusionModifierSelect.options[fusionModifierSelect.selectedIndex].text : ''
@@ -719,7 +791,6 @@ async function generateBrief() {
         currentSeed = 'fusion';
         seedInput.value = 'N/A (Fusion)';
 
-        // Create a new set of components for the output
         const fusionComponents = {
             designerPersonas: persona,
             subject: { name: subjects.join(' + ') },
@@ -731,7 +802,7 @@ async function generateBrief() {
             contextComposition: { name: compositions.join(' + ') },
             conceptualMetaphorical: { name: concepts.join(' + ') },
             creativeConstraints: { name: constraints.join(' + ') },
-            // Store raw arrays and modifier for the AI prompt formatter
+            culturalAnchor: { name: culturalAnchors.join(' + ') }, // <-- NEW
             _subjects: subjects,
             _styles: styles,
             _emotions: emotions,
@@ -741,6 +812,7 @@ async function generateBrief() {
             _compositions: compositions,
             _concepts: concepts,
             _constraints: constraints,
+            _culturalAnchors: culturalAnchors, // <-- NEW
             _modifier: modifier
         };
 
@@ -748,15 +820,14 @@ async function generateBrief() {
         renderPills();
         updateOutputContent();
         copyBtn.classList.remove('hidden');
-        return; // IMPORTANT: We stop the function here for fusion mode
+        return;
     }
 
-    // This part runs for Inspiration and Creation modes, but is skipped by Fusion mode's 'return'
-    lockedComponents = {}; // Reset locks after generation
+    lockedComponents = {};
     renderPills();
     updateOutputContent();
     copyBtn.classList.remove('hidden');
-    refinementPanel.classList.remove('hidden'); // Show panel after generation is complete
+    refinementPanel.classList.remove('hidden');
 }
 
 function renderPills() {
@@ -886,9 +957,9 @@ function formatAsAIPrompt() {
     const fullPreamble = audiencePreamble ? `${personaPreamble}With that target customer in mind, create the following design. ${audiencePreamble}` : personaPreamble;
 
     // The rest of the function logic remains the same as the last version...
+    // --- UPDATED FUSION PROMPT LOGIC ---
     if (currentMode === 'fusion' && c._subjects) {
-        // ... (FUSION LOGIC) ...
-        const { _subjects, _styles, _emotions, _effects, _materials, _processes, _compositions, _concepts, _constraints, _modifier } = c;
+        const { _subjects, _styles, _emotions, _effects, _materials, _processes, _compositions, _concepts, _constraints, _culturalAnchors, _modifier } = c; // <-- Added _culturalAnchors
         let clauses = [];
         if (_subjects.length > 0) clauses.push(`The core subjects are a fusion of: "${_subjects.join('", "')}".`);
         if (_styles.length > 0) clauses.push(`The visual style is a hybrid of: "${_styles.join('", "')}".`);
@@ -898,14 +969,20 @@ function formatAsAIPrompt() {
         if (_compositions.length > 0) clauses.push(`The composition is a unique synthesis of: "${_compositions.join('", "')}".`);
         if (_concepts.length > 0) clauses.push(`The design explores these abstract concepts: "${_concepts.join('", "')}".`);
         if (_effects.length > 0) clauses.push(`It features a combination of graphic effects: "${_effects.join('", "')}".`);
+        if (_culturalAnchors.length > 0) clauses.push(`The design is anchored in these cultural themes or events: "${_culturalAnchors.join('", "')}".`); // <-- NEW
+
         let mainBody = clauses.join(' ');
+
         if (_modifier && _modifier.value !== 'none') {
             mainBody = `The entire conceptual fusion must be presented within the structure of a "${_modifier.text}" design. ${mainBody}`;
         }
+
         finalPrompt = `${fullPreamble}A masterpiece T-shirt graphic. The design is a complex conceptual fusion. ${mainBody} The final output must be a single, cohesive, and harmonious design. ${baseVectorInstructions}`;
+
         if (_constraints.length > 0) {
             finalPrompt += ` \n\n**Important Constraints:** ${_constraints.join('. ')}.`;
         }
+
     } else {
         // ... (INSPIRATION/CREATION LOGIC) ...
         let modifierValue = (currentMode === 'inspiration') ? modifierSelect.value : document.getElementById('manualModifier').value;

@@ -184,6 +184,17 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Culture/Event Anchor:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualCulturalAnchor"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customCulturalAnchor"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom culture/event...">
+                            <button class="custom-toggle-btn text-2xl" data-component="CulturalAnchor">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                         <label for="manualModifier" class="text-gray-300 font-medium sm:text-right">Creative
                             Modifier:</label>
                         <select id="manualModifier"
@@ -263,6 +274,14 @@
                             <div id="fusionCreativeConstraintsPills" class="flex flex-wrap gap-2"></div>
                             <button class="add-component-btn" data-component="creativeConstraints">+ Add
                                 Constraint</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Culture/Events:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionCulturalAnchorPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="culturalAnchor">+ Add
+                                Culture/Event</button>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
@@ -397,7 +416,13 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <select id="audienceMarket" class="bg-gray-700 p-2 rounded w-full" title="Target Market"></select>
+                    <div class="flex items-center gap-2">
+                        <select id="audienceMarket" class="bg-gray-700 p-2 rounded w-full"
+                            title="Target Market"></select>
+                        <button id="findHolidaysBtn"
+                            class="bg-gray-600 hover:bg-gray-700 text-white font-medium p-2 rounded-lg"
+                            title="Find Holidays for selected country">📅</button>
+                    </div>
                     <select id="audienceLanguage" class="bg-gray-700 p-2 rounded w-full"
                         title="Language for Text"></select>
                 </div>
@@ -439,6 +464,17 @@
                 <button id="audienceModalSaveBtn"
                     class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg">Save
                     Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="holidayModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 id="holidayModalTitle" class="text-xl font-bold text-white">Public Holidays</h3>
+                <button id="holidayModalCloseBtn" class="text-2xl">&times;</button>
+            </div>
+            <div id="holidayList" class="p-4 max-h-80 overflow-y-auto">
             </div>
         </div>
     </div>
