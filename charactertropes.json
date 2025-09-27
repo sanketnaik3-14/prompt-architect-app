@@ -1,0 +1,95 @@
+{
+    "A": {
+        "description": "Character Tropes starting with the letter A.",
+        "members": [
+            "Action Girl"
+        ]
+    },
+    "B": {
+        "description": "Character Tropes starting with the letter B.",
+        "members": [
+            "Bad Boy",
+            "Beast",
+            "Black Knight"
+        ]
+    },
+    "D": {
+        "description": "Character Tropes starting with the letter D.",
+        "members": [
+            "Damsel in Distress",
+            "Dark Lord"
+        ]
+    },
+    "F": {
+        "description": "Character Tropes starting with the letter F.",
+        "members": [
+            "Femme Fatale"
+        ]
+    },
+    "G": {
+        "description": "Character Tropes starting with the letter G.",
+        "members": [
+            "Gentleman Thief",
+            "Girl Next Door"
+        ]
+    },
+    "H": {
+        "description": "Character Tropes starting with the letter H.",
+        "members": [
+            "Himbo"
+        ]
+    },
+    "K": {
+        "description": "Character Tropes starting with the letter K.",
+        "members": [
+            "Knight-errant"
+        ]
+    },
+    "L": {
+        "description": "Character Tropes starting with the letter L.",
+        "members": [
+            "Lois Lane"
+        ]
+    },
+    "M": {
+        "description": "Character Tropes starting with the letter M.",
+        "members": [
+            "Mad Scientist",
+            "Magical Girl",
+            "Manic Pixie Dream Girl",
+            "Mary Sue"
+        ]
+    },
+    "P": {
+        "description": "Character Tropes starting with the letter P.",
+        "members": [
+            "Prince Charming"
+        ]
+    },
+    "Q": {
+        "description": "Character Tropes starting with the letter Q.",
+        "members": [
+            "Queen Bee"
+        ]
+    },
+    "S": {
+        "description": "Character Tropes starting with the letter S.",
+        "members": [
+            "Starving Artist"
+        ]
+    },
+    "T": {
+        "description": "Character Tropes starting with the letter T.",
+        "members": [
+            "Tortured Artist",
+            "Tragic Hero"
+        ]
+    },
+    "V": {
+        "description": "Character Tropes starting with the letter V.",
+        "members": [
+            "Vampire",
+            "Villain"
+        ]
+    }
+}

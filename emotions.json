@@ -1,0 +1,565 @@
+{
+    "emotions": [
+        {
+            "category": "Joy",
+            "related_emotions": [
+                "Happiness",
+                "Ecstasy",
+                "Euphoria",
+                "Excitement",
+                "Elation",
+                "Contentment",
+                "Serenity",
+                "Bliss",
+                "Amusement",
+                "Satisfaction",
+                "Pride",
+                "Triumph",
+                "Enthusiasm",
+                "Optimism",
+                "Relief"
+            ]
+        },
+        {
+            "category": "Sadness",
+            "related_emotions": [
+                "Grief",
+                "Sorrow",
+                "Depression",
+                "Disappointment",
+                "Loneliness",
+                "Misery",
+                "Melancholy",
+                "Anguish",
+                "Despair",
+                "Regret",
+                "Remorse",
+                "Sympathy",
+                "Pity",
+                "Nostalgia"
+            ]
+        },
+        {
+            "category": "Fear",
+            "related_emotions": [
+                "Terror",
+                "Panic",
+                "Anxiety",
+                "Apprehension",
+                "Dread",
+                "Horror",
+                "Shock",
+                "Suspense",
+                "Nervousness",
+                "Worry"
+            ]
+        },
+        {
+            "category": "Anger",
+            "related_emotions": [
+                "Rage",
+                "Fury",
+                "Frustration",
+                "Irritation",
+                "Annoyance",
+                "Bitterness",
+                "Resentment",
+                "Hostility",
+                "Contempt",
+                "Jealousy",
+                "Envy",
+                "Spite"
+            ]
+        },
+        {
+            "category": "Disgust",
+            "related_emotions": [
+                "Loathing",
+                "Revulsion",
+                "Aversion",
+                "Contempt",
+                "Repugnance",
+                "Offence",
+                "Distaste"
+            ]
+        },
+        {
+            "category": "Surprise",
+            "related_emotions": [
+                "Amazement",
+                "Astonishment",
+                "Shock",
+                "Distraction",
+                "Awe"
+            ]
+        },
+        {
+            "category": "Trust",
+            "related_emotions": [
+                "Acceptance",
+                "Admiration",
+                "Love",
+                "Affection",
+                "Fondness",
+                "Liking",
+                "Caring",
+                "Tenderness",
+                "Devotion"
+            ]
+        },
+        {
+            "category": "Anticipation",
+            "related_emotions": [
+                "Interest",
+                "Vigilance",
+                "Excitement",
+                "Eagerness",
+                "Craving"
+            ]
+        },
+        {
+            "category": "Awkwardness",
+            "related_emotions": [
+                "Embarrassment",
+                "Shyness",
+                "Humiliation"
+            ]
+        },
+        {
+            "category": "Calmness",
+            "related_emotions": [
+                "Relaxation",
+                "Serenity",
+                "Peace",
+                "Composure"
+            ]
+        },
+        {
+            "category": "Other",
+            "related_emotions": [
+                "Boredom",
+                "Confusion",
+                "Curiosity",
+                "Empathy",
+                "Gratitude",
+                "Hope",
+                "Patience",
+                "Insecurity",
+                "Confusion"
+            ]
+        }
+    ]
+}
+
+{
+    "emotions": [
+        {
+            "category": "Complex Social & Interpersonal",
+            "related_emotions": [
+                "Admiration",
+                "Adoration",
+                "Empathetic pain",
+                "Enthrallment",
+                "Sexual desire",
+                "Romance",
+                "Triumph",
+                "Sympathy",
+                "Friendliness",
+                "Devotion",
+                "Humility",
+                "Compassion",
+                "Benevolence",
+                "Altruism"
+            ]
+        },
+        {
+            "category": "Aesthetic & Sensory",
+            "related_emotions": [
+                "Aesthetic appreciation",
+                "Entrancement",
+                "Awe",
+                "Sensory pleasure",
+                "Wonder",
+                "Duende (Spanish: the mysterious power of art to move a person)",
+                "Goya (Urdu: the transportive feeling of being absorbed in a story)"
+            ]
+        },
+        {
+            "category": "Cognitive & Self-Referential",
+            "related_emotions": [
+                "Awkwardness",
+                "Confusion",
+                "Hope",
+                "Hopelessness",
+                "Cynicism",
+                "Doubt",
+                "Bemusement",
+                "Dismay",
+                "Perplexity",
+                "Resignation"
+            ]
+        },
+        {
+            "category": "Existential & Reflective",
+            "related_emotions": [
+                "Nostalgia",
+                "Solemnity",
+                "Longing",
+                "Grief",
+                "Sorrow",
+                "Melancholy",
+                "Hiraeth (Welsh: homesickness for a home to which you cannot return)",
+                "Saudade (Portuguese: a deep, melancholic longing for something or someone absent)"
+            ]
+        },
+        {
+            "category": "Displeasure & Aversion",
+            "related_emotions": [
+                "Craving",
+                "Annoyance",
+                "Frustration",
+                "Agitation",
+                "Weariness",
+                "Indignation",
+                "Scorn",
+                "Disdain",
+                "Hostility",
+                "Contempt",
+                "Disgust"
+            ]
+        },
+        {
+            "category": "Intense & Primal",
+            "related_emotions": [
+                "Horror",
+                "Terror",
+                "Panic",
+                "Vigilance",
+                "Desperation",
+                "Rage",
+                "Fury",
+                "Ferocity"
+            ]
+        },
+        {
+            "category": "Physiological & Bodily",
+            "related_emotions": [
+                "Euphoria",
+                "Drowsiness",
+                "Exhaustion",
+                "Hunger",
+                "Basorexia (the sudden urge to kiss someone)",
+                "Bedgasm (the euphoria of getting into bed after a long day)"
+            ]
+        }
+    ]
+}
+
+{
+    "emotions": [
+        {
+            "category": "Emotional Dyads (Plutchik)",
+            "related_emotions": [
+                "Love (Joy + Trust)",
+                "Submission (Trust + Fear)",
+                "Awe (Fear + Surprise)",
+                "Disapproval (Surprise + Sadness)",
+                "Remorse (Sadness + Disgust)",
+                "Contempt (Disgust + Anger)",
+                "Aggressiveness (Anger + Anticipation)",
+                "Optimism (Anticipation + Joy)",
+                "Guilt (Joy + Fear)",
+                "Curiosity (Trust + Surprise)",
+                "Despair (Fear + Sadness)",
+                "Envy (Sadness + Anger)",
+                "Pride (Anger + Joy)",
+                "Delight (Joy + Surprise)",
+                "Shame (Fear + Disgust)",
+                "Anxiety (Anticipation + Fear)",
+                "Dominance (Anger + Trust)"
+            ]
+        },
+        {
+            "category": "Interpersonal & Social",
+            "related_emotions": [
+                "Vindication",
+                "Empathetic pain",
+                "Schadenfreude (German: pleasure from another's misfortune)",
+                "Greng Jai (Thai: reluctance to accept help from someone due to a wish not to impose)",
+                "Fago (Ifaluk, Micronesia: A blend of sympathy, sadness, and love)",
+                "Compassion fatigue",
+                "Alienation",
+                "Humiliation",
+                "Rejection",
+                "Intimidation",
+                "Discouragement",
+                "Sympathy",
+                "Valued"
+            ]
+        },
+        {
+            "category": "Existential & Philosophical",
+            "related_emotions": [
+                "Monachopsis (The subtle but persistent feeling of not fitting in)",
+                "Weltschmerz (German: sadness in the face of the world's sorrows)",
+                "Dread",
+                "Eudaimonia (Greek: a state of fulfillment and flourishing)",
+                "Existential angst",
+                "Hiraeth (Welsh: a homesickness for a home to which you can't return)",
+                "Saudade (Portuguese: a deep, melancholic longing for something or someone absent)",
+                "Nostalgia",
+                "Wonder"
+            ]
+        },
+        {
+            "category": "Aesthetic & Sensory",
+            "related_emotions": [
+                "Aesthetic appreciation",
+                "Entrancement",
+                "Fascination",
+                "Sensory pleasure",
+                "Goya (Urdu: absorbed in a fantastic story)",
+                "Duende (Spanish: moved by art)",
+                "Aware (Japanese: bittersweet beauty)"
+            ]
+        },
+        {
+            "category": "Physiological & Bodily",
+            "related_emotions": [
+                "Euphoria",
+                "Basorexia (The sudden urge to kiss someone)",
+                "Bedgasm (The euphoria of getting into bed after a long day)",
+                "Boghz (Persian: knot in the throat before crying)",
+                "Eilkrankheit (German: overwhelming sense of urgency)"
+            ]
+        },
+        {
+            "category": "Cognitive & Self-Referential",
+            "related_emotions": [
+                "Cognitive dissonance",
+                "Dissatisfaction",
+                "Disillusionment",
+                "Cynicism",
+                "Skepticism",
+                "Inadequacy",
+                "Helplessness",
+                "Smugness",
+                "Insecurity",
+                "Self-loathing",
+                "Worthlessness",
+                "Empowerment",
+                "Inspiration",
+                "Reluctance"
+            ]
+        },
+        {
+            "category": "Intensity & Nuance",
+            "related_emotions": [
+                "Serenity",
+                "Calmness",
+                "Tranquility",
+                "Alertness",
+                "Vigilance",
+                "Exhilaration",
+                "Exuberance",
+                "Lethargy",
+                "Fatigue",
+                "Boredom",
+                "Wistfulness",
+                "Melancholy",
+                "Pondering"
+            ]
+        }
+    ]
+}
+
+{
+    "emotions": [
+        {
+            "category": "Interpersonal & Social",
+            "related_emotions": [
+                "Vindication",
+                "Schadenfreude (German: pleasure from another's misfortune)",
+                "Greng Jai (Thai: reluctance to accept help due to not wanting to impose)",
+                "Fago (Ifaluk, Micronesia: A mix of sympathy, sadness, and love)",
+                "Compassion fatigue",
+                "Alienation",
+                "Humiliation",
+                "Rejection",
+                "Intimidation",
+                "Discouragement",
+                "Valued",
+                "Connectedness",
+                "Disconnected",
+                "Embarrassment",
+                "Betrayal",
+                "Neglect"
+            ]
+        },
+        {
+            "category": "Existential & Philosophical",
+            "related_emotions": [
+                "Monachopsis (The subtle but persistent feeling of not fitting in)",
+                "Weltschmerz (German: sadness in the face of the world's sorrows)",
+                "Eudaimonia (Greek: a state of fulfillment and flourishing)",
+                "Existential angst",
+                "Hiraeth (Welsh: a homesickness for a home to which you can't return)",
+                "Saudade (Portuguese: a deep, melancholic longing for something or someone absent)",
+                "Dread",
+                "Yearning",
+                "Ennui"
+            ]
+        },
+        {
+            "category": "Aesthetic & Sensory",
+            "related_emotions": [
+                "Entrancement",
+                "Fascination",
+                "Sensory overload",
+                "Sensory deprivation",
+                "Goya (Urdu: absorbed in a fantastic story)",
+                "Duende (Spanish: moved by art)",
+                "Aware (Japanese: bittersweet beauty)"
+            ]
+        },
+        {
+            "category": "Physiological & Bodily",
+            "related_emotions": [
+                "Basorexia (The sudden urge to kiss someone)",
+                "Bedgasm (The euphoria of getting into bed after a long day)",
+                "Boghz (Persian: knot in the throat before crying)",
+                "Eilkrankheit (German: overwhelming sense of urgency)",
+                "Drowsiness",
+                "Lethargy"
+            ]
+        },
+        {
+            "category": "Cognitive & Self-Referential",
+            "related_emotions": [
+                "Cognitive dissonance",
+                "Disillusionment",
+                "Cynicism",
+                "Skepticism",
+                "Inadequacy",
+                "Helplessness",
+                "Smugness",
+                "Self-loathing",
+                "Worthlessness",
+                "Empowerment",
+                "Inspired",
+                "Reluctance",
+                "Certainty",
+                "Perplexity",
+                "Bemusement",
+                "Indecisiveness"
+            ]
+        },
+        {
+            "category": "Intensity & Nuance",
+            "related_emotions": [
+                "Tranquility",
+                "Alertness",
+                "Vigilance",
+                "Exhilaration",
+                "Exuberance",
+                "Wistfulness",
+                "Pondering",
+                "Somberness",
+                "Solemnity",
+                "Overwhelmed",
+                "Underwhelmed"
+            ]
+        },
+        {
+            "category": "Mood States",
+            "related_emotions": [
+                "Moodiness",
+                "Giddiness",
+                "Mirth",
+                "Resilience",
+                "Serendipity"
+            ]
+        }
+    ]
+}
+
+{
+    "emotions": [
+        {
+            "category": "Emotional and Cognitive Blends",
+            "related_emotions": [
+                "Déjà vu",
+                "Presque vu (the "tip-of-the-tongue" phenomenon)",
+                "Jamais vu (the eerie sense of unfamiliarity with a familiar situation)",
+                "L'appel du vide (French: the call of the void, the urge to jump from a high place)",
+                "Liberosis (the desire to care less about things)",
+                "Sonder (the realization that each random passerby is living a life as complex as your own)",
+                "Opia (the ambiguous intensity of looking someone in the eye)",
+                "Kuebiko (a state of exhaustion inspired by acts of senseless violence)",
+                "Exulansis (the tendency to give up trying to talk about an experience because people are unable to relate to it)",
+                "Adronitis (frustration with how long it takes to get to know someone)",
+                "Rubatosis (the unsettling awareness of one's own heartbeat)",
+                "Chrysalism (the amniotic tranquility of being indoors during a thunderstorm)",
+                "Jouska (a hypothetical conversation you compulsively play out in your head)",
+                "Kenopsia (the eerie, forlorn atmosphere of a place that is usually bustling with people but is now quiet and empty)"
+            ]
+        },
+        {
+            "category": "Situational & Contextual",
+            "related_emotions": [
+                "Anticipatory grief",
+                "Sympathetic joy",
+                "Moral outrage",
+                "Disenchantment",
+                "Estrangement",
+                "Familiarity",
+                "Fervor",
+                "Reverence",
+                "Scorn",
+                "Ponderousness",
+                "Resentment",
+                "Resignation",
+                "Satiety"
+            ]
+        },
+        {
+            "category": "Interpersonal & Relational",
+            "related_emotions": [
+                "Agape (Greek: spiritual, unconditional love)",
+                "Philia (Greek: deep, platonic friendship)",
+                "Storge (Greek: family love)",
+                "Pragma (Greek: mature, long-lasting love)",
+                "Philautia (Greek: love of self)",
+                "Envy",
+                "Jealousy",
+                "Rivalry",
+                "Distrust",
+                "Skepticism",
+                "Deference"
+            ]
+        },
+        {
+            "category": "Aesthetic & Creative",
+            "related_emotions": [
+                "Aesthetic chills",
+                "Goosebumps",
+                "Frisson (French: a sudden shiver of pleasure or excitement)",
+                "Flow state",
+                "Catharsis",
+                "Sublimity"
+            ]
+        },
+        {
+            "category": "Transcendental & Spiritual",
+            "related_emotions": [
+                "Transcendence",
+                "Etherealness",
+                "Bliss",
+                "Enlightenment",
+                "Epiphany",
+                "Zen",
+                "Nirvana"
+            ]
+        }
+    ]
+}

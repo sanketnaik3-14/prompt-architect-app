@@ -1,0 +1,1164 @@
+{
+    "Anatomy": {
+        "description": "Aesthetics related to the structure and parts of the body.",
+        "members": [
+            "Body Horror",
+            "Digital Gore",
+            "Medical"
+        ]
+    },
+    "Animals": {
+        "description": "Aesthetics centered around animals.",
+        "members": [
+            "Bugs",
+            "Crowcore",
+            "Dragoncore",
+            "Frogs",
+            "Lobster",
+            "Vulture Culture"
+        ]
+    },
+    "Art": {
+        "description": "Aesthetics inspired by various art movements and styles.",
+        "members": [
+            "Art Academia",
+            "Art Deco",
+            "Art Hoe",
+            "Art Nouveau",
+            "Arts and Crafts",
+            "Bauhaus",
+            "Bohemian",
+            "Constructivism",
+            "Cubism",
+            "Dada",
+            "Expressionism",
+            "Impressionism",
+            "Mid-Century Modern",
+            "Minimalism",
+            "MS-Paint",
+            "Neoclassicism",
+            "Pop Art",
+            "Rococo",
+            "Surrealism",
+            "Synthwave"
+        ]
+    },
+    "Autumn": {
+        "description": "Aesthetics related to the season of Autumn.",
+        "members": [
+            "Autumn",
+            "Dark Academia",
+            "Spooky"
+        ]
+    },
+    "Body": {
+        "description": "Aesthetics that focus on the human body, its functions, and modifications.",
+        "members": [
+            "Anatomy",
+            "Baddie",
+            "Biopunk",
+            "Body Horror",
+            "Bodymod",
+            "Health Goth"
+        ]
+    },
+    "Bridgerton": {
+        "description": "Aesthetics inspired by the Bridgerton series, focusing on Regency-era fashion and romance.",
+        "members": [
+            "Bridgerton",
+            "Regency",
+            "Royalcore"
+        ]
+    },
+    "Bugs": {
+        "description": "Aesthetics that revolve around insects and other arthropods.",
+        "members": [
+            "Bugs",
+            "Goblincore"
+        ]
+    },
+    "Celestial": {
+        "description": "Aesthetics inspired by space, stars, the moon, and other astronomical objects and phenomena.",
+        "members": [
+            "Alien",
+            "Auroracore",
+            "Celestial",
+            "Moon",
+            "Space",
+            "Star"
+        ]
+    },
+    "Christian": {
+        "description": "Aesthetics derived from the Christian religion, its symbols, and traditions.",
+        "members": [
+            "Angelcore",
+            "Biblicore",
+            "Christian",
+            "Christian Girl Autumn",
+            "Devilcore"
+        ]
+    },
+    "Classical": {
+        "description": "Aesthetics inspired by the art, architecture, and culture of ancient Greece and Rome.",
+        "members": [
+            "Bronze Age",
+            "Classic Academia",
+            "Classical",
+            "Greco-Roman",
+            "Hellenistic",
+            "Light Academia",
+            "Roman",
+            "Vaporwave"
+        ]
+    },
+    "Clouds": {
+        "description": "Aesthetics that feature clouds as a primary visual element.",
+        "members": [
+            "Clouds",
+            "Sky"
+        ]
+    },
+    "Colors": {
+        "description": "Aesthetics defined by a specific color palette.",
+        "members": [
+            "Black and White",
+            "Golden",
+            "Pastel",
+            "Rainbow"
+        ]
+    },
+    "Dark": {
+        "description": "Aesthetics characterized by darkness, mystery, and melancholy.",
+        "members": [
+            "Dark",
+            "Dark Academia",
+            "Dark Fantasy",
+            "Dark Naturalism",
+            "Gloom",
+            "Goth",
+            "Sad"
+        ]
+    },
+    "Death": {
+        "description": "Aesthetics that explore themes of mortality, death, and the macabre.",
+        "members": [
+            "Death",
+            "Decay",
+            "Goth",
+            "Vulture Culture"
+        ]
+    },
+    "Decay": {
+        "description": "Aesthetics that find beauty in decay, ruin, and decomposition.",
+        "members": [
+            "Decay",
+            "Goblincore",
+            "Vulture Culture"
+        ]
+    },
+    "Dreams": {
+        "description": "Aesthetics that have a dream-like, surreal, or ethereal quality.",
+        "members": [
+            "Auroracore",
+            "Dreamcore",
+            "Dreams",
+            "Ethereal",
+            "Surreal"
+        ]
+    },
+    "Dystopian": {
+        "description": "Aesthetics that depict a futuristic, imagined universe in which oppressive societal control and the illusion of a perfect society are maintained through corporate, bureaucratic, technological, moral, or totalitarian control.",
+        "members": [
+            "Cyberpunk",
+            "Dystopian",
+            "Post-Apocalyptic"
+        ]
+    },
+    "Elements": {
+        "description": "Aesthetics based on the classical elements: earth, water, air, and fire.",
+        "members": [
+            "Air",
+            "Earth",
+            "Elements",
+            "Fire",
+            "Water"
+        ]
+    },
+    "Emo": {
+        "description": "Aesthetics associated with the emo music subculture, characterized by emotional expression and specific fashion styles.",
+        "members": [
+            "Emo",
+            "Mallgoth",
+            "Midwest Emo",
+            "Scene"
+        ]
+    },
+    "Emotional": {
+        "description": "Aesthetics centered around the expression of deep emotions.",
+        "members": [
+            "Emotional",
+            "Feminine Rage",
+            "Love",
+            "Sad"
+        ]
+    },
+    "Entertainment": {
+        "description": "Aesthetics inspired by various forms of entertainment like movies, television, and theatre.",
+        "members": [
+            "Animecore",
+            "Bridgerton",
+            "Clowncore",
+            "Fandom",
+            "Film Noir",
+            "Old Hollywood",
+            "Theatre Academia",
+            "Video Games"
+        ]
+    },
+    "Environment": {
+        "description": "Aesthetics that focus on the natural world and environmentalism.",
+        "members": [
+            "Dark Naturalism",
+            "Environment",
+            "Nature",
+            "Solarpunk"
+        ]
+    },
+    "Eras": {
+        "description": "Aesthetics defined by specific historical periods.",
+        "members": [
+            "1990s",
+            "2000s",
+            "2010s",
+            "Ancient Egypt",
+            "Bronze Age",
+            "Classical",
+            "Eras",
+            "Medieval",
+            "Regency",
+            "Retro",
+            "Time",
+            "Vintage",
+            "Vintage Fashion"
+        ]
+    },
+    "Ethereal": {
+        "description": "Aesthetics that are extremely delicate and light in a way that seems too perfect for this world.",
+        "members": [
+            "Angelcore",
+            "Auroracore",
+            "Clouds",
+            "Ethereal",
+            "Fairycore",
+            "Light Academia",
+            "Spiritcore"
+        ]
+    },
+    "Everyday": {
+        "description": "Aesthetics that find beauty in the mundane and ordinary aspects of daily life.",
+        "members": [
+            "Everyday",
+            "Normcore",
+            "Slice of Life"
+        ]
+    },
+    "Fandom": {
+        "description": "Aesthetics created and shared by fans of a particular media franchise or celebrity.",
+        "members": [
+            "Animecore",
+            "Bridgerton",
+            "Fandom",
+            "Sanriocore"
+        ]
+    },
+    "Feminine": {
+        "description": "Aesthetics that emphasize traditionally feminine qualities, styles, and interests.",
+        "members": [
+            "Baddie",
+            "Coquette",
+            "Feminine",
+            "Feminine Rage",
+            "Girly",
+            "Lolita",
+            "Pastel",
+            "Princesscore",
+            "Softie"
+        ]
+    },
+    "Food": {
+        "description": "Aesthetics that are centered around food, cooking, and eating.",
+        "members": [
+            "Dinner Party",
+            "Food",
+            "Honeycore",
+            "Mushroomcore"
+        ]
+    },
+    "Forest": {
+        "description": "Aesthetics inspired by forests, woods, and the creatures within them.",
+        "members": [
+            "Cabincore",
+            "Forest",
+            "Forestpunk",
+            "Goblincore",
+            "Mori Kei"
+        ]
+    },
+    "Frogs": {
+        "description": "Aesthetics that specifically celebrate frogs and amphibians.",
+        "members": [
+            "Frogs",
+            "Goblincore"
+        ]
+    },
+    "Futurism": {
+        "description": "Aesthetics that are concerned with the future, technology, and speed.",
+        "members": [
+            "Afrofuturism",
+            "Cyberpunk",
+            "Futurism",
+            "Retrofuturism",
+            "Solarpunk",
+            "Steampunk"
+        ]
+    },
+    "Gloom": {
+        "description": "Aesthetics characterized by a sense of depression or despair.",
+        "members": [
+            "Dark",
+            "Gloom",
+            "Sad"
+        ]
+    },
+    "Glow": {
+        "description": "Aesthetics that feature glowing, luminous, or neon elements.",
+        "members": [
+            "Auroracore",
+            "Glow",
+            "Glowwave",
+            "Neon"
+        ]
+    },
+    "Gods": {
+        "description": "Aesthetics inspired by deities and mythology from various cultures.",
+        "members": [
+            "Angelcore",
+            "Biblicore",
+            "Christian",
+            "Classical",
+            "Devilcore",
+            "Gods",
+            "Mythical"
+        ]
+    },
+    "Golden": {
+        "description": "Aesthetics that prominently feature the color gold, often symbolizing wealth, divinity, or beauty.",
+        "members": [
+            "Golden",
+            "Light Academia",
+            "Old Money",
+            "Royalcore"
+        ]
+    },
+    "Horror": {
+        "description": "Aesthetics designed to elicit fear, shock, or disgust.",
+        "members": [
+            "Body Horror",
+            "Cosmic Horror",
+            "Digital Gore",
+            "Goth",
+            "Horror",
+            "Horror Subgenres",
+            "Spooky",
+            "Unsettling",
+            "Vampire"
+        ]
+    },
+    "Horror Subgenres": {
+        "description": "Aesthetics based on specific subgenres of horror fiction and film.",
+        "members": [
+            "Body Horror",
+            "Cosmic Horror",
+            "Digital Gore",
+            "Horror Subgenres"
+        ]
+    },
+    "Industrial": {
+        "description": "Aesthetics inspired by industrial machinery, factories, and urban landscapes.",
+        "members": [
+            "Industrial",
+            "Rivethead",
+            "Steampunk"
+        ]
+    },
+    "Light": {
+        "description": "Aesthetics characterized by brightness, purity, and optimism.",
+        "members": [
+            "Angelcore",
+            "Ethereal",
+            "Light",
+            "Light Academia",
+            "Pastel"
+        ]
+    },
+    "Liminal Space": {
+        "description": "Aesthetics that evoke a sense of being in-between places or states, often feeling unsettling or nostalgic.",
+        "members": [
+            "Dreamcore",
+            "Liminal Space",
+            "Poolcore",
+            "Unsettling"
+        ]
+    },
+    "Literary": {
+        "description": "Aesthetics inspired by literature, books, and writing.",
+        "members": [
+            "Biblicore",
+            "Dark Academia",
+            "Light Academia",
+            "Literary",
+            "Romantic"
+        ]
+    },
+    "Locations": {
+        "description": "Aesthetics based on specific real or imagined places.",
+        "members": [
+            "British Countryside",
+            "Forest",
+            "Liminal Space",
+            "Locations",
+            "Ocean",
+            "Poolcore",
+            "School",
+            "Space",
+            "Urban"
+        ]
+    },
+    "Love": {
+        "description": "Aesthetics centered around themes of romance, affection, and love.",
+        "members": [
+            "Coquette",
+            "Love",
+            "Lovecore",
+            "Romantic"
+        ]
+    },
+    "Masculine": {
+        "description": "Aesthetics that emphasize traditionally masculine qualities and styles.",
+        "members": [
+            "Biker",
+            "Masculine",
+            "Military",
+            "Ouji"
+        ]
+    },
+    "Medical": {
+        "description": "Aesthetics that draw inspiration from medicine, hospitals, and anatomical science.",
+        "members": [
+            "Anatomy",
+            "Medical"
+        ]
+    },
+    "Medieval": {
+        "description": "Aesthetics inspired by the Middle Ages.",
+        "members": [
+            "Bardcore",
+            "Dark Academia",
+            "Dungeon Synth",
+            "Medieval",
+            "Royalcore"
+        ]
+    },
+    "Military": {
+        "description": "Aesthetics that incorporate elements of military uniforms, equipment, and themes.",
+        "members": [
+            "Military",
+            "Military Lolita",
+            "Steampunk"
+        ]
+    },
+    "Money": {
+        "description": "Aesthetics that revolve around wealth, luxury, and currency.",
+        "members": [
+            "Bling",
+            "Golden",
+            "Money",
+            "New Money",
+            "Old Money"
+        ]
+    },
+    "Music": {
+        "description": "Aesthetics associated with specific genres of music.",
+        "members": [
+            "Bardcore",
+            "Chillwave",
+            "Darkwave",
+            "Deathrock",
+            "Dungeon Synth",
+            "Emo",
+            "Goth",
+            "Grunge",
+            "Hip-Hop",
+            "Indie",
+            "Midwest Emo",
+            "Music",
+            "Punk",
+            "Rave",
+            "Scene",
+            "Synthwave",
+            "Vaporwave",
+            "Wave"
+        ]
+    },
+    "Mystical": {
+        "description": "Aesthetics related to mysticism, magic, and the supernatural.",
+        "members": [
+            "Celestial",
+            "Ethereal",
+            "Mystical",
+            "Spiritual",
+            "Witch"
+        ]
+    },
+    "Mythical": {
+        "description": "Aesthetics inspired by myths, legends, and folklore.",
+        "members": [
+            "Angelcore",
+            "Dragoncore",
+            "Fairycore",
+            "Gods",
+            "Mermaidcore",
+            "Mythical",
+            "Vampire"
+        ]
+    },
+    "Nautical": {
+        "description": "Aesthetics inspired by sailors, ships, and the sea.",
+        "members": [
+            "Nautical",
+            "Ocean",
+            "Piratecore",
+            "Sailor Lolita",
+            "Seapunk",
+            "Underwater"
+        ]
+    },
+    "Nature": {
+        "description": "Aesthetics that celebrate the natural world.",
+        "members": [
+            "Animals",
+            "Autumn",
+            "Bloomcore",
+            "Clouds",
+            "Cottagecore",
+            "Dark Naturalism",
+            "Earth",
+            "Elements",
+            "Environment",
+            "Forest",
+            "Goblincore",
+            "Green",
+            "Honeycore",
+            "Mosscore",
+            "Mushroomcore",
+            "Nature",
+            "Ocean",
+            "Plants",
+            "Rustic",
+            "Seasonal",
+            "Sky",
+            "Solarpunk",
+            "Spring",
+            "Summer",
+            "Vulture Culture",
+            "Water",
+            "Weather",
+            "Winter"
+        ]
+    },
+    "Ocean": {
+        "description": "Aesthetics inspired by the ocean and marine life.",
+        "members": [
+            "Mermaidcore",
+            "Nautical",
+            "Ocean",
+            "Ocean Academia",
+            "Ocean Grunge",
+            "Seapunk",
+            "Tropical",
+            "Underwater"
+        ]
+    },
+    "Old": {
+        "description": "Aesthetics that evoke a sense of age, history, and nostalgia.",
+        "members": [
+            "Antique",
+            "Classical",
+            "Eras",
+            "Medieval",
+            "Old",
+            "Old Hollywood",
+            "Old Money",
+            "Retro",
+            "Rustic",
+            "Time",
+            "Vintage",
+            "Vintage Fashion"
+        ]
+    },
+    "Party": {
+        "description": "Aesthetics associated with celebrations, parties, and nightlife.",
+        "members": [
+            "Clowncore",
+            "Dinner Party",
+            "Neon",
+            "Party",
+            "Rave"
+        ]
+    },
+    "Pastel": {
+        "description": "Aesthetics that utilize a soft, pale color palette.",
+        "members": [
+            "Kawaii",
+            "Light Academia",
+            "Pastel",
+            "Pastel Goth",
+            "Softie",
+            "Sweet Lolita"
+        ]
+    },
+    "Patterns": {
+        "description": "Aesthetics that focus on repeating decorative designs.",
+        "members": [
+            "Argyle",
+            "Paisley",
+            "Patterns",
+            "Plaid"
+        ]
+    },
+    "People": {
+        "description": "Aesthetics centered around different types of people, social roles, or subcultures.",
+        "members": [
+            "Baddie",
+            "Biker",
+            "Clowncore",
+            "Coquette",
+            "Cowboy",
+            "Dandy",
+            "Emo",
+            "Fandom",
+            "Flapper",
+            "Girly",
+            "Goth",
+            "Greaser",
+            "Grunge",
+            "Hippie",
+            "Hipster",
+            "Lolita",
+            "Masculine",
+            "Mod",
+            "People",
+            "Piratecore",
+            "Preppy",
+            "Princesscore",
+            "Punk",
+            "Rocker",
+            "Skater",
+            "Teddy Boy",
+            "Vampire",
+            "Villain",
+            "Witch",
+            "Youth",
+            "Yuppie"
+        ]
+    },
+    "Plants": {
+        "description": "Aesthetics that feature plants, flowers, and gardens.",
+        "members": [
+            "Bloomcore",
+            "Cottagecore",
+            "Green",
+            "Mushroomcore",
+            "Plants"
+        ]
+    },
+    "Political": {
+        "description": "Aesthetics that are tied to a specific political ideology or movement.",
+        "members": [
+            "Anarcho-Punk",
+            "Feminine Rage",
+            "Laborwave",
+            "Political",
+            "Riot Grrrl"
+        ]
+    },
+    "Psychedelic": {
+        "description": "Aesthetics inspired by psychedelic experiences, characterized by distorted visuals and vibrant colors.",
+        "members": [
+            "Cyberdelic",
+            "Glitch",
+            "Psychedelic",
+            "Surreal",
+            "Weird"
+        ]
+    },
+    "Rainbow": {
+        "description": "Aesthetics that feature the colors of the rainbow.",
+        "members": [
+            "Kidcore",
+            "Rainbow",
+            "Rainbowcore"
+        ]
+    },
+    "Regency": {
+        "description": "Aesthetics inspired by the English Regency period (roughly 1811-1820).",
+        "members": [
+            "Bridgerton",
+            "Dandy",
+            "Regency",
+            "Romantic"
+        ]
+    },
+    "Religious": {
+        "description": "Aesthetics derived from various religions, their symbols, and traditions.",
+        "members": [
+            "Angelcore",
+            "Biblicore",
+            "Christian",
+            "Devilcore",
+            "Gods",
+            "Religious",
+            "Spiritual"
+        ]
+    },
+    "Retro": {
+        "description": "Aesthetics that imitate trends, modes, and styles from the recent past.",
+        "members": [
+            "1990s",
+            "2000s",
+            "2010s",
+            "Atompunk",
+            "Cassette Futurism",
+            "Cyberpunk",
+            "Frutiger Aero",
+            "Old Web",
+            "Retrofuturism",
+            "Retro",
+            "Steampunk",
+            "Synthwave",
+            "Vaporwave",
+            "Vintage",
+            "Y2K"
+        ]
+    },
+    "Romantic": {
+        "description": "Aesthetics that emphasize emotion, individualism, and the beauty of nature.",
+        "members": [
+            "Bridgerton",
+            "Coquette",
+            "Light Academia",
+            "Love",
+            "Regency",
+            "Romantic",
+            "Romantic Academia",
+            "Romantic Goth"
+        ]
+    },
+    "Royalty": {
+        "description": "Aesthetics inspired by kings, queens, and the concept of royalty.",
+        "members": [
+            "Bridgerton",
+            "Princesscore",
+            "Regency",
+            "Royalcore",
+            "Royalty"
+        ]
+    },
+    "Rustic": {
+        "description": "Aesthetics that emphasize a simple, rural, and unrefined quality.",
+        "members": [
+            "Cabincore",
+            "Cottagecore",
+            "Country",
+            "Dark Naturalism",
+            "Farmcore",
+            "Goblincore",
+            "Rustic",
+            "Western"
+        ]
+    },
+    "Sad": {
+        "description": "Aesthetics that evoke feelings of sadness, melancholy, and nostalgia.",
+        "members": [
+            "Dark",
+            "Emo",
+            "Gloom",
+            "Sad",
+            "Slice of Life"
+        ]
+    },
+    "School": {
+        "description": "Aesthetics related to school, learning, and academic life.",
+        "members": [
+            "Academia",
+            "Dark Academia",
+            "Light Academia",
+            "Preppy",
+            "School"
+        ]
+    },
+    "Science": {
+        "description": "Aesthetics inspired by scientific concepts, laboratories, and experiments.",
+        "members": [
+            "Anatomy",
+            "Biopunk",
+            "Cyberpunk",
+            "Environment",
+            "Medical",
+            "Science",
+            "Space",
+            "Steampunk",
+            "Technology",
+            "Weather"
+        ]
+    },
+    "Seasonal": {
+        "description": "Aesthetics based on the different seasons of the year.",
+        "members": [
+            "Autumn",
+            "Seasonal",
+            "Spring",
+            "Summer",
+            "Winter"
+        ]
+    },
+    "Shapes": {
+        "description": "Aesthetics that focus on geometric shapes and forms.",
+        "members": [
+            "Art Deco",
+            "Bauhaus",
+            "Cubism",
+            "Shapes"
+        ]
+    },
+    "Sky": {
+        "description": "Aesthetics that feature the sky, whether day or night, as a central theme.",
+        "members": [
+            "Auroracore",
+            "Clouds",
+            "Sky",
+            "Space",
+            "Star",
+            "Weather"
+        ]
+    },
+    "Space": {
+        "description": "Aesthetics inspired by outer space, planets, and space exploration.",
+        "members": [
+            "Alien",
+            "Atompunk",
+            "Celestial",
+            "Retrofuturism",
+            "Sky",
+            "Space",
+            "Spacecore"
+        ]
+    },
+    "Spiritual": {
+        "description": "Aesthetics that relate to the human spirit or soul as opposed to material or physical things.",
+        "members": [
+            "Angelcore",
+            "Auroracore",
+            "Ethereal",
+            "Mystical",
+            "Religious",
+            "Spiritual",
+            "Spiritcore",
+            "Witch"
+        ]
+    },
+    "Spooky": {
+        "description": "Aesthetics that are eerie, unsettling, or related to Halloween.",
+        "members": [
+            "Autumn",
+            "Goth",
+            "Horror",
+            "Spooky",
+            "Vampire",
+            "Witch"
+        ]
+    },
+    "Spring": {
+        "description": "Aesthetics related to the season of Spring.",
+        "members": [
+            "Bloomcore",
+            "Pastel",
+            "Spring"
+        ]
+    },
+    "Summer": {
+        "description": "Aesthetics related to the season of Summer.",
+        "members": [
+            "Nautical",
+            "Ocean",
+            "Poolcore",
+            "Summer",
+            "Tropical"
+        ]
+    },
+    "Surreal": {
+        "description": "Aesthetics that are bizarre, dream-like, and defy logical explanation.",
+        "members": [
+            "Cyberdelic",
+            "Dada",
+            "Dreamcore",
+            "Dreams",
+            "Psychedelic",
+            "Surreal",
+            "Weird"
+        ]
+    },
+    "Technology": {
+        "description": "Aesthetics that are centered around technology.",
+        "members": [
+            "Atompunk",
+            "Biopunk",
+            "Cyberpunk",
+            "Frutiger Aero",
+            "Futurism",
+            "Industrial",
+            "Retrofuturism",
+            "Science",
+            "Steampunk",
+            "Technology",
+            "Vaporwave",
+            "Y2K"
+        ]
+    },
+    "Time": {
+        "description": "Aesthetics that explore the concept of time, including different historical periods and the passage of time.",
+        "members": [
+            "Clockpunk",
+            "Eras",
+            "Futurism",
+            "Old",
+            "Retro",
+            "Steampunk",
+            "Time",
+            "Vintage"
+        ]
+    },
+    "Transportation": {
+        "description": "Aesthetics inspired by various modes of transport.",
+        "members": [
+            "Biker",
+            "Nautical",
+            "Steampunk",
+            "Transportation"
+        ]
+    },
+    "Travel": {
+        "description": "Aesthetics related to travel, exploration, and different cultures.",
+        "members": [
+            "Adventurecore",
+            "Nautical",
+            "Travel",
+            "Tropical"
+        ]
+    },
+    "Tropical": {
+        "description": "Aesthetics inspired by the tropics, featuring lush plants, bright colors, and a relaxed atmosphere.",
+        "members": [
+            "Jungle",
+            "Ocean",
+            "Summer",
+            "Tropical"
+        ]
+    },
+    "Underwater": {
+        "description": "Aesthetics that focus on the world beneath the water's surface.",
+        "members": [
+            "Mermaidcore",
+            "Nautical",
+            "Ocean",
+            "Poolcore",
+            "Seapunk",
+            "Underwater"
+        ]
+    },
+    "Unique": {
+        "description": "Aesthetics that are unconventional and do not fit neatly into other categories.",
+        "members": [
+            "Bizarro",
+            "Tacky",
+            "Unique",
+            "Weird"
+        ]
+    },
+    "Unsettling": {
+        "description": "Aesthetics that are designed to be disturbing or unnerving.",
+        "members": [
+            "Body Horror",
+            "Dreamcore",
+            "Horror",
+            "Liminal Space",
+            "Spooky",
+            "Surreal",
+            "Unsettling",
+            "Weird"
+        ]
+    },
+    "Urban": {
+        "description": "Aesthetics related to city life.",
+        "members": [
+            "Cyberpunk",
+            "Hip-Hop",
+            "Industrial",
+            "Rivethead",
+            "Skater",
+            "Streetwear",
+            "Urban"
+        ]
+    },
+    "Vampire": {
+        "description": "Aesthetics inspired by vampires in folklore and fiction.",
+        "members": [
+            "Goth",
+            "Horror",
+            "Spooky",
+            "Vampire"
+        ]
+    },
+    "Video Games": {
+        "description": "Aesthetics derived from the visual styles of video games.",
+        "members": [
+            "8-Bit",
+            "Nintendo",
+            "Sanriocore",
+            "Vaporwave",
+            "Video Games"
+        ]
+    },
+    "Villain": {
+        "description": "Aesthetics centered around the archetype of the villain or antagonist.",
+        "members": [
+            "Dark Academia",
+            "Devilcore",
+            "Goth",
+            "Vampire",
+            "Villain"
+        ]
+    },
+    "Vintage Fashion": {
+        "description": "Aesthetics that focus on clothing from previous eras.",
+        "members": [
+            "Dandy",
+            "Flapper",
+            "Greaser",
+            "Hippie",
+            "Lolita",
+            "Mod",
+            "Pin-Up",
+            "Rocker",
+            "Teddy Boy",
+            "Twee",
+            "Vintage",
+            "Vintage Fashion",
+            "Y2K"
+        ]
+    },
+    "Violence": {
+        "description": "Aesthetics that explore themes of violence and aggression.",
+        "members": [
+            "Body Horror",
+            "Digital Gore",
+            "Feminine Rage",
+            "Horror",
+            "Military",
+            "Punk",
+            "Violence"
+        ]
+    },
+    "Water": {
+        "description": "Aesthetics inspired by water in all its forms.",
+        "members": [
+            "Clouds",
+            "Nautical",
+            "Ocean",
+            "Poolcore",
+            "Seapunk",
+            "Underwater",
+            "Water",
+            "Weather"
+        ]
+    },
+    "Weather": {
+        "description": "Aesthetics that are inspired by different weather phenomena.",
+        "members": [
+            "Autumn",
+            "Clouds",
+            "Sky",
+            "Spring",
+            "Summer",
+            "Weather",
+            "Winter"
+        ]
+    },
+    "Weird": {
+        "description": "Aesthetics that are strange, eccentric, or bizarre.",
+        "members": [
+            "Bizarro",
+            "Dreamcore",
+            "Glitch",
+            "Goblincore",
+            "Surreal",
+            "Tacky",
+            "Unique",
+            "Unsettling",
+            "Weird",
+            "Weirdcore"
+        ]
+    },
+    "Western": {
+        "description": "Aesthetics inspired by the American West during the 19th century.",
+        "members": [
+            "Cowboy",
+            "Rustic",
+            "Western",
+            "Wild West"
+        ]
+    },
+    "Winter": {
+        "description": "Aesthetics related to the season of Winter.",
+        "members": [
+            "Christmas",
+            "Winter"
+        ]
+    },
+    "Witch": {
+        "description": "Aesthetics inspired by witches, witchcraft, and magic.",
+        "members": [
+            "Goth",
+            "Mystical",
+            "Spooky",
+            "Witch",
+            "Witchcore"
+        ]
+    },
+    "Youth": {
+        "description": "Aesthetics that are associated with youth subcultures and the experience of being young.",
+        "members": [
+            "Emo",
+            "Indie",
+            "Kidcore",
+            "Punk",
+            "Rave",
+            "Scene",
+            "Skater",
+            "Softie",
+            "Teen",
+            "Twee",
+            "Youth"
+        ]
+    }
+}

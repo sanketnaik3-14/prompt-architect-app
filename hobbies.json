@@ -1,0 +1,4227 @@
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Painting",
+                        "Drawing",
+                        "Sketching",
+                        "Illustration",
+                        "Sculpting",
+                        "Pottery",
+                        "Photography",
+                        "Graphic design",
+                        "Animation",
+                        "Calligraphy",
+                        "Cartooning"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Knitting",
+                        "Crocheting",
+                        "Sewing",
+                        "Embroidery",
+                        "Quilting",
+                        "Weaving",
+                        "Macrame"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Origami",
+                        "Scrapbooking",
+                        "Card making",
+                        "Journaling",
+                        "Paper quilling",
+                        "Bookbinding"
+                    ]
+                },
+                {
+                    "name": "Decorative Crafts",
+                    "activities": [
+                        "Jewelry making",
+                        "Soap making",
+                        "Candle making",
+                        "Woodburning",
+                        "Miniature painting",
+                        "Model building"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Playing a musical instrument",
+                        "Singing",
+                        "Songwriting",
+                        "Music production",
+                        "DJing",
+                        "Composing music",
+                        "Listening to music"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Acting",
+                        "Improvisation",
+                        "Stand-up comedy",
+                        "Magic tricks"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Dancing (various styles)",
+                        "Ballroom dancing",
+                        "Hip hop dancing",
+                        "Ballet"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Hiking",
+                        "Rock climbing",
+                        "Kayaking",
+                        "Canoeing",
+                        "Skydiving",
+                        "Surfing",
+                        "White-water rafting",
+                        "Skiing",
+                        "Snowboarding",
+                        "Scuba diving"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Camping",
+                        "Backpacking",
+                        "Fishing",
+                        "Gardening",
+                        "Birdwatching",
+                        "Stargazing",
+                        "Geocaching",
+                        "Kite flying",
+                        "Metal detecting",
+                        "Cloud watching"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Road biking",
+                        "Mountain biking",
+                        "Cyclocross",
+                        "BMX"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Horseback riding",
+                        "Dog training",
+                        "Playing with pets"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Soccer",
+                        "Basketball",
+                        "Volleyball",
+                        "Baseball",
+                        "Football",
+                        "Pickleball",
+                        "Badminton"
+                    ]
+                },
+                {
+                    "name": "Individual Sports",
+                    "activities": [
+                        "Running",
+                        "Swimming",
+                        "Yoga",
+                        "Pilates",
+                        "Weightlifting",
+                        "Martial arts",
+                        "Skateboarding",
+                        "Rollerblading",
+                        "Golf",
+                        "Tennis",
+                        "Archery"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Skiing",
+                        "Snowboarding",
+                        "Ice skating"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Learning a new language",
+                        "Taking online classes",
+                        "Reading books",
+                        "Writing stories or poetry",
+                        "Blogging",
+                        "Listening to podcasts",
+                        "Genealogy",
+                        "Researching history"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Playing board games",
+                        "Solving crossword puzzles",
+                        "Playing Sudoku",
+                        "Chess",
+                        "Card games",
+                        "Playing video games",
+                        "Speedcubing"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Trivia",
+                        "Watching documentaries",
+                        "Studying film",
+                        "Astronomy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Stamp collecting",
+                        "Coin collecting",
+                        "Collecting action figures",
+                        "Collecting comic books",
+                        "Collecting vinyl records",
+                        "Collecting trading cards"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting antiques",
+                        "Collecting vintage clothing",
+                        "Thrift shopping"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting seashells",
+                        "Collecting sea glass",
+                        "Collecting crystals",
+                        "Collecting rocks"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cooking",
+                        "Baking",
+                        "Grilling",
+                        "Pizza making",
+                        "Cheesemaking"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Home brewing",
+                        "Wine tasting",
+                        "Crafting cocktails",
+                        "Coffee brewing"
+                    ]
+                },
+                {
+                    "name": "Knowledge & Social",
+                    "activities": [
+                        "Collecting cookbooks",
+                        "Hosting dinner parties",
+                        "Food blogging"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "3D printing",
+                        "Computer programming",
+                        "Web design",
+                        "App building",
+                        "Podcasting",
+                        "Video editing",
+                        "Content creation"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Woodworking",
+                        "DIY projects",
+                        "Furniture restoration",
+                        "Car restoration"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Robotics",
+                        "Building computers",
+                        "Electronics tinkering",
+                        "Drone flying"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Volunteering",
+                        "Joining a book club",
+                        "Running clubs",
+                        "Community gardening",
+                        "Attending theater",
+                        "Organizing local meetups"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Event planning",
+                        "Attending networking events"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Meditation",
+                        "Yoga Nidra",
+                        "Mindful walking",
+                        "Astrology"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Self-massage",
+                        "Sound baths"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Painting",
+                        "Drawing",
+                        "Sketching",
+                        "Illustration",
+                        "Sculpting",
+                        "Pottery",
+                        "Photography",
+                        "Graphic design",
+                        "Animation",
+                        "Calligraphy",
+                        "Cartooning",
+                        "Graffiti art",
+                        "Digital drawing",
+                        "3D modeling"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Knitting",
+                        "Crocheting",
+                        "Sewing",
+                        "Embroidery",
+                        "Quilting",
+                        "Weaving",
+                        "Macrame",
+                        "Cross-stitching",
+                        "Punch needling",
+                        "Dressmaking"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Origami",
+                        "Scrapbooking",
+                        "Card making",
+                        "Journaling",
+                        "Bullet journaling",
+                        "Paper quilling",
+                        "Bookbinding",
+                        "Collaging"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Jewelry making",
+                        "Soap making",
+                        "Candle making",
+                        "Woodburning",
+                        "Miniature painting",
+                        "Model building",
+                        "DIY home projects",
+                        "Upcycling",
+                        "Furniture restoration"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Writing stories",
+                        "Poetry",
+                        "Blogging",
+                        "Screenwriting",
+                        "Fan fiction",
+                        "Memoir writing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Playing a musical instrument",
+                        "Singing",
+                        "Songwriting",
+                        "Music production",
+                        "DJing",
+                        "Composing music",
+                        "Listening to music",
+                        "Collecting vinyl records"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Acting",
+                        "Improvisation",
+                        "Stand-up comedy",
+                        "Magic tricks",
+                        "Juggling"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Dancing (various styles)",
+                        "Ballroom dancing",
+                        "Hip hop dancing",
+                        "Ballet",
+                        "Choreography"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Podcasting",
+                        "Storytelling",
+                        "Hosting events",
+                        "Public speaking"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Hiking",
+                        "Rock climbing",
+                        "Kayaking",
+                        "Canoeing",
+                        "Skydiving",
+                        "Surfing",
+                        "White-water rafting",
+                        "Skiing",
+                        "Snowboarding",
+                        "Scuba diving",
+                        "Mountaineering",
+                        "Kite surfing",
+                        "Sailing",
+                        "Backpacking"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Camping",
+                        "Fishing",
+                        "Gardening",
+                        "Birdwatching",
+                        "Stargazing",
+                        "Geocaching",
+                        "Kite flying",
+                        "Metal detecting",
+                        "Cloud watching",
+                        "Foraging",
+                        "Beachcombing"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Road biking",
+                        "Mountain biking",
+                        "Cyclocross",
+                        "BMX"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Horseback riding",
+                        "Dog training",
+                        "Pet fostering",
+                        "Birdwatching"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Soccer",
+                        "Basketball",
+                        "Volleyball",
+                        "Baseball",
+                        "Football",
+                        "Pickleball",
+                        "Badminton",
+                        "Handball",
+                        "Paintball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Running",
+                        "Swimming",
+                        "Yoga",
+                        "Pilates",
+                        "Weightlifting",
+                        "Martial arts",
+                        "Skateboarding",
+                        "Rollerblading",
+                        "Golf",
+                        "Tennis",
+                        "Archery",
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Home workouts",
+                        "Personal training"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Skiing",
+                        "Snowboarding",
+                        "Ice skating",
+                        "Sledding",
+                        "Snowshoeing"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Drone racing",
+                        "Competitive swimming",
+                        "Marathon running"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Learning a new language",
+                        "Taking online classes",
+                        "Reading books",
+                        "Listening to podcasts",
+                        "Genealogy",
+                        "Researching history",
+                        "Watching documentaries",
+                        "Astrology"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Playing board games",
+                        "Solving crossword puzzles",
+                        "Playing Sudoku",
+                        "Chess",
+                        "Card games",
+                        "Playing video games",
+                        "Speedcubing",
+                        "Jigsaw puzzles",
+                        "Escape rooms",
+                        "Trivia",
+                        "Fantasy sports"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Studying film",
+                        "Astronomy",
+                        "Election forecasting",
+                        "DIY science experiments"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Stamp collecting",
+                        "Coin collecting",
+                        "Collecting action figures",
+                        "Collecting comic books",
+                        "Collecting vinyl records",
+                        "Collecting trading cards",
+                        "Collecting memorabilia",
+                        "Collecting LEGO sets"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting antiques",
+                        "Collecting vintage clothing",
+                        "Thrift shopping",
+                        "Collecting vintage decor"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting seashells",
+                        "Collecting sea glass",
+                        "Collecting crystals",
+                        "Collecting rocks",
+                        "Collecting driftwood"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cooking",
+                        "Baking",
+                        "Grilling",
+                        "Pizza making",
+                        "Cheesemaking",
+                        "Bread making",
+                        "Pickling",
+                        "Hosting dinner parties",
+                        "Food blogging"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Home brewing (beer, kombucha)",
+                        "Wine tasting",
+                        "Crafting cocktails (mixology)",
+                        "Coffee brewing (barista skills)",
+                        "Wine making"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "3D printing",
+                        "Computer programming",
+                        "Web design",
+                        "App building",
+                        "Podcasting",
+                        "Video editing",
+                        "Content creation",
+                        "Game development",
+                        "Data analysis",
+                        "Digital art"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Woodworking",
+                        "DIY projects",
+                        "Furniture restoration",
+                        "Car restoration",
+                        "Electronics repair",
+                        "Home organization"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Robotics",
+                        "Building computers",
+                        "Electronics tinkering",
+                        "Drone flying",
+                        "Arduino projects",
+                        "Smart home automation"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Volunteering",
+                        "Joining a book club",
+                        "Running clubs",
+                        "Community gardening",
+                        "Attending theater",
+                        "Organizing local meetups",
+                        "Board game groups",
+                        "Hosting parties"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Event planning",
+                        "Attending networking events",
+                        "Museum visiting"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Meditation",
+                        "Yoga Nidra",
+                        "Mindful walking",
+                        "Astrology",
+                        "Tarot card reading"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy",
+                        "Self-massage"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Sound baths",
+                        "Practicing gratitude"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Traveling",
+                        "Sightseeing",
+                        "Road trips",
+                        "Urban exploration",
+                        "Exploring other cultures"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "Collecting postcards",
+                        "Collecting travel souvenirs",
+                        "National Park stamp collection"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Painting",
+                        "Drawing",
+                        "Sketching",
+                        "Illustration",
+                        "Sculpting",
+                        "Pottery",
+                        "Photography",
+                        "Graphic design",
+                        "Animation",
+                        "Calligraphy",
+                        "Cartooning",
+                        "Graffiti art",
+                        "Digital drawing",
+                        "3D modeling"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Knitting",
+                        "Crocheting",
+                        "Sewing",
+                        "Embroidery",
+                        "Quilting",
+                        "Weaving",
+                        "Macrame",
+                        "Cross-stitching",
+                        "Punch needling",
+                        "Dressmaking",
+                        "Needlepoint"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Origami",
+                        "Scrapbooking",
+                        "Card making",
+                        "Journaling",
+                        "Bullet journaling",
+                        "Paper quilling",
+                        "Bookbinding",
+                        "Collaging",
+                        "Paper making"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Jewelry making",
+                        "Soap making",
+                        "Candle making",
+                        "Woodburning",
+                        "Miniature painting",
+                        "Model building",
+                        "DIY home projects",
+                        "Upcycling",
+                        "Furniture restoration",
+                        "Flower pressing",
+                        "Terrarium building",
+                        "Balloon art",
+                        "Glass blowing",
+                        "Leather crafting"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Writing stories",
+                        "Poetry",
+                        "Blogging",
+                        "Screenwriting",
+                        "Fan fiction",
+                        "Memoir writing",
+                        "Essay writing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Playing a musical instrument",
+                        "Singing",
+                        "Songwriting",
+                        "Music production",
+                        "DJing",
+                        "Composing music",
+                        "Listening to music",
+                        "Collecting vinyl records",
+                        "Karaoke"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Acting",
+                        "Improvisation",
+                        "Stand-up comedy",
+                        "Magic tricks",
+                        "Juggling"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Dancing (various styles)",
+                        "Ballroom dancing",
+                        "Hip hop dancing",
+                        "Ballet",
+                        "Choreography",
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Podcasting",
+                        "Storytelling",
+                        "Hosting events",
+                        "Public speaking",
+                        "Streaming"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Hiking",
+                        "Rock climbing",
+                        "Kayaking",
+                        "Canoeing",
+                        "Skydiving",
+                        "Surfing",
+                        "White-water rafting",
+                        "Skiing",
+                        "Snowboarding",
+                        "Scuba diving",
+                        "Mountaineering",
+                        "Kite surfing",
+                        "Sailing",
+                        "Backpacking",
+                        "Canyoneering",
+                        "Spelunking"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Camping",
+                        "Fishing",
+                        "Gardening",
+                        "Birdwatching",
+                        "Stargazing",
+                        "Geocaching",
+                        "Kite flying",
+                        "Metal detecting",
+                        "Cloud watching",
+                        "Foraging",
+                        "Beachcombing",
+                        "Ice fishing",
+                        "Train spotting"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Road biking",
+                        "Mountain biking",
+                        "Cyclocross",
+                        "BMX"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Horseback riding",
+                        "Dog training",
+                        "Pet fostering",
+                        "Birdwatching",
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Soccer",
+                        "Basketball",
+                        "Volleyball",
+                        "Baseball",
+                        "Football",
+                        "Pickleball",
+                        "Badminton",
+                        "Handball",
+                        "Paintball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Running",
+                        "Swimming",
+                        "Yoga",
+                        "Pilates",
+                        "Weightlifting",
+                        "Martial arts",
+                        "Skateboarding",
+                        "Rollerblading",
+                        "Golf",
+                        "Tennis",
+                        "Archery",
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Home workouts",
+                        "Personal training",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Skiing",
+                        "Snowboarding",
+                        "Ice skating",
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Drone racing",
+                        "Competitive swimming",
+                        "Marathon running",
+                        "Go-kart racing",
+                        "Hula hooping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Learning a new language",
+                        "Taking online classes",
+                        "Reading books",
+                        "Listening to podcasts",
+                        "Genealogy",
+                        "Researching history",
+                        "Watching documentaries",
+                        "Astrology",
+                        "Election forecasting",
+                        "Meteorology",
+                        "Wikipedia editing"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Playing board games",
+                        "Solving crossword puzzles",
+                        "Playing Sudoku",
+                        "Chess",
+                        "Card games",
+                        "Playing video games",
+                        "Speedcubing",
+                        "Jigsaw puzzles",
+                        "Escape rooms",
+                        "Trivia",
+                        "Fantasy sports"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Studying film",
+                        "Astronomy",
+                        "DIY science experiments",
+                        "Investing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Stamp collecting",
+                        "Coin collecting",
+                        "Collecting action figures",
+                        "Collecting comic books",
+                        "Collecting vinyl records",
+                        "Collecting trading cards",
+                        "Collecting memorabilia",
+                        "Collecting LEGO sets",
+                        "Collecting postcards"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting antiques",
+                        "Collecting vintage clothing",
+                        "Thrift shopping",
+                        "Collecting vintage decor"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting seashells",
+                        "Collecting sea glass",
+                        "Collecting crystals",
+                        "Collecting rocks",
+                        "Collecting driftwood"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cooking",
+                        "Baking",
+                        "Grilling",
+                        "Pizza making",
+                        "Cheesemaking",
+                        "Bread making",
+                        "Pickling",
+                        "Hosting dinner parties",
+                        "Food blogging",
+                        "Cake decorating",
+                        "Latte art"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Home brewing (beer, kombucha)",
+                        "Wine tasting",
+                        "Crafting cocktails (mixology)",
+                        "Coffee brewing (barista skills)",
+                        "Wine making"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "3D printing",
+                        "Computer programming",
+                        "Web design",
+                        "App building",
+                        "Podcasting",
+                        "Video editing",
+                        "Content creation",
+                        "Game development",
+                        "Data analysis",
+                        "Digital art",
+                        "AI generated art"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Woodworking",
+                        "DIY projects",
+                        "Furniture restoration",
+                        "Car restoration",
+                        "Electronics repair",
+                        "Home organization",
+                        "Welding"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Robotics",
+                        "Building computers",
+                        "Electronics tinkering",
+                        "Drone flying",
+                        "Arduino projects",
+                        "Smart home automation",
+                        "Flying model planes/cars"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Volunteering",
+                        "Joining a book club",
+                        "Running clubs",
+                        "Community gardening",
+                        "Attending theater",
+                        "Organizing local meetups",
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Event planning",
+                        "Attending networking events",
+                        "Attending focus groups"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Meditation",
+                        "Yoga Nidra",
+                        "Mindful walking",
+                        "Astrology",
+                        "Tarot card reading"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy",
+                        "Self-massage"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Sound baths",
+                        "Practicing gratitude",
+                        "Making playlists"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Traveling",
+                        "Sightseeing",
+                        "Road trips",
+                        "Urban exploration",
+                        "Exploring other cultures",
+                        "Cruising"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "Collecting postcards",
+                        "Collecting travel souvenirs",
+                        "National Park stamp collection"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Vehicle Hobbies",
+            "subcategories": [
+                {
+                    "name": "Restoration",
+                    "activities": [
+                        "Car restoration"
+                    ]
+                },
+                {
+                    "name": "Driving",
+                    "activities": [
+                        "Hiring nice cars to drive in nature"
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "activities": [
+                        "Remote control car racing",
+                        "Go-kart racing"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Painting",
+                        "Drawing",
+                        "Sketching",
+                        "Illustration",
+                        "Sculpting",
+                        "Pottery",
+                        "Photography",
+                        "Graphic design",
+                        "Animation",
+                        "Calligraphy",
+                        "Cartooning",
+                        "Graffiti art",
+                        "Digital drawing",
+                        "3D modeling",
+                        "AI-generated art",
+                        "Sand art",
+                        "Microscopy",
+                        "Botanical illustration"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Knitting",
+                        "Crocheting",
+                        "Sewing",
+                        "Embroidery",
+                        "Quilting",
+                        "Weaving",
+                        "Macrame",
+                        "Cross-stitching",
+                        "Punch needling",
+                        "Dressmaking",
+                        "Needlepoint",
+                        "Tatting",
+                        "Lace making",
+                        "Natural dye making"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Origami",
+                        "Scrapbooking",
+                        "Card making",
+                        "Journaling",
+                        "Bullet journaling",
+                        "Paper quilling",
+                        "Bookbinding",
+                        "Collaging",
+                        "Paper making",
+                        "Postcrossing"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Jewelry making",
+                        "Soap making",
+                        "Candle making",
+                        "Woodburning",
+                        "Miniature painting",
+                        "Model building",
+                        "DIY home projects",
+                        "Upcycling",
+                        "Furniture restoration",
+                        "Flower pressing",
+                        "Terrarium building",
+                        "Balloon art",
+                        "Glass blowing",
+                        "Leather crafting",
+                        "Carving (wood, soap, ice)",
+                        "Lapidary (gemstone cutting)"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Writing stories",
+                        "Poetry",
+                        "Blogging",
+                        "Screenwriting",
+                        "Fan fiction",
+                        "Memoir writing",
+                        "Essay writing",
+                        "Worldbuilding"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Playing a musical instrument",
+                        "Singing",
+                        "Songwriting",
+                        "Music production",
+                        "DJing",
+                        "Composing music",
+                        "Listening to music",
+                        "Collecting vinyl records",
+                        "Karaoke",
+                        "Choir singing"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Acting",
+                        "Improvisation",
+                        "Stand-up comedy",
+                        "Magic tricks",
+                        "Juggling",
+                        "Puppetry",
+                        "Skit writing"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Dancing (various styles)",
+                        "Ballroom dancing",
+                        "Hip hop dancing",
+                        "Ballet",
+                        "Choreography",
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading",
+                        "Tai chi",
+                        "Zumba"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Podcasting",
+                        "Storytelling",
+                        "Hosting events",
+                        "Public speaking",
+                        "Streaming",
+                        "Video production"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Hiking",
+                        "Rock climbing",
+                        "Kayaking",
+                        "Canoeing",
+                        "Skydiving",
+                        "Surfing",
+                        "White-water rafting",
+                        "Skiing",
+                        "Snowboarding",
+                        "Scuba diving",
+                        "Mountaineering",
+                        "Kite surfing",
+                        "Sailing",
+                        "Backpacking",
+                        "Canyoneering",
+                        "Spelunking",
+                        "BASE jumping"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Camping",
+                        "Fishing",
+                        "Gardening",
+                        "Birdwatching",
+                        "Stargazing",
+                        "Geocaching",
+                        "Kite flying",
+                        "Metal detecting",
+                        "Cloud watching",
+                        "Foraging",
+                        "Beachcombing",
+                        "Ice fishing",
+                        "Trainspotting",
+                        "Drone flying",
+                        "Whale watching",
+                        "Mushroom hunting"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Road biking",
+                        "Mountain biking",
+                        "Cyclocross",
+                        "BMX",
+                        "Motorcycling"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Horseback riding",
+                        "Dog training",
+                        "Pet fostering",
+                        "Birdwatching",
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping",
+                        "Herpetology",
+                        "Fishkeeping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Soccer",
+                        "Basketball",
+                        "Volleyball",
+                        "Baseball",
+                        "Football",
+                        "Pickleball",
+                        "Badminton",
+                        "Handball",
+                        "Paintball",
+                        "Bubble football",
+                        "Fencing"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Running",
+                        "Swimming",
+                        "Yoga",
+                        "Pilates",
+                        "Weightlifting",
+                        "Martial arts",
+                        "Skateboarding",
+                        "Rollerblading",
+                        "Golf",
+                        "Tennis",
+                        "Archery",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Home workouts",
+                        "Personal training",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts",
+                        "Hula hooping",
+                        "Juggling"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Skiing",
+                        "Snowboarding",
+                        "Ice skating",
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Drone racing",
+                        "Competitive swimming",
+                        "Marathon running",
+                        "Go-kart racing",
+                        "Extreme ironing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Learning a new language",
+                        "Taking online classes",
+                        "Reading books",
+                        "Listening to podcasts",
+                        "Genealogy",
+                        "Researching history",
+                        "Watching documentaries",
+                        "Astrology",
+                        "Election forecasting",
+                        "Meteorology",
+                        "Wikipedia editing",
+                        "Numerology",
+                        "Urban exploration"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Playing board games",
+                        "Solving crossword puzzles",
+                        "Playing Sudoku",
+                        "Chess",
+                        "Card games",
+                        "Playing video games",
+                        "Speedcubing",
+                        "Jigsaw puzzles",
+                        "Escape rooms",
+                        "Trivia",
+                        "Fantasy sports",
+                        "Lego sets",
+                        "Role-playing games (RPG)",
+                        "War gaming",
+                        "Logic puzzles"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Studying film",
+                        "Astronomy",
+                        "DIY science experiments",
+                        "Investing",
+                        "Philately",
+                        "Numismatics",
+                        "Taxidermy",
+                        "Archaeology"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Stamp collecting",
+                        "Coin collecting",
+                        "Collecting action figures",
+                        "Collecting comic books",
+                        "Collecting vinyl records",
+                        "Collecting trading cards",
+                        "Collecting memorabilia",
+                        "Collecting Lego sets",
+                        "Collecting postcards",
+                        "Collecting uranium glass",
+                        "Collecting movie posters",
+                        "Collecting books"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting antiques",
+                        "Collecting vintage clothing",
+                        "Thrift shopping",
+                        "Collecting vintage decor",
+                        "Collecting vintage toys",
+                        "Collecting retro video games"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting seashells",
+                        "Collecting sea glass",
+                        "Collecting crystals",
+                        "Collecting rocks",
+                        "Collecting driftwood",
+                        "Collecting insects",
+                        "Collecting butterflies"
+                    ]
+                },
+                {
+                    "name": "Unusual Collections",
+                    "activities": [
+                        "Collecting naval fluff",
+                        "Collecting money from defunct countries"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cooking",
+                        "Baking",
+                        "Grilling",
+                        "Pizza making",
+                        "Cheesemaking",
+                        "Bread making",
+                        "Pickling",
+                        "Hosting dinner parties",
+                        "Food blogging",
+                        "Cake decorating",
+                        "Latte art",
+                        "Molecular gastronomy"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Home brewing (beer, kombucha)",
+                        "Wine tasting",
+                        "Crafting cocktails (mixology)",
+                        "Coffee brewing (barista skills)",
+                        "Wine making",
+                        "Coffee roasting"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "3D printing",
+                        "Computer programming",
+                        "Web design",
+                        "App building",
+                        "Podcasting",
+                        "Video editing",
+                        "Content creation",
+                        "Game development",
+                        "Data analysis",
+                        "Digital art",
+                        "AI-generated art",
+                        "Hacking (ethical)"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Woodworking",
+                        "DIY projects",
+                        "Furniture restoration",
+                        "Car restoration",
+                        "Electronics repair",
+                        "Home organization",
+                        "Welding",
+                        "Gunsmithing"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Robotics",
+                        "Building computers",
+                        "Electronics tinkering",
+                        "Drone flying",
+                        "Arduino projects",
+                        "Smart home automation",
+                        "Flying model planes/cars",
+                        "Amateur radio"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Volunteering",
+                        "Joining a book club",
+                        "Running clubs",
+                        "Community gardening",
+                        "Attending theater",
+                        "Organizing local meetups",
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Event planning",
+                        "Attending networking events",
+                        "Attending focus groups"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Meditation",
+                        "Yoga Nidra",
+                        "Mindful walking",
+                        "Astrology",
+                        "Tarot card reading",
+                        "Practicing gratitude"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy",
+                        "Self-massage"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Sound baths",
+                        "Making playlists",
+                        "Somatic therapy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Traveling",
+                        "Sightseeing",
+                        "Road trips",
+                        "Urban exploration",
+                        "Exploring other cultures",
+                        "Cruising",
+                        "Backpacking",
+                        "Pilgrimage",
+                        "Visiting historical sites"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "Collecting postcards",
+                        "Collecting travel souvenirs",
+                        "National Park stamp collection"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Vehicle Hobbies",
+            "subcategories": [
+                {
+                    "name": "Restoration",
+                    "activities": [
+                        "Car restoration",
+                        "Vehicle restoration"
+                    ]
+                },
+                {
+                    "name": "Driving",
+                    "activities": [
+                        "Hiring nice cars to drive in nature"
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "activities": [
+                        "Remote control car racing",
+                        "Go-kart racing",
+                        "Model rocketry"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Sand art",
+                        "Microscopy",
+                        "Botanical illustration",
+                        "Printmaking",
+                        "Stained glass",
+                        "Mosaic art",
+                        "Assemblage art",
+                        "Installation art",
+                        "Digital collage",
+                        "Kinetic art",
+                        "Virtual reality art",
+                        "Augmented reality art"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Tatting",
+                        "Lace making",
+                        "Natural dye making",
+                        "Felting",
+                        "Tapestry weaving"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Paper making",
+                        "Postcrossing"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Flower pressing",
+                        "Terrarium building",
+                        "Balloon art",
+                        "Glass blowing",
+                        "Leather crafting",
+                        "Carving (wood, soap, ice)",
+                        "Lapidary (gemstone cutting)",
+                        "Glass etching",
+                        "Rug weaving",
+                        "Embossing",
+                        "String art"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Worldbuilding",
+                        "Creative nonfiction"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Choir singing",
+                        "Electronic music production",
+                        "Sound art"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Puppetry",
+                        "Skit writing",
+                        "Mime"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading",
+                        "Zumba"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Voice acting",
+                        "Spoken word poetry",
+                        "Storytelling"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Canyoneering",
+                        "Spelunking",
+                        "BASE jumping"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Ice fishing",
+                        "Trainspotting",
+                        "Whale watching",
+                        "Mushroom hunting",
+                        "Meteorology"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Motorcycling"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping",
+                        "Herpetology",
+                        "Fishkeeping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Bubble football",
+                        "Handball",
+                        "Paintball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts",
+                        "Hula hooping",
+                        "Juggling"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Extreme ironing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Election forecasting",
+                        "Wikipedia editing",
+                        "Numerology",
+                        "Urban exploration",
+                        "Forensic debate"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Role-playing games (RPG)",
+                        "War gaming",
+                        "Logic puzzles",
+                        "Escape rooms"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Investing",
+                        "Philately",
+                        "Numismatics",
+                        "Taxidermy",
+                        "Archaeology",
+                        "Genealogy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Collecting uranium glass",
+                        "Collecting movie posters",
+                        "Collecting books"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting vintage toys",
+                        "Collecting retro video games"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting insects",
+                        "Collecting butterflies"
+                    ]
+                },
+                {
+                    "name": "Unusual Collections",
+                    "activities": [
+                        "Collecting naval fluff",
+                        "Collecting money from defunct countries"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cake decorating",
+                        "Latte art",
+                        "Molecular gastronomy",
+                        "Pickling",
+                        "Cheesemaking"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Coffee roasting",
+                        "Home brewing",
+                        "Mixology",
+                        "Wine making"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "Hacking (ethical)",
+                        "Game development",
+                        "Data analysis",
+                        "Web design"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Welding",
+                        "Gunsmithing",
+                        "Furniture restoration"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Arduino projects",
+                        "Amateur radio",
+                        "Model rocketry",
+                        "RC vehicle building/racing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries",
+                        "Volunteering"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Attending focus groups",
+                        "Event planning"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Tarot card reading",
+                        "Practicing gratitude",
+                        "Yoga Nidra"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Self-massage",
+                        "Skincare"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Sound baths",
+                        "Making playlists",
+                        "Somatic therapy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Cruising",
+                        "Backpacking",
+                        "Pilgrimage",
+                        "Visiting historical sites"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "Collecting postcards",
+                        "Collecting travel souvenirs",
+                        "National Park stamp collection"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Vehicle Hobbies",
+            "subcategories": [
+                {
+                    "name": "Restoration",
+                    "activities": [
+                        "Vehicle restoration"
+                    ]
+                },
+                {
+                    "name": "Driving",
+                    "activities": [
+                        "Hiring nice cars to drive in nature"
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "activities": [
+                        "Remote control car racing",
+                        "Go-kart racing",
+                        "Model rocketry"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Home & Garden",
+            "subcategories": [
+                {
+                    "name": "Horticulture & Gardening",
+                    "activities": [
+                        "Bonsai growing",
+                        "Hydroponics",
+                        "Orchid cultivation",
+                        "Permaculture"
+                    ]
+                },
+                {
+                    "name": "DIY Home Projects",
+                    "activities": [
+                        "Refinishing hardwood floors",
+                        "Interior decorating",
+                        "Custom shelving building",
+                        "Wallpapering",
+                        "Accent wall painting"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Logic & Strategy Games",
+            "subcategories": [
+                {
+                    "name": "Board Games",
+                    "activities": [
+                        "Go (game)",
+                        "Backgammon",
+                        "Catan"
+                    ]
+                },
+                {
+                    "name": "Card Games",
+                    "activities": [
+                        "Bridge",
+                        "Poker",
+                        "Magic: The Gathering"
+                    ]
+                },
+                {
+                    "name": "Puzzles",
+                    "activities": [
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Historical & Military",
+            "subcategories": [
+                {
+                    "name": "Reenactments",
+                    "activities": [
+                        "Historical reenacting",
+                        "Living history"
+                    ]
+                },
+                {
+                    "name": "Wargaming",
+                    "activities": [
+                        "Miniature wargaming",
+                        "Strategic board gaming"
+                    ]
+                },
+                {
+                    "name": "Research",
+                    "activities": [
+                        "Military history research",
+                        "Genealogy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Food & Beverage Production",
+            "subcategories": [
+                {
+                    "name": "Craft Production",
+                    "activities": [
+                        "Distilling spirits",
+                        "Sourdough starter maintenance",
+                        "Foraging"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Printmaking",
+                        "Stained glass",
+                        "Mosaic art",
+                        "Assemblage art",
+                        "Installation art",
+                        "Digital collage",
+                        "Kinetic art",
+                        "Virtual reality art",
+                        "Augmented reality art"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Felting",
+                        "Tapestry weaving",
+                        "Candlewicking",
+                        "Bandana printing"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Postcrossing"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Glass etching",
+                        "Rug weaving",
+                        "Embossing",
+                        "String art",
+                        "Lapidary (gemstone cutting)",
+                        "Model rocketry",
+                        "Prop building",
+                        "Tattoo artistry"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Worldbuilding",
+                        "Creative nonfiction"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Choir singing",
+                        "Electronic music production",
+                        "Sound art"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Puppetry",
+                        "Skit writing",
+                        "Mime"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading",
+                        "Zumba"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Voice acting",
+                        "Spoken word poetry",
+                        "Storytelling"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Canyoneering",
+                        "Spelunking",
+                        "BASE jumping",
+                        "Caving"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Ice fishing",
+                        "Trainspotting",
+                        "Whale watching",
+                        "Mushroom hunting",
+                        "Meteorology"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Motorcycling"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping",
+                        "Herpetology",
+                        "Fishkeeping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Bubble football",
+                        "Handball",
+                        "Paintball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts",
+                        "Hula hooping",
+                        "Juggling"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing",
+                        "Curling"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Extreme ironing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Election forecasting",
+                        "Wikipedia editing",
+                        "Numerology",
+                        "Urban exploration",
+                        "Forensic debate"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Role-playing games (RPG)",
+                        "War gaming",
+                        "Logic puzzles",
+                        "Escape rooms",
+                        "Geocaching",
+                        "Jigsaw puzzles"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Investing",
+                        "Philately",
+                        "Numismatics",
+                        "Taxidermy",
+                        "Archaeology",
+                        "Genealogy",
+                        "Local history research"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Collecting uranium glass",
+                        "Collecting movie posters",
+                        "Collecting books",
+                        "Collecting postcards"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting vintage toys",
+                        "Collecting retro video games"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting insects",
+                        "Collecting butterflies",
+                        "Collecting sea glass",
+                        "Collecting driftwood"
+                    ]
+                },
+                {
+                    "name": "Unusual Collections",
+                    "activities": [
+                        "Collecting naval fluff",
+                        "Collecting money from defunct countries"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cake decorating",
+                        "Latte art",
+                        "Molecular gastronomy",
+                        "Pickling",
+                        "Cheesemaking"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Coffee roasting",
+                        "Home brewing",
+                        "Mixology",
+                        "Wine making"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "Hacking (ethical)",
+                        "Game development",
+                        "Data analysis",
+                        "Web design"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Welding",
+                        "Gunsmithing",
+                        "Furniture restoration",
+                        "DIY home projects"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Arduino projects",
+                        "Amateur radio",
+                        "RC vehicle building/racing",
+                        "Smart home automation"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries",
+                        "Volunteering",
+                        "Community gardening"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Attending focus groups",
+                        "Event planning"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Tarot card reading",
+                        "Practicing gratitude",
+                        "Yoga Nidra",
+                        "Sound baths"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Self-massage",
+                        "Skincare",
+                        "Manicuring"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Making playlists",
+                        "Somatic therapy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Cruising",
+                        "Backpacking",
+                        "Pilgrimage",
+                        "Visiting historical sites",
+                        "Exploring other cultures"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "Collecting postcards",
+                        "Collecting travel souvenirs",
+                        "National Park stamp collection"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Vehicle Hobbies",
+            "subcategories": [
+                {
+                    "name": "Restoration",
+                    "activities": [
+                        "Vehicle restoration"
+                    ]
+                },
+                {
+                    "name": "Driving",
+                    "activities": [
+                        "Hiring nice cars to drive in nature"
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "activities": [
+                        "Remote control car racing",
+                        "Go-kart racing",
+                        "Model rocketry"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Home & Garden",
+            "subcategories": [
+                {
+                    "name": "Horticulture & Gardening",
+                    "activities": [
+                        "Bonsai growing",
+                        "Hydroponics",
+                        "Orchid cultivation",
+                        "Permaculture"
+                    ]
+                },
+                {
+                    "name": "DIY Home Projects",
+                    "activities": [
+                        "Refinishing hardwood floors",
+                        "Interior decorating",
+                        "Custom shelving building",
+                        "Wallpapering",
+                        "Accent wall painting"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Logic & Strategy Games",
+            "subcategories": [
+                {
+                    "name": "Board Games",
+                    "activities": [
+                        "Go (game)",
+                        "Backgammon",
+                        "Catan",
+                        "Miniature wargaming",
+                        "Chess"
+                    ]
+                },
+                {
+                    "name": "Card Games",
+                    "activities": [
+                        "Bridge",
+                        "Poker",
+                        "Magic: The Gathering"
+                    ]
+                },
+                {
+                    "name": "Puzzles",
+                    "activities": [
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Historical & Military",
+            "subcategories": [
+                {
+                    "name": "Reenactments",
+                    "activities": [
+                        "Historical reenacting",
+                        "Living history"
+                    ]
+                },
+                {
+                    "name": "Wargaming",
+                    "activities": [
+                        "Strategic board gaming"
+                    ]
+                },
+                {
+                    "name": "Research",
+                    "activities": [
+                        "Military history research",
+                        "Genealogy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Food & Beverage Production",
+            "subcategories": [
+                {
+                    "name": "Craft Production",
+                    "activities": [
+                        "Distilling spirits",
+                        "Sourdough starter maintenance",
+                        "Foraging"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Printmaking",
+                        "Stained glass",
+                        "Mosaic art",
+                        "Assemblage art",
+                        "Installation art",
+                        "Digital collage",
+                        "Kinetic art",
+                        "Virtual reality art",
+                        "Augmented reality art",
+                        "Sand art",
+                        "Microscopy",
+                        "Botanical illustration"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Tatting",
+                        "Lace making",
+                        "Natural dye making",
+                        "Felting",
+                        "Tapestry weaving",
+                        "Candlewicking",
+                        "Bandana printing"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Paper making",
+                        "Postcrossing",
+                        "Junk journaling"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Glass etching",
+                        "Rug weaving",
+                        "Embossing",
+                        "String art",
+                        "Lapidary (gemstone cutting)",
+                        "Prop building",
+                        "Tattoo artistry",
+                        "Seed art",
+                        "Bead art",
+                        "Felt item making",
+                        "Bone carving"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Worldbuilding",
+                        "Creative nonfiction",
+                        "Essay writing",
+                        "Screenwriting",
+                        "Spoken word poetry",
+                        "Fan fiction"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Choir singing",
+                        "Electronic music production",
+                        "Sound art",
+                        "DJing",
+                        "Karaoke"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Puppetry",
+                        "Skit writing",
+                        "Mime",
+                        "Improvisation"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading",
+                        "Zumba",
+                        "Irish dancing"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Voice acting",
+                        "Storytelling",
+                        "Streaming",
+                        "Video production",
+                        "Hosting events"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Canyoneering",
+                        "Spelunking",
+                        "BASE jumping",
+                        "Caving",
+                        "Off-road jogging"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Ice fishing",
+                        "Trainspotting",
+                        "Whale watching",
+                        "Mushroom hunting",
+                        "Meteorology",
+                        "Cloud watching"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Motorcycling"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping",
+                        "Herpetology",
+                        "Fishkeeping"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Bubble football",
+                        "Handball",
+                        "Paintball",
+                        "Curling",
+                        "Spikeball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts",
+                        "Hula hooping",
+                        "Juggling",
+                        "Weightlifting",
+                        "Pilates",
+                        "Yoga",
+                        "Trampoline fitness"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing",
+                        "Snow sculpting"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Equestrianism",
+                        "Parkour",
+                        "Slacklining",
+                        "Extreme ironing",
+                        "Adventure racing",
+                        "Combat sports (e.g., MMA)"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Election forecasting",
+                        "Wikipedia editing",
+                        "Numerology",
+                        "Urban exploration",
+                        "Forensic debate",
+                        "Local history research",
+                        "Genealogy"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Role-playing games (RPG)",
+                        "War gaming",
+                        "Logic puzzles",
+                        "Escape rooms",
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Investing",
+                        "Philately",
+                        "Numismatics",
+                        "Taxidermy",
+                        "Archaeology",
+                        "Film studies"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Collecting uranium glass",
+                        "Collecting movie posters",
+                        "Collecting books",
+                        "Collecting postcards",
+                        "Collecting perfumes"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting vintage toys",
+                        "Collecting retro video games"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting insects",
+                        "Collecting butterflies"
+                    ]
+                },
+                {
+                    "name": "Unusual Collections",
+                    "activities": [
+                        "Collecting naval fluff",
+                        "Collecting money from defunct countries"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cake decorating",
+                        "Latte art",
+                        "Molecular gastronomy",
+                        "Pickling",
+                        "Cheesemaking"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Coffee roasting",
+                        "Home brewing",
+                        "Mixology",
+                        "Wine making"
+                    ]
+                },
+                {
+                    "name": "Craft Production",
+                    "activities": [
+                        "Distilling spirits",
+                        "Sourdough starter maintenance",
+                        "Foraging"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "Hacking (ethical)",
+                        "Game development",
+                        "Data analysis",
+                        "Web design",
+                        "App development",
+                        "Animation"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Welding",
+                        "Gunsmithing",
+                        "Furniture restoration",
+                        "DIY home projects"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Arduino projects",
+                        "Amateur radio",
+                        "Model rocketry",
+                        "RC vehicle building/racing",
+                        "Smart home automation",
+                        "Flying model planes/cars"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries",
+                        "Volunteering",
+                        "Community gardening",
+                        "Participating in community theater"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Attending focus groups",
+                        "Event planning",
+                        "Attending open mic nights"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Tarot card reading",
+                        "Practicing gratitude",
+                        "Yoga Nidra",
+                        "Sound baths",
+                        "Astrology"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Self-massage",
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Making playlists",
+                        "Somatic therapy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Cruising",
+                        "Backpacking",
+                        "Pilgrimage",
+                        "Visiting historical sites",
+                        "Exploring other cultures"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "National Park stamp collection",
+                        "Collecting travel souvenirs"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Vehicle Hobbies",
+            "subcategories": [
+                {
+                    "name": "Restoration",
+                    "activities": [
+                        "Vehicle restoration"
+                    ]
+                },
+                {
+                    "name": "Driving",
+                    "activities": [
+                        "Hiring nice cars to drive in nature",
+                        "Competitive shooting"
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "activities": [
+                        "Go-kart racing",
+                        "Model rocketry",
+                        "RC vehicle building/racing"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Home & Garden",
+            "subcategories": [
+                {
+                    "name": "Horticulture & Gardening",
+                    "activities": [
+                        "Bonsai growing",
+                        "Hydroponics",
+                        "Orchid cultivation",
+                        "Permaculture"
+                    ]
+                },
+                {
+                    "name": "DIY Home Projects",
+                    "activities": [
+                        "Refinishing hardwood floors",
+                        "Interior decorating",
+                        "Custom shelving building",
+                        "Wallpapering",
+                        "Accent wall painting"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Logic & Strategy Games",
+            "subcategories": [
+                {
+                    "name": "Board Games",
+                    "activities": [
+                        "Go (game)",
+                        "Backgammon",
+                        "Catan",
+                        "Miniature wargaming",
+                        "Chess",
+                        "Risk",
+                        "Carcassonne",
+                        "Dominion",
+                        "Pandemic",
+                        "Qwirkle",
+                        "Rummikub"
+                    ]
+                },
+                {
+                    "name": "Card Games",
+                    "activities": [
+                        "Bridge",
+                        "Poker",
+                        "Magic: The Gathering",
+                        "Solitaire"
+                    ]
+                },
+                {
+                    "name": "Puzzles",
+                    "activities": [
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Historical & Military",
+            "subcategories": [
+                {
+                    "name": "Reenactments",
+                    "activities": [
+                        "Historical reenacting",
+                        "Living history"
+                    ]
+                },
+                {
+                    "name": "Wargaming",
+                    "activities": [
+                        "Strategic board gaming"
+                    ]
+                },
+                {
+                    "name": "Research",
+                    "activities": [
+                        "Military history research"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "hobbies": [
+        {
+            "category": "Creative Arts & Crafts",
+            "subcategories": [
+                {
+                    "name": "Visual Arts",
+                    "activities": [
+                        "Printmaking",
+                        "Stained glass",
+                        "Mosaic art",
+                        "Assemblage art",
+                        "Installation art",
+                        "Digital collage",
+                        "Kinetic art",
+                        "Virtual reality art",
+                        "Augmented reality art",
+                        "Sand art",
+                        "Microscopy",
+                        "Botanical illustration"
+                    ]
+                },
+                {
+                    "name": "Textile & Fiber Arts",
+                    "activities": [
+                        "Tatting",
+                        "Lace making",
+                        "Natural dye making",
+                        "Felting",
+                        "Tapestry weaving",
+                        "Candlewicking",
+                        "Bandana printing",
+                        "Huck weaving",
+                        "Bargello needlework",
+                        "Pine needle crafts"
+                    ]
+                },
+                {
+                    "name": "Paper & Book Crafts",
+                    "activities": [
+                        "Paper making",
+                        "Postcrossing",
+                        "Junk journaling",
+                        "Paper modelling",
+                        "Kirigami"
+                    ]
+                },
+                {
+                    "name": "Decorative & Home Crafts",
+                    "activities": [
+                        "Glass etching",
+                        "Rug weaving",
+                        "Embossing",
+                        "String art",
+                        "Lapidary (gemstone cutting)",
+                        "Prop building",
+                        "Tattoo artistry",
+                        "Seed art",
+                        "Bead art",
+                        "Felt item making",
+                        "Bone carving",
+                        "Decoupage",
+                        "Aquascaping",
+                        "Building incense houses",
+                        "Sharpie art"
+                    ]
+                },
+                {
+                    "name": "Creative Writing",
+                    "activities": [
+                        "Worldbuilding",
+                        "Creative nonfiction",
+                        "Conlanging (creating languages)"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Performance Arts",
+            "subcategories": [
+                {
+                    "name": "Music",
+                    "activities": [
+                        "Choir singing",
+                        "Electronic music production",
+                        "Sound art",
+                        "Instrument making",
+                        "Flute playing"
+                    ]
+                },
+                {
+                    "name": "Theater & Drama",
+                    "activities": [
+                        "Puppetry",
+                        "Skit writing",
+                        "Mime",
+                        "Improvisation"
+                    ]
+                },
+                {
+                    "name": "Dance",
+                    "activities": [
+                        "Belly dancing",
+                        "Synchronized swimming",
+                        "Cheerleading",
+                        "Zumba",
+                        "Irish dancing"
+                    ]
+                },
+                {
+                    "name": "Public Speaking & Storytelling",
+                    "activities": [
+                        "Voice acting",
+                        "Storytelling",
+                        "Streaming",
+                        "Video production",
+                        "Hosting events"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Outdoor & Nature Activities",
+            "subcategories": [
+                {
+                    "name": "Adventure Sports",
+                    "activities": [
+                        "Canyoneering",
+                        "Spelunking",
+                        "BASE jumping",
+                        "Caving",
+                        "Off-road jogging",
+                        "Wild swimming",
+                        "Glider flying"
+                    ]
+                },
+                {
+                    "name": "Recreational Outdoors",
+                    "activities": [
+                        "Ice fishing",
+                        "Trainspotting",
+                        "Whale watching",
+                        "Mushroom hunting",
+                        "Meteorology",
+                        "Cloud watching",
+                        "Rockhounding",
+                        "Drain cover spotting",
+                        "Forest bathing"
+                    ]
+                },
+                {
+                    "name": "Cycling",
+                    "activities": [
+                        "Motorcycling",
+                        "Bike touring"
+                    ]
+                },
+                {
+                    "name": "Animal-Related",
+                    "activities": [
+                        "Animal breeding",
+                        "Animal grooming",
+                        "Beekeeping",
+                        "Herpetology",
+                        "Fishkeeping",
+                        "Ant farming",
+                        "Roach farming",
+                        "Competitive dog grooming",
+                        "Duck herding"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Sports & Fitness",
+            "subcategories": [
+                {
+                    "name": "Team Sports",
+                    "activities": [
+                        "Bubble football",
+                        "Handball",
+                        "Paintball",
+                        "Curling",
+                        "Spikeball"
+                    ]
+                },
+                {
+                    "name": "Individual Sports & Fitness",
+                    "activities": [
+                        "Fencing",
+                        "Powerlifting",
+                        "Tai chi",
+                        "Bowling",
+                        "Table tennis",
+                        "Billiards (Pool)",
+                        "Darts",
+                        "Hula hooping",
+                        "Juggling",
+                        "Trampoline fitness",
+                        "Slacklining",
+                        "Parkour",
+                        "Marathon running",
+                        "Competitive shooting"
+                    ]
+                },
+                {
+                    "name": "Winter Sports",
+                    "activities": [
+                        "Sledding",
+                        "Snowshoeing",
+                        "Cross-country skiing",
+                        "Snow sculpting"
+                    ]
+                },
+                {
+                    "name": "Niche & Extreme Sports",
+                    "activities": [
+                        "Extreme ironing",
+                        "Adventure racing",
+                        "Combat sports (e.g., MMA)",
+                        "Cheese rolling"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Intellectual & Learning",
+            "subcategories": [
+                {
+                    "name": "Academic & Research",
+                    "activities": [
+                        "Election forecasting",
+                        "Wikipedia editing",
+                        "Numerology",
+                        "Urban exploration",
+                        "Forensic debate",
+                        "Local history research",
+                        "Genealogy",
+                        "Studying history",
+                        "Researching Salem Witch Trials"
+                    ]
+                },
+                {
+                    "name": "Games & Puzzles",
+                    "activities": [
+                        "Role-playing games (RPG)",
+                        "War gaming",
+                        "Logic puzzles",
+                        "Escape rooms",
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles",
+                        "Go (game)",
+                        "Backgammon",
+                        "Catan",
+                        "Risk",
+                        "Carcassonne",
+                        "Dominion",
+                        "Pandemic",
+                        "Qwirkle",
+                        "Rummikub",
+                        "Fantasy sports"
+                    ]
+                },
+                {
+                    "name": "Knowledge-Based",
+                    "activities": [
+                        "Investing",
+                        "Philately",
+                        "Numismatics",
+                        "Taxidermy",
+                        "Archaeology",
+                        "Film studies",
+                        "Day trading"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collecting",
+            "subcategories": [
+                {
+                    "name": "General Collections",
+                    "activities": [
+                        "Collecting uranium glass",
+                        "Collecting movie posters",
+                        "Collecting books",
+                        "Collecting postcards",
+                        "Collecting perfumes",
+                        "Collecting music memorabilia",
+                        "Collecting comics",
+                        "Collecting military uniforms"
+                    ]
+                },
+                {
+                    "name": "Antique & Vintage",
+                    "activities": [
+                        "Collecting vintage toys",
+                        "Collecting retro video games",
+                        "Collecting vintage clothing",
+                        "Collecting vintage Fiestaware",
+                        "Thrift shopping"
+                    ]
+                },
+                {
+                    "name": "Natural Collections",
+                    "activities": [
+                        "Collecting insects",
+                        "Collecting butterflies",
+                        "Collecting rocks",
+                        "Collecting crystals",
+                        "Collecting driftwood",
+                        "Collecting seashells",
+                        "Collecting sea glass",
+                        "Collecting snowdrops"
+                    ]
+                },
+                {
+                    "name": "Unusual Collections",
+                    "activities": [
+                        "Collecting naval fluff",
+                        "Collecting money from defunct countries",
+                        "Collecting taxidermy",
+                        "Element collecting",
+                        "Collecting celebrity autographs",
+                        "Collecting autographs"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Culinary & Food",
+            "subcategories": [
+                {
+                    "name": "Cooking",
+                    "activities": [
+                        "Cake decorating",
+                        "Latte art",
+                        "Molecular gastronomy",
+                        "Pickling",
+                        "Cheesemaking",
+                        "Pizza making",
+                        "Vegan cooking"
+                    ]
+                },
+                {
+                    "name": "Beverage",
+                    "activities": [
+                        "Coffee roasting",
+                        "Home brewing",
+                        "Mixology",
+                        "Wine making",
+                        "Distilling spirits"
+                    ]
+                },
+                {
+                    "name": "Craft Production",
+                    "activities": [
+                        "Sourdough starter maintenance",
+                        "Foraging"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Technology & DIY",
+            "subcategories": [
+                {
+                    "name": "Digital Creation",
+                    "activities": [
+                        "Hacking (ethical)",
+                        "Game development",
+                        "Data analysis",
+                        "Web design",
+                        "App development",
+                        "Animation",
+                        "Filmmaking",
+                        "Podcast hosting",
+                        "Video editing"
+                    ]
+                },
+                {
+                    "name": "Home Improvement & Repair",
+                    "activities": [
+                        "Welding",
+                        "Gunsmithing",
+                        "Furniture restoration",
+                        "DIY home projects",
+                        "Refinishing floors",
+                        "Custom shelving",
+                        "Interior decorating"
+                    ]
+                },
+                {
+                    "name": "Electronics & Robotics",
+                    "activities": [
+                        "Arduino projects",
+                        "Amateur radio",
+                        "Model rocketry",
+                        "RC vehicle building/racing",
+                        "Smart home automation",
+                        "Building computers",
+                        "Electronics tinkering"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Social & Community",
+            "subcategories": [
+                {
+                    "name": "Group Activities",
+                    "activities": [
+                        "Board game groups",
+                        "Hosting parties",
+                        "Visiting museums/art galleries",
+                        "Volunteering",
+                        "Community gardening",
+                        "Participating in community theater",
+                        "Local meetups"
+                    ]
+                },
+                {
+                    "name": "Networking & Events",
+                    "activities": [
+                        "Attending focus groups",
+                        "Event planning",
+                        "Attending open mic nights",
+                        "Attending concerts"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Relaxation & Wellness",
+            "subcategories": [
+                {
+                    "name": "Mindful Activities",
+                    "activities": [
+                        "Tarot card reading",
+                        "Practicing gratitude",
+                        "Yoga Nidra",
+                        "Sound baths",
+                        "Astrology",
+                        "Meditation"
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "activities": [
+                        "Self-massage",
+                        "Skincare",
+                        "Manicuring",
+                        "Aromatherapy"
+                    ]
+                },
+                {
+                    "name": "General Wellness",
+                    "activities": [
+                        "Making playlists",
+                        "Somatic therapy",
+                        "Relaxation techniques"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Travel & Exploration",
+            "subcategories": [
+                {
+                    "name": "Exploring New Places",
+                    "activities": [
+                        "Cruising",
+                        "Backpacking",
+                        "Pilgrimage",
+                        "Visiting historical sites",
+                        "Exploring other cultures",
+                        "Road trips",
+                        "Urban exploration",
+                        "Geocaching"
+                    ]
+                },
+                {
+                    "name": "Documenting Travel",
+                    "activities": [
+                        "Travel blogging",
+                        "Travel photography",
+                        "Creating travel journals"
+                    ]
+                },
+                {
+                    "name": "Travel-based Collections",
+                    "activities": [
+                        "National Park stamp collection",
+                        "Collecting travel souvenirs"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Home & Garden",
+            "subcategories": [
+                {
+                    "name": "Horticulture & Gardening",
+                    "activities": [
+                        "Bonsai growing",
+                        "Hydroponics",
+                        "Orchid cultivation",
+                        "Permaculture",
+                        "Landscaping"
+                    ]
+                },
+                {
+                    "name": "DIY Home Projects",
+                    "activities": [
+                        "Refinishing hardwood floors",
+                        "Interior decorating",
+                        "Custom shelving building",
+                        "Wallpapering",
+                        "Accent wall painting",
+                        "Home organization"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Logic & Strategy Games",
+            "subcategories": [
+                {
+                    "name": "Board Games",
+                    "activities": [
+                        "Go (game)",
+                        "Backgammon",
+                        "Catan",
+                        "Miniature wargaming",
+                        "Chess",
+                        "Risk",
+                        "Carcassonne",
+                        "Dominion",
+                        "Pandemic",
+                        "Qwirkle",
+                        "Rummikub"
+                    ]
+                },
+                {
+                    "name": "Card Games",
+                    "activities": [
+                        "Bridge",
+                        "Poker",
+                        "Magic: The Gathering",
+                        "Solitaire"
+                    ]
+                },
+                {
+                    "name": "Puzzles",
+                    "activities": [
+                        "Cryptic crosswords",
+                        "Nonograms",
+                        "Mechanical puzzles",
+                        "Jigsaw puzzles",
+                        "Sudoku"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Historical & Military",
+            "subcategories": [
+                {
+                    "name": "Reenactments",
+                    "activities": [
+                        "Historical reenacting",
+                        "Living history"
+                    ]
+                },
+                {
+                    "name": "Wargaming",
+                    "activities": [
+                        "Strategic board gaming"
+                    ]
+                },
+                {
+                    "name": "Research",
+                    "activities": [
+                        "Military history research",
+                        "Genealogy"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Food & Beverage Production",
+            "subcategories": [
+                {
+                    "name": "Craft Production",
+                    "activities": [
+                        "Distilling spirits",
+                        "Sourdough starter maintenance",
+                        "Foraging",
+                        "Making essential oils",
+                        "Jam making"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Other",
+            "subcategories": [
+                {
+                    "name": "Creative",
+                    "activities": [
+                        "Making friendship bracelets",
+                        "Cosplay"
+                    ]
+                },
+                {
+                    "name": "Unusual",
+                    "activities": [
+                        "Extreme ironing"
+                    ]
+                }
+            ]
+        }
+    ]
+}

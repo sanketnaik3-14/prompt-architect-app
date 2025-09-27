@@ -1,0 +1,44 @@
+{
+    "Autumnal Aesthetics": {
+        "description": "Aesthetics related to the season of Autumn, often characterized by themes of harvest, change, warmth, and decay.",
+        "members": [
+            "Dark Academia",
+            "Darkest Academia",
+            "Fall",
+            "Halloween",
+            "Thanksgiving"
+        ]
+    },
+    "Spring Aesthetics": {
+        "description": "Aesthetics associated with the season of Spring, typically involving themes of rebirth, renewal, love, and blossoming nature.",
+        "members": [
+            "Cuddle Party",
+            "Easter",
+            "Light Academia",
+            "Pastel",
+            "Spring",
+            "Valentine's Day"
+        ]
+    },
+    "Summer Aesthetics": {
+        "description": "Aesthetics connected to the season of Summer, often featuring themes of sunshine, vacation, heat, freedom, and vibrant life.",
+        "members": [
+            "Beach Bunny",
+            "Coconut Girl",
+            "Golden Hour",
+            "Hot Girl Summer",
+            "Summer",
+            "Tropical"
+        ]
+    },
+    "Winter Aesthetics": {
+        "description": "Aesthetics related to the season of Winter, characterized by themes of cold, coziness, holidays, quiet, and reflection.",
+        "members": [
+            "Christmas",
+            "Cozy Christmas",
+            "Christmax",
+            "Warmcore",
+            "Winter"
+        ]
+    }
+}

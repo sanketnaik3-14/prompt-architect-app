@@ -1,0 +1,42 @@
+{
+    "Design Aesthetics": {
+        "description": "Aesthetics that are primarily defined by their application in various fields of design, including graphic design, architecture, interior design, and product design. They often follow specific principles, movements, and visual styles.",
+        "members": [
+            "Art Deco",
+            "Art Nouveau",
+            "Arts and Crafts",
+            "Atomic Age",
+            "Bauhaus",
+            "Biomorphism",
+            "Constructivism",
+            "Cubism",
+            "Dada",
+            "Danish Pastel",
+            "De Stijl",
+            "Dither",
+            "Ditherwave",
+            "Dullcore",
+            "Expressionism",
+            "Flat Design",
+            "Frutiger Aero",
+            "Googie",
+            "Grotesque",
+            "Impressionism",
+            "International Typographic Style",
+            "Maximalism",
+            "Memphis Design",
+            "Mid-Century Modern",
+            "Minimalism",
+            "Neoclassicism",
+            "Neu-Brutalism",
+            "Pop Art",
+            "Postmodern",
+            "Psychedelic",
+            "Raygun Gothic",
+            "Skeuomorphism",
+            "Surrealism",
+            "Vector-Based",
+            "Vectorheart"
+        ]
+    }
+}

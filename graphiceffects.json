@@ -1,0 +1,629 @@
+{
+    "graphic_design_effects": {
+        "visual_enhancement_effects": {
+            "texture_effects": [
+                "noise_effect",
+                "film_grain",
+                "gritty_texture",
+                "paper_texture",
+                "grunge_texture"
+            ],
+            "color_effects": [
+                "gradient",
+                "monochrome",
+                "duotone",
+                "sepia_tone",
+                "psychedelic_colors",
+                "color_blocking"
+            ],
+            "lighting_and_shadow_effects": [
+                "drop_shadow",
+                "inner_shadow",
+                "glowing_edges",
+                "lens_flare",
+                "bokeh_effect",
+                "epic_glow_effect"
+            ],
+            "distortion_and_manipulation": [
+                "pixelation",
+                "glitch_effect",
+                "halftone_pattern",
+                "liquify",
+                "refraction",
+                "glassmorphism"
+            ]
+        },
+        "typographic_effects": [
+            "hand_drawn_lettering",
+            "bold_typography",
+            "distorted_typography",
+            "text_as_shape",
+            "3d_typography"
+        ],
+        "spatial_and_compositional_effects": {
+            "depth_effects": [
+                "3d_visualizations",
+                "layered_elements"
+            ],
+            "layout_effects": [
+                "asymmetrical_layout",
+                "grid_layout",
+                "minimalist_design",
+                "maximalist_design",
+                "overlapping_elements"
+            ],
+            "scale_effects": [
+                "dramatic_scale_shifts",
+                "miniaturization"
+            ]
+        },
+        "interactive_and_motion_effects": {
+            "web_design_effects": [
+                "parallax_scrolling",
+                "interactive_backgrounds",
+                "hover_reveal",
+                "microinteractions",
+                "custom_cursor_effects",
+                "animated_page_transitions"
+            ],
+            "animation_effects": [
+                "lottie_animations",
+                "cinemagraphs",
+                "gif_animations",
+                "svg_animations"
+            ]
+        },
+        "stylistic_effects": {
+            "retro_and_vintage_effects": [
+                "retro_futurism",
+                "vintage_effect",
+                "retro_color_palette",
+                "distressed_print_effect"
+            ],
+            "modern_and_abstract_effects": [
+                "abstract_geometric_shapes",
+                "fluid_and_organic_shapes",
+                "minimalist_lines",
+                "abstract_wave_effect"
+            ]
+        },
+        "ai_and_generative_effects": [
+            "generative_fill",
+            "ai_image_creation",
+            "content_aware_removal"
+        ]
+    }
+}
+{
+    "graphic_design_effects": {
+        "visual_enhancement_effects": {
+            "texture_effects": [
+                "noise_effect",
+                "film_grain",
+                "gritty_texture",
+                "paper_texture",
+                "grunge_texture",
+                "vintage_distress",
+                "pixelation",
+                "sand_texture",
+                "holographic_texture"
+            ],
+            "color_effects": [
+                "gradient",
+                "subtle_gradient",
+                "monochrome",
+                "duotone",
+                "sepia_tone",
+                "psychedelic_colors",
+                "color_blocking",
+                "vibrant_hues",
+                "muted_palette",
+                "maximalist_color_scheme",
+                "high_contrast_pairings"
+            ],
+            "lighting_and_shadow_effects": [
+                "drop_shadow",
+                "inner_shadow",
+                "glowing_edges",
+                "lens_flare",
+                "bokeh_effect",
+                "epic_glow_effect",
+                "natural_lighting",
+                "metallic_effects"
+            ],
+            "distortion_and_manipulation": [
+                "glitch_effect",
+                "halftone_pattern",
+                "liquify",
+                "refraction",
+                "glassmorphism",
+                "datamoshing",
+                "cyberpunk_aesthetics"
+            ]
+        },
+        "typographic_effects": {
+            "advanced_techniques": [
+                "dynamic_fonts",
+                "glyph_editing",
+                "variable_fonts",
+                "text_manipulation",
+                "kerning_and_tracking_variations",
+                "expressive_typography"
+            ],
+            "stylistic_typography": [
+                "hand_drawn_lettering",
+                "bold_typography",
+                "distorted_typography",
+                "text_as_shape",
+                "3d_typography",
+                "vintage_serif_branding",
+                "pixelated_fonts",
+                "experimental_typography",
+                "bubble_typography"
+            ]
+        },
+        "spatial_and_compositional_effects": {
+            "depth_effects": [
+                "3d_visualizations",
+                "layered_elements",
+                "overlapping_elements",
+                "biomorphic_design",
+                "fluid_and_organic_shapes"
+            ],
+            "layout_effects": [
+                "asymmetrical_layout",
+                "grid_layout",
+                "minimalist_design",
+                "maximalist_design",
+                "anti_design",
+                "utilitarian_design"
+            ],
+            "scale_effects": [
+                "dramatic_scale_shifts",
+                "miniaturization"
+            ],
+            "space_effects": [
+                "white_space_emphasis",
+                "negative_space_usage"
+            ]
+        },
+        "interactive_and_motion_effects": {
+            "web_design_effects": [
+                "parallax_scrolling",
+                "interactive_backgrounds",
+                "hover_reveal",
+                "microinteractions",
+                "custom_cursor_effects",
+                "animated_page_transitions",
+                "neumorphism"
+            ],
+            "animation_effects": [
+                "lottie_animations",
+                "cinemagraphs",
+                "gif_animations",
+                "svg_animations",
+                "motion_infused_minimalism",
+                "seamless_loops",
+                "hand_drawn_animation"
+            ],
+            "augmented_and_virtual_reality": [
+                "ar_effects",
+                "vr_experiences",
+                "interactive_packaging"
+            ]
+        },
+        "stylistic_effects": {
+            "retro_and_vintage_effects": [
+                "retro_futurism",
+                "vintage_aesthetic",
+                "retro_color_palette",
+                "distressed_print_effect",
+                "modern_heritage"
+            ],
+            "modern_and_abstract_effects": [
+                "abstract_geometric_shapes",
+                "fluid_and_organic_shapes",
+                "minimalist_lines",
+                "conceptual_and_abstract_design",
+                "goth_aesthetic",
+                "geometric_composition"
+            ],
+            "mixed_media": [
+                "collage_effects",
+                "digital_scrapbooking",
+                "hand_drawn_illustration",
+                "combined_media_effects"
+            ]
+        },
+        "emerging_and_ai_effects": [
+            "generative_fill",
+            "ai_image_creation",
+            "content_aware_removal",
+            "ai_realism",
+            "dynamic_branding",
+            "sustainable_design",
+            "tactile_design",
+            "inclusive_visuals"
+        ]
+    }
+}
+{
+    "graphic_design_effects": {
+        "visual_enhancement_effects": {
+            "texture_effects": [
+                "noise_effect",
+                "film_grain",
+                "gritty_texture",
+                "paper_texture",
+                "grunge_texture",
+                "vintage_distress",
+                "pixelation",
+                "sand_texture",
+                "holographic_texture",
+                "halftone_texture",
+                "spray_paint_texture",
+                "woodcut_texture",
+                "plasticine_clay_effect"
+            ],
+            "color_effects": [
+                "gradient",
+                "subtle_gradient",
+                "liquid_gradient",
+                "duotone",
+                "monochrome",
+                "sepia_tone",
+                "psychedelic_colors",
+                "color_blocking",
+                "vibrant_hues",
+                "muted_palette",
+                "maximalist_color_scheme",
+                "unconventional_color_combinations",
+                "dark_mode_with_neon_accents",
+                "heatmapping",
+                "high_contrast_pairings"
+            ],
+            "lighting_and_shadow_effects": [
+                "drop_shadow",
+                "flat_drop_shadow",
+                "inner_shadow",
+                "glowing_edges",
+                "lens_flare",
+                "bokeh_effect",
+                "epic_glow_effect",
+                "natural_lighting",
+                "metallic_effects",
+                "neon_effects"
+            ],
+            "distortion_and_manipulation": [
+                "glitch_effect",
+                "datamoshing",
+                "liquify",
+                "refraction",
+                "glassmorphism",
+                "vector_painting",
+                "cyberpunk_aesthetics",
+                "surrealism_airbrush",
+                "photo_bashing"
+            ]
+        },
+        "typographic_effects": {
+            "advanced_techniques": [
+                "dynamic_fonts",
+                "glyph_editing",
+                "variable_fonts",
+                "text_manipulation",
+                "kerning_and_tracking_variations",
+                "expressive_typography",
+                "kinetic_typography"
+            ],
+            "stylistic_typography": [
+                "hand_drawn_lettering",
+                "bold_typography",
+                "experimental_typography",
+                "distorted_typography",
+                "text_as_shape",
+                "3d_typography",
+                "retro_serif_branding",
+                "pixelated_fonts",
+                "bubble_typography"
+            ]
+        },
+        "spatial_and_compositional_effects": {
+            "depth_effects": [
+                "3d_visualizations",
+                "layered_elements",
+                "overlapping_elements",
+                "biomorphic_design",
+                "fluid_and_organic_shapes",
+                "dimensional_composition"
+            ],
+            "layout_effects": [
+                "asymmetrical_layout",
+                "grid_layout",
+                "brutalism_and_anti_design",
+                "minimalist_design",
+                "maximalist_design",
+                "minimalist_maximalism",
+                "utilitarian_design"
+            ],
+            "scale_effects": [
+                "dramatic_scale_shifts",
+                "miniaturization"
+            ],
+            "space_effects": [
+                "white_space_emphasis",
+                "negative_space_usage"
+            ]
+        },
+        "interactive_and_motion_effects": {
+            "web_design_effects": [
+                "parallax_scrolling",
+                "interactive_backgrounds",
+                "hover_reveal",
+                "microinteractions",
+                "custom_cursor_effects",
+                "animated_page_transitions",
+                "neumorphism",
+                "user_centric_design"
+            ],
+            "animation_effects": [
+                "lottie_animations",
+                "json_animations",
+                "cinemagraphs",
+                "gif_animations",
+                "svg_animations",
+                "motion_infused_minimalism",
+                "seamless_loops",
+                "hand_drawn_animation",
+                "2d_animation_with_3d_effects"
+            ],
+            "augmented_and_virtual_reality": [
+                "ar_effects",
+                "vr_experiences",
+                "interactive_packaging",
+                "metaverse_integration"
+            ]
+        },
+        "stylistic_effects": {
+            "retro_and_vintage_effects": [
+                "retro_futurism",
+                "vintage_aesthetic",
+                "retro_color_palette",
+                "distressed_print_effect",
+                "modern_heritage",
+                "y2k_aesthetic",
+                "90s_nostalgia",
+                "80s_retro",
+                "retro_pixels_and_arcade_style"
+            ],
+            "modern_and_abstract_effects": [
+                "abstract_geometric_shapes",
+                "minimalist_lines",
+                "conceptual_and_abstract_design",
+                "goth_aesthetic",
+                "geometric_composition",
+                "expressive_lettering",
+                "fluid_and_organic_shapes"
+            ],
+            "mixed_media": [
+                "collage_effects",
+                "scrapbooking_style",
+                "digital_scrapbooking",
+                "mixed_media_typography"
+            ]
+        },
+        "emerging_and_ai_effects": [
+            "generative_fill",
+            "ai_image_creation",
+            "content_aware_removal",
+            "ai_realism",
+            "dynamic_branding",
+            "generative_typography",
+            "generative_ai_integration"
+        ],
+        "conceptual_effects": [
+            "visual_metaphors",
+            "symbolism",
+            "storytelling_through_design",
+            "conceptual_illustrations",
+            "ethical_design",
+            "sustainable_design",
+            "inclusive_design"
+        ]
+    }
+}
+{
+    "graphic_design_effects": {
+        "visual_enhancement_effects": {
+            "texture_effects": [
+                "noise_effect",
+                "film_grain",
+                "gritty_texture",
+                "paper_texture",
+                "grunge_texture",
+                "vintage_distress",
+                "pixelation",
+                "sand_texture",
+                "holographic_texture",
+                "halftone_texture",
+                "spray_paint_texture",
+                "woodcut_texture",
+                "screen_print_effect",
+                "subtle_texture_overlay"
+            ],
+            "color_effects": [
+                "gradient",
+                "liquid_gradient",
+                "duotone",
+                "monochrome",
+                "sepia_tone",
+                "psychedelic_colors",
+                "color_blocking",
+                "vibrant_hues",
+                "muted_palette",
+                "maximalist_color_scheme",
+                "unconventional_color_combinations",
+                "dark_mode_with_neon_accents",
+                "heatmapping_style",
+                "high_contrast_pairings",
+                "color_inversion"
+            ],
+            "lighting_and_shadow_effects": [
+                "drop_shadow",
+                "flat_drop_shadow",
+                "inner_shadow",
+                "glowing_edges",
+                "lens_flare",
+                "bokeh_effect",
+                "epic_glow_effect",
+                "natural_lighting",
+                "metallic_effects",
+                "neon_effects",
+                "aura_gradients"
+            ],
+            "distortion_and_manipulation": [
+                "glitch_effect",
+                "datamoshing",
+                "liquify",
+                "refraction",
+                "glassmorphism",
+                "vector_painting",
+                "cyberpunk_aesthetics",
+                "surrealism_airbrush",
+                "photo_bashing",
+                "anaglyph_effect",
+                "pixel_sorting"
+            ]
+        },
+        "typographic_effects": {
+            "advanced_techniques": [
+                "dynamic_fonts",
+                "glyph_editing",
+                "variable_fonts",
+                "text_manipulation",
+                "kerning_and_tracking_variations",
+                "expressive_typography",
+                "kinetic_typography"
+            ],
+            "stylistic_typography": [
+                "hand_drawn_lettering",
+                "bold_typography",
+                "experimental_typography",
+                "distorted_typography",
+                "text_as_shape",
+                "3d_typography",
+                "retro_serif_branding",
+                "modern_gothic",
+                "pixelated_fonts",
+                "bubble_typography",
+                "calligraphy"
+            ]
+        },
+        "spatial_and_compositional_effects": {
+            "depth_effects": [
+                "3d_visualizations",
+                "layered_elements",
+                "overlapping_elements",
+                "dimensional_composition",
+                "forced_perspective",
+                "double_exposure"
+            ],
+            "layout_effects": [
+                "asymmetrical_layout",
+                "grid_layout",
+                "neo-brutalism_and_anti_design",
+                "minimalist_design",
+                "maximalist_design",
+                "minimalist_maximalism",
+                "utilitarian_design",
+                "bento_box_design"
+            ],
+            "scale_effects": [
+                "dramatic_scale_shifts",
+                "miniaturization"
+            ],
+            "space_effects": [
+                "white_space_emphasis",
+                "negative_space_usage"
+            ]
+        },
+        "interactive_and_motion_effects": {
+            "web_design_effects": [
+                "parallax_scrolling",
+                "interactive_backgrounds",
+                "hover_reveal",
+                "microinteractions",
+                "custom_cursor_effects",
+                "animated_page_transitions",
+                "neumorphism",
+                "user_centric_design"
+            ],
+            "animation_effects": [
+                "lottie_animations",
+                "cinemagraphs",
+                "gif_animations",
+                "svg_animations",
+                "motion_infused_minimalism",
+                "seamless_loops",
+                "hand_drawn_animation",
+                "2d_animation_with_3d_effects",
+                "animated_graphic_loops",
+                "ui_ux_animations"
+            ],
+            "augmented_and_virtual_reality": [
+                "ar_effects",
+                "vr_experiences",
+                "interactive_packaging",
+                "metaverse_integration",
+                "immersive_billboards"
+            ]
+        },
+        "stylistic_effects": {
+            "retro_and_vintage_effects": [
+                "retro_futurism",
+                "vintage_aesthetic",
+                "retro_color_palette",
+                "distressed_print_effect",
+                "modern_heritage",
+                "y2k_aesthetic",
+                "90s_nostalgia",
+                "80s_retro",
+                "retro_pixels_and_arcade_style",
+                "70s_nostalgia"
+            ],
+            "modern_and_abstract_effects": [
+                "abstract_geometric_shapes",
+                "minimalist_lines",
+                "conceptual_and_abstract_design",
+                "goth_aesthetic",
+                "geometric_composition",
+                "expressive_lettering",
+                "fluid_and_organic_shapes",
+                "modern_surrealism",
+                "pop_futurism",
+                "brutalist_maximalism"
+            ],
+            "mixed_media": [
+                "collage_effects",
+                "digital_scrapbooking",
+                "hand_drawn_illustration",
+                "combined_media_effects",
+                "mixed_media_typography"
+            ]
+        },
+        "conceptual_and_emerging_effects": [
+            "generative_fill",
+            "ai_image_creation",
+            "content_aware_removal",
+            "ai_realism",
+            "dynamic_branding",
+            "generative_typography",
+            "ai_driven_personalization",
+            "ethical_design",
+            "sustainable_design",
+            "inclusive_design",
+            "data_driven_creativity",
+            "custom_shape_cropping"
+        ]
+    }
+}

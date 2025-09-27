@@ -1,0 +1,155 @@
+{
+    "A": {
+        "description": "Subcultures starting with the letter A.",
+        "members": [
+            "Academia",
+            "Art Hoe",
+            "Arts and Crafts",
+            "Beatnik",
+            "Biker",
+            "Biopunk"
+        ]
+    },
+    "B": {
+        "description": "Subcultures starting with the letter B.",
+        "members": [
+            "Bogan"
+        ]
+    },
+    "C": {
+        "description": "Subcultures starting with the letter C.",
+        "members": [
+            "Camp",
+            "Chap Hop",
+            "Cottagecore",
+            "Cyber Goth",
+            "Cybergoth",
+            "Cyberpunk"
+        ]
+    },
+    "D": {
+        "description": "Subcultures starting with the letter D.",
+        "members": [
+            "Dark Academia",
+            "Dazecore",
+            "Dieselpunk"
+        ]
+    },
+    "E": {
+        "description": "Subcultures starting with the letter E.",
+        "members": [
+            "E-Girl/E-Boy",
+            "Emo"
+        ]
+    },
+    "F": {
+        "description": "Subcultures starting with the letter F.",
+        "members": [
+            "Flapper"
+        ]
+    },
+    "G": {
+        "description": "Subcultures starting with the letter G.",
+        "members": [
+            "Geek",
+            "Gibson Girl",
+            "Goth",
+            "Greaser",
+            "Grunge"
+        ]
+    },
+    "H": {
+        "description": "Subcultures starting with the letter H.",
+        "members": [
+            "Health Goth",
+            "Hippie",
+            "Hipster",
+            "Hypebeast"
+        ]
+    },
+    "I": {
+        "description": "Subcultures starting with the letter I.",
+        "members": [
+            "Indie",
+            "Instagoth"
+        ]
+    },
+    "K": {
+        "description": "Subcultures starting with the letter K.",
+        "members": [
+            "Kawaii"
+        ]
+    },
+    "L": {
+        "description": "Subcultures starting with the letter L.",
+        "members": [
+            "Light Academia",
+            "Lolita Fashion"
+        ]
+    },
+    "M": {
+        "description": "Subcultures starting with the letter M.",
+        "members": [
+            "Mallgoth",
+            "Mod"
+        ]
+    },
+    "N": {
+        "description": "Subcultures starting with the letter N.",
+        "members": [
+            "Nerd",
+            "Normcore",
+            "Nu-Goth"
+        ]
+    },
+    "P": {
+        "description": "Subcultures starting with the letter P.",
+        "members": [
+            "Pastel Goth",
+            "Pin-Up",
+            "Preppy",
+            "Punk"
+        ]
+    },
+    "R": {
+        "description": "Subcultures starting with the letter R.",
+        "members": [
+            "Rave",
+            "Rivethead",
+            "Rockabilly"
+        ]
+    },
+    "S": {
+        "description": "Subcultures starting with the letter S.",
+        "members": [
+            "Scene",
+            "Seapunk",
+            "Skater",
+            "Sloane Ranger",
+            "Soft Grunge",
+            "Solarpunk",
+            "Steampunk",
+            "Strega"
+        ]
+    },
+    "T": {
+        "description": "Subcultures starting with the letter T.",
+        "members": [
+            "Teddy Boy",
+            "Trad Goth"
+        ]
+    },
+    "V": {
+        "description": "Subcultures starting with the letter V.",
+        "members": [
+            "Vampire",
+            "VSCO"
+        ]
+    },
+    "W": {
+        "description": "Subcultures starting with the letter W.",
+        "members": [
+            "Witch House"
+        ]
+    }
+}

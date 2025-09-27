@@ -1,0 +1,84 @@
+{
+    "B": {
+        "description": "Stereotypes starting with the letter B.",
+        "members": [
+            "Biker",
+            "Bimbo",
+            "Bogan"
+        ]
+    },
+    "C": {
+        "description": "Stereotypes starting with the letter C.",
+        "members": [
+            "Chav",
+            "Chonga"
+        ]
+    },
+    "E": {
+        "description": "Stereotypes starting with the letter E.",
+        "members": [
+            "E-Girl/E-Boy"
+        ]
+    },
+    "G": {
+        "description": "Stereotypes starting with the letter G.",
+        "members": [
+            "Geek",
+            "Gibson Girl",
+            "Gopnik",
+            "Greaser",
+            "Gyaru"
+        ]
+    },
+    "H": {
+        "description": "Stereotypes starting with the letter H.",
+        "members": [
+            "Hipster",
+            "Hypebeast"
+        ]
+    },
+    "J": {
+        "description": "Stereotypes starting with the letter J.",
+        "members": [
+            "Jock"
+        ]
+    },
+    "N": {
+        "description": "Stereotypes starting with the letter N.",
+        "members": [
+            "Nerd"
+        ]
+    },
+    "P": {
+        "description": "Stereotypes starting with the letter P.",
+        "members": [
+            "Pin-Up",
+            "Preppy"
+        ]
+    },
+    "S": {
+        "description": "Stereotypes starting with the letter S.",
+        "members": [
+            "Skater",
+            "Sloane Ranger"
+        ]
+    },
+    "T": {
+        "description": "Stereotypes starting with the letter T.",
+        "members": [
+            "Teddy Boy"
+        ]
+    },
+    "V": {
+        "description": "Stereotypes starting with the letter V.",
+        "members": [
+            "VSCO"
+        ]
+    },
+    "Y": {
+        "description": "Stereotypes starting with the letter Y.",
+        "members": [
+            "Yuppie"
+        ]
+    }
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definitive Design Prompt Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-200 flex flex-col min-h-screen">
+    <main class="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
+        <div id="appContainer" class="bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 max-w-4xl mx-auto">
+            <header class="text-center mb-6 md:mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Definitive Design Prompt Architect
+                </h1>
+                <p class="text-gray-400 mt-2 text-lg">Your programmatic partner for creative exploration.</p>
+            </header>
+
+            <div class="flex justify-center my-6">
+                <div id="modeSwitcher" class="flex p-1 bg-gray-700 rounded-lg">
+                    <button class="mode-btn active" data-mode="inspiration">Inspiration</button>
+                    <button class="mode-btn" data-mode="creation">Creation</button>
+                    <button class="mode-btn" data-mode="fusion">Fusion</button>
+                </div>
+                <button id="audienceBtn"
+                    class="flex items-center gap-2 p-1 px-3 bg-gray-700 rounded-lg ml-4 text-gray-300 hover:bg-gray-600">
+                    <span class="text-xl">👤</span>
+                    <span>Define Audience</span>
+                </button>
+            </div>
+
+            <div id="inspirationModeContainer">
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="seed" class="text-gray-300 font-medium sm:text-right">Creative Seed:</label>
+                        <input type="text" id="seed"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"
+                            placeholder="Enter a number or leave blank for random">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="architecture" class="text-gray-300 font-medium sm:text-right">Prompt
+                            Architecture:</label>
+                        <select id="architecture"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="novelty" class="text-gray-300 font-medium sm:text-right">Target Novelty
+                            Level:</label>
+                        <select id="novelty"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="modifier" class="text-gray-300 font-medium sm:text-right">Creative Modifier:</label>
+                        <select id="modifier"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                    </div>
+                    <div class="flex justify-center pt-4">
+                        <button id="generateBtn"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">Forge
+                            New Prompt</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="creationModeContainer" class="hidden">
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Designer Persona:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualDesignerPersonas"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customDesignerPersonas"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom persona...">
+                            <button class="custom-toggle-btn text-2xl"
+                                data-component="DesignerPersonas">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Subject:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualSubject"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customSubject"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom subject...">
+                            <button class="custom-toggle-btn text-2xl" data-component="Subject">&#9998;</button>
+
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Style:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualStyle"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customStyle"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom style...">
+                            <button class="custom-toggle-btn text-2xl" data-component="Style">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Emotion/Tone:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualEmotionTone"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customEmotionTone"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom emotion/tone...">
+                            <button class="custom-toggle-btn text-2xl" data-component="EmotionTone">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Materiality:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualMediumMateriality"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customMediumMateriality"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom materiality...">
+                            <button class="custom-toggle-btn text-2xl"
+                                data-component="MediumMateriality">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Process:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualActionProcess"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customActionProcess"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom process...">
+                            <button class="custom-toggle-btn text-2xl" data-component="ActionProcess">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Composition:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualContextComposition"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customContextComposition"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom composition...">
+                            <button class="custom-toggle-btn text-2xl"
+                                data-component="ContextComposition">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Concept:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualConceptualMetaphorical"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customConceptualMetaphorical"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom concept...">
+                            <button class="custom-toggle-btn text-2xl"
+                                data-component="ConceptualMetaphorical">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Graphic Effect:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualGraphicEffects"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customGraphicEffects"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom effect...">
+                            <button class="custom-toggle-btn text-2xl" data-component="GraphicEffects">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Creative Constraint:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualCreativeConstraints"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customCreativeConstraints"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom constraint...">
+                            <button class="custom-toggle-btn text-2xl"
+                                data-component="CreativeConstraints">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label class="text-gray-300 font-medium sm:text-right">Culture/Event Anchor:</label>
+                        <div class="sm:col-span-2 flex items-center gap-2">
+                            <select id="manualCulturalAnchor"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                            <input type="text" id="customCulturalAnchor"
+                                class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-3 hidden"
+                                placeholder="Enter custom culture/event...">
+                            <button class="custom-toggle-btn text-2xl" data-component="CulturalAnchor">&#9998;</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="manualModifier" class="text-gray-300 font-medium sm:text-right">Creative
+                            Modifier:</label>
+                        <select id="manualModifier"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                    </div>
+                    <div class="flex justify-center pt-4">
+                        <button id="assembleBtn"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">Assemble
+                            Brief</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fusionModeContainer" class="hidden">
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Subjects:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionSubjectPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="subject">+ Add Subject</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Styles:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionStylePills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="style">+ Add Style</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Emotions:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionEmotionTonePills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="emotionTone">+ Add Emotion</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Effects:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionGraphicEffectsPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="graphicEffects">+ Add Effect</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Materials:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionMediumMaterialityPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="mediumMateriality">+ Add Material</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Processes:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionActionProcessPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="actionProcess">+ Add Process</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Compositions:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionContextCompositionPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="contextComposition">+ Add
+                                Composition</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Concepts:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionConceptualMetaphoricalPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="conceptualMetaphorical">+ Add
+                                Concept</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Constraints:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionCreativeConstraintsPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="creativeConstraints">+ Add
+                                Constraint</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+                        <label class="text-gray-300 font-medium sm:text-right pt-2">Culture/Events:</label>
+                        <div class="sm:col-span-2 flex flex-wrap items-center gap-2">
+                            <div id="fusionCulturalAnchorPills" class="flex flex-wrap gap-2"></div>
+                            <button class="add-component-btn" data-component="culturalAnchor">+ Add
+                                Culture/Event</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                        <label for="fusionModifier" class="text-gray-300 font-medium sm:text-right">Creative
+                            Modifier:</label>
+                        <select id="fusionModifier"
+                            class="sm:col-span-2 bg-gray-700 border border-gray-600 text-white rounded-lg p-3"></select>
+                    </div>
+                    <div class="flex justify-center pt-4">
+                        <button id="fusionAssembleBtn"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg">Assemble
+                            Fusion
+                            Brief</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8 text-center">
+                <button id="constraintBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-lg">
+                    Add a Creative Constraint
+                </button>
+                <div id="constraintOutput" class="mt-4 text-indigo-400 font-medium text-lg min-h-[28px]">
+                </div>
+            </div>
+
+            <div id="output" class="mt-8">
+                <div id="activeAudienceDisplay"
+                    class="mb-4 p-3 bg-gray-900/50 rounded-lg text-center text-sm text-indigo-300 border border-gray-700 hidden">
+                </div>
+                <div id="pillsContainer" class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-gray-400 italic">Your creative components will appear here...</span>
+                </div>
+
+                <div class="flex border-b border-gray-700 mb-4">
+                    <button class="format-btn active text-white border-indigo-500 py-2 px-4"
+                        data-format="brief">Creative
+                        Brief</button>
+                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                        data-format="ai">AI Prompt</button>
+                    <button class="format-btn text-gray-400 border-transparent hover:text-white py-2 px-4"
+                        data-format="keywords">Keywords</button>
+                    <button id="copyBtn"
+                        class="ml-auto bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-2 px-4 rounded-lg hidden">Copy</button>
+                </div>
+
+                <div id="outputContentArea" class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 min-h-[120px]">
+                    <pre id="brief"
+                        class="text-gray-300 whitespace-pre-wrap text-base leading-relaxed">Click 'Forge New Prompt' to begin.</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="refinementPanel" class="hidden container mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-8">
+        <div class="bg-gray-800 rounded-2xl shadow-2xl p-4 max-w-4xl mx-auto">
+            <h3 class="text-center text-lg font-semibold text-white mb-4">Refine Current Design</h3>
+            <div id="refinementBtns" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button id="refineSimplifyBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Simplify /
+                    Deconstruct</button>
+                <button id="refineElaborateBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Elaborate /
+                    Embellish</button>
+                <button id="refinePerspectiveBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Shift
+                    Perspective</button>
+                <button id="refinePaletteBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Suggest Color
+                    Palette</button>
+            </div>
+            <div id="paletteOutput" class="mt-4 text-center text-sm"></div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-gray-500 text-sm">
+        <p>Built for creative exploration.</p>
+    </footer>
+
+    <div id="fusionModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-4 border-b border-gray-700">
+                <h3 id="modalTitle" class="text-xl font-bold text-white">Select Components</h3>
+            </div>
+            <div class="p-4">
+                <input type="text" id="modalSearch" class="w-full bg-gray-700 p-2 rounded mb-4" placeholder="Search...">
+            </div>
+            <div class="p-4 flex gap-2">
+                <input type="text" id="modalCustomInput" class="w-full bg-gray-900 border border-gray-600 p-2 rounded"
+                    placeholder="Add a custom item...">
+                <button id="modalAddCustomBtn"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Add</button>
+            </div>
+            <div id="modalContent" class="p-4 max-h-64 overflow-y-auto">
+            </div>
+            <div class="p-4 border-t border-gray-700 flex justify-end">
+                <button id="modalCloseBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="audienceModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-xl font-bold text-white">👤 Target Audience Profile</h3>
+                <button id="audienceModalCloseBtn" class="text-2xl">&times;</button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <select id="audienceGender" class="bg-gray-700 p-2 rounded w-full" title="Gender"></select>
+                    <select id="audienceAge" class="bg-gray-700 p-2 rounded w-full" title="Age Group"></select>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                    <div class="flex items-center gap-2">
+                        <select id="audienceLifeStageSelect" class="bg-gray-700 p-2 rounded w-full"
+                            title="Life Stage"></select>
+                        <input type="text" id="audienceLifeStageCustom"
+                            class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                            placeholder="Custom life stage...">
+                        <button class="custom-audience-toggle-btn text-2xl"
+                            data-component="audienceLifeStage">&#9998;</button>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select id="audienceOccupationSelect" class="bg-gray-700 p-2 rounded w-full"
+                            title="Occupation"></select>
+                        <input type="text" id="audienceOccupationCustom"
+                            class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                            placeholder="Custom occupation...">
+                        <button class="custom-audience-toggle-btn text-2xl"
+                            data-component="audienceOccupation">&#9998;</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-2">
+                        <select id="audienceMarket" class="bg-gray-700 p-2 rounded w-full"
+                            title="Target Market"></select>
+                        <button id="findHolidaysBtn"
+                            class="bg-gray-600 hover:bg-gray-700 text-white font-medium p-2 rounded-lg"
+                            title="Find Holidays for selected country">📅</button>
+                    </div>
+                    <select id="audienceLanguage" class="bg-gray-700 p-2 rounded w-full"
+                        title="Language for Text"></select>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="audienceCultureSelect" class="bg-gray-700 p-2 rounded w-full"></select>
+                    <input type="text" id="audienceCultureCustom"
+                        class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                        placeholder="Custom cultural context...">
+                    <button class="custom-audience-toggle-btn text-2xl"
+                        data-component="audienceCulture">&#9998;</button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="audienceValuesSelect" class="bg-gray-700 p-2 rounded w-full"></select>
+                    <input type="text" id="audienceValuesCustom"
+                        class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                        placeholder="Custom core values...">
+                    <button class="custom-audience-toggle-btn text-2xl" data-component="audienceValues">&#9998;</button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="audienceInterestsSelect" class="bg-gray-700 p-2 rounded w-full"></select>
+                    <input type="text" id="audienceInterestsCustom"
+                        class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                        placeholder="Custom key interests...">
+                    <button class="custom-audience-toggle-btn text-2xl"
+                        data-component="audienceInterests">&#9998;</button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="audienceMediaSelect" class="bg-gray-700 p-2 rounded w-full"></select>
+                    <input type="text" id="audienceMediaCustom"
+                        class="bg-gray-900 border border-gray-600 p-2 rounded w-full hidden"
+                        placeholder="Custom media diet...">
+                    <button class="custom-audience-toggle-btn text-2xl" data-component="audienceMedia">&#9998;</button>
+                </div>
+            </div>
+            <div class="p-4 border-t border-gray-700 flex justify-end gap-4">
+                <button id="audienceModalClearBtn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg">Clear
+                    Profile</button>
+                <button id="audienceModalSaveBtn"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg">Save
+                    Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="holidayModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 hidden">
+        <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 id="holidayModalTitle" class="text-xl font-bold text-white">Public Holidays</h3>
+                <button id="holidayModalCloseBtn" class="text-2xl">&times;</button>
+            </div>
+            <div id="holidayList" class="p-4 max-h-80 overflow-y-auto">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

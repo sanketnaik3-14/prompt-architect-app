@@ -1,0 +1,108 @@
+{
+    "Alternative Fashion Styles": {
+        "description": "Fashion styles that exist outside of the mainstream, often associated with subcultures like Goth, Punk, and Emo.",
+        "members": [
+            "Biker",
+            "Cyber Goth",
+            "Cybergoth",
+            "Dark Academia",
+            "E-Girl/E-Boy",
+            "Emo",
+            "Goth",
+            "Grunge",
+            "Health Goth",
+            "Hip-Hop",
+            "Instagoth",
+            "Light Academia",
+            "Mallgoth",
+            "Mod",
+            "Punk",
+            "Rave",
+            "Rockabilly",
+            "Scene",
+            "Skater",
+            "Soft Grunge",
+            "Steampunk",
+            "Teddy Boy",
+            "Vampire",
+            "Whimsigoth"
+        ]
+    },
+    "Feminine Fashion Styles": {
+        "description": "Styles that emphasize traditionally feminine qualities, often characterized by soft colors, delicate fabrics, and romantic or glamorous silhouettes.",
+        "members": [
+            "Baddie",
+            "Barbiecore",
+            "Coquette",
+            "Diva",
+            "Flapper",
+            "Gibson Girl",
+            "Girly",
+            "Hime Gyaru",
+            "Pin-Up",
+            "Princess",
+            "Softie",
+            "VSCO"
+        ]
+    },
+    "Lolita Fashion Styles": {
+        "description": "A Japanese street fashion subculture heavily influenced by Victorian and Edwardian clothing, known for its focus on modesty and cute, doll-like aesthetics.",
+        "members": [
+            "Aristocrat",
+            "Bittersweet Lolita",
+            "Casual Lolita",
+            "Classic Lolita",
+            "Country Lolita",
+            "Ero Lolita",
+            "Gothic Lolita",
+            "Guro Lolita",
+            "Hime Lolita",
+            "Kodona",
+            "Old School Lolita",
+            "Pirate Lolita",
+            "Punk Lolita",
+            "Qi Lolita",
+            "Sailor Lolita",
+            "Shiro & Kuro Lolita",
+            "Sweet Lolita",
+            "Wa Lolita"
+        ]
+    },
+    "Masculine Fashion Styles": {
+        "description": "Styles that emphasize traditionally masculine qualities, often characterized by structured silhouettes, durable fabrics, and functional or powerful aesthetics.",
+        "members": [
+            "Biker",
+            "Dandy",
+            "Greaser",
+            "Kodona",
+            "Preppy",
+            "Skater",
+            "Sloane Ranger",
+            "Teddy Boy"
+        ]
+    },
+    "Streetwear Fashion Styles": {
+        "description": "A style of casual clothing worn by followers of popular culture, originating from skate and hip-hop culture and now encompassing elements of sportswear and high fashion.",
+        "members": [
+            "Baddie",
+            "E-Girl/E-Boy",
+            "Gorpcore",
+            "Greaser",
+            "Hip-Hop",
+            "Hypebeast",
+            "Skater",
+            "Techwear",
+            "Urban"
+        ]
+    },
+    "Other General Styles": {
+        "description": "Broad fashion aesthetics or those not categorized under the other sub-styles.",
+        "members": [
+            "Academia",
+            "Indie",
+            "Normcore",
+            "Old Money",
+            "Vintage"
+        ]
+    }
+}

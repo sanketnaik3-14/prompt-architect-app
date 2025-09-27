@@ -1,0 +1,705 @@
+{
+    "humour_types": [
+        {
+            "category": "Verbal Humour",
+            "items": [
+                {
+                    "type": "Pun",
+                    "description": "A play on words that are similar in sound but different in meaning, often resulting in a groan-worthy joke."
+                },
+                {
+                    "type": "Wit",
+                    "description": "Clever, quick, and intelligent humor, often engaging with intellectually stimulating topics."
+                },
+                {
+                    "type": "Sarcasm",
+                    "description": "The use of irony to mock or convey contempt, relying on vocal tone and context."
+                },
+                {
+                    "type": "Dry Humor (Deadpan)",
+                    "description": "Humor delivered in a flat, unemotional tone, contrasting with the absurdity of the joke."
+                },
+                {
+                    "type": "One-Liner",
+                    "description": "A concise joke that is delivered in a single line, often with a clever or unexpected punchline."
+                },
+                {
+                    "type": "Anecdotal Humor",
+                    "description": "Humor that relies on telling a funny, personal story, whether true or embellished."
+                },
+                {
+                    "type": "Epigrammatic Humor",
+                    "description": "Humor based on a short, witty, and often wise saying."
+                },
+                {
+                    "type": "Hyperbole",
+                    "description": "The use of extravagant exaggeration for comedic effect."
+                },
+                {
+                    "type": "Wordplay",
+                    "description": "A broad category of jokes that rely on the clever manipulation of language."
+                }
+            ]
+        },
+        {
+            "category": "Physical Humour",
+            "items": [
+                {
+                    "type": "Slapstick",
+                    "description": "Exaggerated, over-the-top physical movements, mock violence, and bodily harm for comedic effect."
+                },
+                {
+                    "type": "Physical Comedy",
+                    "description": "A broader category that encompasses any form of humor involving movement, gestures, or funny facial expressions."
+                },
+                {
+                    "type": "Farce",
+                    "description": "Comedy based on highly improbable situations, exaggerated characters, and fast-paced action."
+                }
+            ]
+        },
+        {
+            "category": "Observational & Situational Humour",
+            "items": [
+                {
+                    "type": "Observational Humor",
+                    "description": "Comedy that finds humor in the quirks and common situations of everyday life."
+                },
+                {
+                    "type": "Topical Humor",
+                    "description": "Jokes based on current events, pop culture, or social and political conversations."
+                },
+                {
+                    "type": "Cringe Comedy",
+                    "description": "Humor derived from socially awkward, embarrassing, or uncomfortable situations."
+                },
+                {
+                    "type": "Situational Comedy (Sitcom)",
+                    "description": "Humor arising from a particular setting and the interactions of characters within it."
+                }
+            ]
+        },
+        {
+            "category": "Dark & Taboo Humour",
+            "items": [
+                {
+                    "type": "Dark Humor (Black Comedy)",
+                    "description": "Humor that addresses morbid, taboo, or disturbing subjects like death, illness, or crime in a satirical way."
+                },
+                {
+                    "type": "Toilet Humor",
+                    "description": "Jokes relating to bodily functions and other visceral, gross-out humor."
+                },
+                {
+                    "type": "Aggressive Humor",
+                    "description": "Humor that uses put-downs, insults, and mockery to denigrate others, often reinforcing social hierarchies."
+                }
+            ]
+        },
+        {
+            "category": "Highbrow & Lowbrow Humour",
+            "items": [
+                {
+                    "type": "Highbrow Humor",
+                    "description": "Sophisticated and intellectual humor, often involving complex topics or elaborate satire."
+                },
+                {
+                    "type": "Lowbrow Humor",
+                    "description": "Crude, unsophisticated humor that requires little background knowledge to understand."
+                }
+            ]
+        },
+        {
+            "category": "Ironic Humour",
+            "items": [
+                {
+                    "type": "Situational Irony",
+                    "description": "When the outcome of a situation is the opposite of what is expected."
+                },
+                {
+                    "type": "Dramatic Irony",
+                    "description": "When the audience knows something the characters in a story do not, creating a humorous disparity."
+                }
+            ]
+        },
+        {
+            "category": "Self-Referential Humour",
+            "items": [
+                {
+                    "type": "Self-Deprecating Humor",
+                    "description": "When the speaker makes themselves the butt of the joke, often to build rapport or deflect criticism."
+                },
+                {
+                    "type": "Self-Enhancing Humor",
+                    "description": "Using humor to cope with or find a positive perspective on a stressful situation."
+                },
+                {
+                    "type": "Meta Humor",
+                    "description": "Humor that is self-referential, commenting on the very act of telling a joke or being in a comedic situation."
+                }
+            ]
+        },
+        {
+            "category": "Surreal & Absurdist Humour",
+            "items": [
+                {
+                    "type": "Surreal Humor (Absurdist)",
+                    "description": "Humor that defies logic and relies on absurd or illogical situations and dialogue."
+                },
+                {
+                    "type": "Anti-Humor",
+                    "description": "Humor that is intentionally unfunny, subverting expectations by building up a joke with no satisfying punchline."
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "humour_types": [
+        {
+            "category": "Verbal Humour",
+            "items": [
+                {
+                    "type": "Dad Jokes",
+                    "description": "Wholesome, simple, and often groan-worthy puns, typically delivered with a playful, un-edgy demeanor."
+                },
+                {
+                    "type": "Parody",
+                    "description": "Humor that imitates and makes fun of a particular work, genre, or style."
+                },
+                {
+                    "type": "Spoonerism",
+                    "description": "The transposition of initial consonants or letters in a phrase to create a comical effect."
+                },
+                {
+                    "type": "Malapropism",
+                    "description": "The unintentional misuse of a word for a similar-sounding one, resulting in a nonsensical and humorous statement."
+                },
+                {
+                    "type": "Understatement",
+                    "description": "The presentation of something as being smaller, worse, or less important than it actually is."
+                },
+                {
+                    "type": "Overstatement",
+                    "description": "The exaggeration of a situation for comedic effect."
+                },
+                {
+                    "type": "Innuendo",
+                    "description": "A clever or suggestive remark, often hinting at something risqué or inappropriate."
+                }
+            ]
+        },
+        {
+            "category": "Observational & Situational Humour",
+            "items": [
+                {
+                    "type": "Topical Humor",
+                    "description": "Jokes based on current events, news, or trends."
+                },
+                {
+                    "type": "Satire",
+                    "description": "The use of humor, irony, or exaggeration to expose and criticize people's stupidity or vices, particularly in the context of politics and other topical issues."
+                },
+                {
+                    "type": "Juvenile Humor (Sophomoric)",
+                    "description": "Comedy involving childish themes such as pranks, name-calling, and other immature behavior."
+                }
+            ]
+        },
+        {
+            "category": "Highbrow & Lowbrow Humour",
+            "items": [
+                {
+                    "type": "Broad Humor",
+                    "description": "Unrestrained, unsubtle humor often marked by coarse jokes and sexual situations."
+                },
+                {
+                    "type": "Droll Humor",
+                    "description": "Utilizes a capricious or eccentric style of humor."
+                }
+            ]
+        },
+        {
+            "category": "Ironic Humour",
+            "items": [
+                {
+                    "type": "Dramatic Irony",
+                    "description": "When the audience is aware of something that the characters in a story are not."
+                }
+            ]
+        },
+        {
+            "category": "Psychological Humour",
+            "items": [
+                {
+                    "type": "Affiliative Humor",
+                    "description": "Humor used to enhance one's relationships with others in a benevolent and positive manner."
+                },
+                {
+                    "type": "Self-Enhancing Humor",
+                    "description": "A style of humor related to having a good-natured attitude toward life, often used as a coping mechanism."
+                },
+                {
+                    "type": "Aggressive Humor",
+                    "description": "A style of humor characterized by the use of potentially detrimental content toward others, such as sarcasm, put-downs, and ridicule."
+                },
+                {
+                    "type": "Self-Defeating Humor",
+                    "description": "The use of humor potentially detrimental to oneself to gain approval from others, often masking negative feelings."
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "humour_types": [
+        {
+            "category": "Verbal Humour",
+            "items": [
+                {
+                    "type": "Dad Jokes",
+                    "description": "Wholesome, simple, and often groan-worthy puns, typically delivered with a playful, un-edgy demeanor."
+                },
+                {
+                    "type": "Parody",
+                    "description": "Humor that imitates and makes fun of a particular work, genre, or style."
+                },
+                {
+                    "type": "Spoonerism",
+                    "description": "The transposition of initial consonants or letters in a phrase to create a comical effect."
+                },
+                {
+                    "type": "Malapropism",
+                    "description": "The unintentional misuse of a word for a similar-sounding one, resulting in a nonsensical and humorous statement."
+                },
+                {
+                    "type": "Understatement",
+                    "description": "The presentation of something as being smaller, worse, or less important than it actually is."
+                },
+                {
+                    "type": "Innuendo",
+                    "description": "A clever or suggestive remark, often hinting at something risqué or inappropriate."
+                },
+                {
+                    "type": "Double Entendre",
+                    "description": "A figure of speech with two interpretations, one of which is often risqué or indecent."
+                },
+                {
+                    "type": "Epigrammatic Humor",
+                    "description": "Humor consisting of a concise, witty, and often wise saying."
+                },
+                {
+                    "type": "Wordplay",
+                    "description": "Humor that relies on the clever manipulation of language, including puns, spoonerisms, and other linguistic devices."
+                },
+                {
+                    "type": "Witty Humor",
+                    "description": "Humor that involves clever, quick, and intelligent phrasing."
+                }
+            ]
+        },
+        {
+            "category": "Observational & Situational Humour",
+            "items": [
+                {
+                    "type": "Topical Humor",
+                    "description": "Jokes based on current events, pop culture, or social and political conversations."
+                },
+                {
+                    "type": "Satire",
+                    "description": "The use of humor, irony, or exaggeration to expose and criticize people's stupidity or vices, particularly in the context of politics and other topical issues."
+                },
+                {
+                    "type": "Juvenile Humor (Sophomoric)",
+                    "description": "Comedy involving childish themes such as pranks, name-calling, and other immature behavior."
+                },
+                {
+                    "type": "Cringe Comedy",
+                    "description": "Humor derived from socially awkward, embarrassing, or uncomfortable situations."
+                },
+                {
+                    "type": "Observational Humor",
+                    "description": "Comedy that finds humor in the quirks and common situations of everyday life."
+                },
+                {
+                    "type": "Situational Comedy (Sitcom)",
+                    "description": "Humor arising from a particular setting and the interactions of characters within it."
+                }
+            ]
+        },
+        {
+            "category": "Highbrow & Lowbrow Humour",
+            "items": [
+                {
+                    "type": "Broad Humor",
+                    "description": "Unrestrained, unsubtle humor often marked by coarse jokes and sexual situations."
+                },
+                {
+                    "type": "Droll Humor",
+                    "description": "Utilizes a capricious or eccentric style of humor."
+                },
+                {
+                    "type": "Highbrow Humor",
+                    "description": "Sophisticated and intellectual humor, often involving complex topics or elaborate satire."
+                },
+                {
+                    "type": "Lowbrow Humor",
+                    "description": "Crude, unsophisticated humor that requires little background knowledge to understand."
+                }
+            ]
+        },
+        {
+            "category": "Psychological Humour",
+            "items": [
+                {
+                    "type": "Affiliative Humor",
+                    "description": "Humor used to enhance one's relationships with others in a benevolent and positive manner."
+                },
+                {
+                    "type": "Self-Enhancing Humor",
+                    "description": "A style of humor related to having a good-natured attitude toward life, often used as a coping mechanism."
+                },
+                {
+                    "type": "Aggressive Humor",
+                    "description": "A style of humor characterized by the use of potentially detrimental content toward others, such as sarcasm, put-downs, and ridicule."
+                },
+                {
+                    "type": "Self-Defeating Humor",
+                    "description": "The use of humor potentially detrimental to oneself to gain approval from others, often masking negative feelings."
+                }
+            ]
+        },
+        {
+            "category": "Ironic Humour",
+            "items": [
+                {
+                    "type": "Situational Irony",
+                    "description": "When the outcome of a situation is the opposite of what is expected."
+                },
+                {
+                    "type": "Dramatic Irony",
+                    "description": "When the audience knows something the characters in a story do not, creating a humorous disparity."
+                }
+            ]
+        },
+        {
+            "category": "Surreal & Absurdist Humour",
+            "items": [
+                {
+                    "type": "Surreal Humor (Absurdist)",
+                    "description": "Humor that defies logic and relies on absurd or illogical situations and dialogue."
+                },
+                {
+                    "type": "Anti-Humor",
+                    "description": "Humor that is intentionally unfunny, subverting expectations by building up a joke with no satisfying punchline."
+                }
+            ]
+        },
+        {
+            "category": "Dark & Taboo Humour",
+            "items": [
+                {
+                    "type": "Dark Humor (Black Comedy)",
+                    "description": "Humor that addresses morbid, taboo, or disturbing subjects like death, illness, or crime in a satirical way."
+                },
+                {
+                    "type": "Toilet Humor",
+                    "description": "Jokes relating to bodily functions and other visceral, gross-out humor."
+                }
+            ]
+        },
+        {
+            "category": "Performance & Delivery",
+            "items": [
+                {
+                    "type": "Deadpan/Dry Humor",
+                    "description": "Delivered in a flat, unemotional tone, contrasting with the absurdity of the joke."
+                },
+                {
+                    "type": "Slapstick",
+                    "description": "Exaggerated, over-the-top physical movements, mock violence, and bodily harm for comedic effect."
+                },
+                {
+                    "type": "Physical Comedy",
+                    "description": "Any form of humor involving movement, gestures, or funny facial expressions."
+                },
+                {
+                    "type": "One-Liner",
+                    "description": "A concise joke that is delivered in a single line, often with a clever or unexpected punchline."
+                },
+                {
+                    "type": "Anecdotal Humor",
+                    "description": "Humor that relies on telling a funny, personal story, whether true or embellished."
+                },
+                {
+                    "type": "Farce",
+                    "description": "Comedy based on highly improbable situations, exaggerated characters, and fast-paced action."
+                },
+                {
+                    "type": "Stand-up Comedy",
+                    "description": "A form of comedy delivered live by a comedian to an audience."
+                },
+                {
+                    "type": "Banter",
+                    "description": "Witty, spontaneous, and informal conversational humor."
+                },
+                {
+                    "type": "Burlesque",
+                    "description": "Humor that ridicules by imitating with caricature or exaggerated characterization."
+                },
+                {
+                    "type": "Screwball",
+                    "description": "Humor that deals with unlikely situations and responses, characterized by exaggerated characters and fast-paced action."
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "humour_types": [
+        {
+            "category": "Verbal Humour",
+            "items": [
+                {
+                    "type": "Dad Jokes",
+                    "description": "Wholesome, simple, and often groan-worthy puns, typically delivered with a playful, un-edgy demeanor."
+                },
+                {
+                    "type": "Parody",
+                    "description": "Humor that imitates and makes fun of a particular work, genre, or style."
+                },
+                {
+                    "type": "Spoonerism",
+                    "description": "The transposition of initial consonants or letters in a phrase to create a comical effect."
+                },
+                {
+                    "type": "Malapropism",
+                    "description": "The unintentional misuse of a word for a similar-sounding one, resulting in a nonsensical and humorous statement."
+                },
+                {
+                    "type": "Understatement",
+                    "description": "The presentation of something as being smaller, worse, or less important than it actually is."
+                },
+                {
+                    "type": "Innuendo",
+                    "description": "A clever or suggestive remark, often hinting at something risqué or inappropriate."
+                },
+                {
+                    "type": "Double Entendre",
+                    "description": "A figure of speech with two interpretations, one of which is often risqué or indecent."
+                },
+                {
+                    "type": "Epigrammatic Humor",
+                    "description": "Humor consisting of a concise, witty, and often wise saying."
+                },
+                {
+                    "type": "Wordplay",
+                    "description": "Humor that relies on the clever manipulation of language, including puns, spoonerisms, and other linguistic devices."
+                },
+                {
+                    "type": "Witty Humor",
+                    "description": "Humor that involves clever, quick, and intelligent phrasing."
+                }
+            ]
+        },
+        {
+            "category": "Observational & Situational Humour",
+            "items": [
+                {
+                    "type": "Topical Humor",
+                    "description": "Jokes based on current events, pop culture, or social and political conversations."
+                },
+                {
+                    "type": "Satire",
+                    "description": "The use of humor, irony, or exaggeration to expose and criticize people's stupidity or vices, particularly in the context of politics and other topical issues."
+                },
+                {
+                    "type": "Juvenile Humor (Sophomoric)",
+                    "description": "Comedy involving childish themes such as pranks, name-calling, and other immature behavior."
+                },
+                {
+                    "type": "Cringe Comedy",
+                    "description": "Humor derived from socially awkward, embarrassing, or uncomfortable situations."
+                },
+                {
+                    "type": "Observational Humor",
+                    "description": "Comedy that finds humor in the quirks and common situations of everyday life."
+                },
+                {
+                    "type": "Situational Comedy (Sitcom)",
+                    "description": "Humor arising from a particular setting and the interactions of characters within it."
+                }
+            ]
+        },
+        {
+            "category": "Highbrow & Lowbrow Humour",
+            "items": [
+                {
+                    "type": "Broad Humor",
+                    "description": "Unrestrained, unsubtle humor often marked by coarse jokes and sexual situations."
+                },
+                {
+                    "type": "Droll Humor",
+                    "description": "Utilizes a capricious or eccentric style of humor."
+                },
+                {
+                    "type": "Highbrow Humor",
+                    "description": "Sophisticated and intellectual humor, often involving complex topics or elaborate satire."
+                },
+                {
+                    "type": "Lowbrow Humor",
+                    "description": "Crude, unsophisticated humor that requires little background knowledge to understand."
+                }
+            ]
+        },
+        {
+            "category": "Psychological Humour",
+            "items": [
+                {
+                    "type": "Affiliative Humor",
+                    "description": "Humor used to enhance one's relationships with others in a benevolent and positive manner."
+                },
+                {
+                    "type": "Self-Enhancing Humor",
+                    "description": "A style of humor related to having a good-natured attitude toward life, often used as a coping mechanism."
+                },
+                {
+                    "type": "Aggressive Humor",
+                    "description": "A style of humor characterized by the use of potentially detrimental content toward others, such as sarcasm, put-downs, and ridicule."
+                },
+                {
+                    "type": "Self-Defeating Humor",
+                    "description": "The use of humor potentially detrimental to oneself to gain approval from others, often masking negative feelings."
+                }
+            ]
+        },
+        {
+            "category": "Ironic Humour",
+            "items": [
+                {
+                    "type": "Situational Irony",
+                    "description": "When the outcome of a situation is the opposite of what is expected."
+                },
+                {
+                    "type": "Dramatic Irony",
+                    "description": "When the audience knows something the characters in a story do not, creating a humorous disparity."
+                },
+                {
+                    "type": "Sarcasm",
+                    "description": "The use of irony to mock or convey contempt, relying on vocal tone and context."
+                }
+            ]
+        },
+        {
+            "category": "Surreal & Absurdist Humour",
+            "items": [
+                {
+                    "type": "Surreal Humor (Absurdist)",
+                    "description": "Humor that defies logic and relies on absurd or illogical situations and dialogue."
+                },
+                {
+                    "type": "Anti-Humor",
+                    "description": "Humor that is intentionally unfunny, subverting expectations by building up a joke with no satisfying punchline."
+                }
+            ]
+        },
+        {
+            "category": "Dark & Taboo Humour",
+            "items": [
+                {
+                    "type": "Dark Humor (Black Comedy)",
+                    "description": "Humor that addresses morbid, taboo, or disturbing subjects like death, illness, or crime in a satirical way."
+                },
+                {
+                    "type": "Toilet Humor",
+                    "description": "Jokes relating to bodily functions and other visceral, gross-out humor."
+                },
+                {
+                    "type": "Blue Humor",
+                    "description": "Relies on impropriety or indecency for comic effect, often dealing with sexual themes or profanity."
+                },
+                {
+                    "type": "Gallows Humor",
+                    "description": "Humor that deals with grim or depressing subjects in a pessimistic manner."
+                }
+            ]
+        },
+        {
+            "category": "Performance & Delivery",
+            "items": [
+                {
+                    "type": "Deadpan/Dry Humor",
+                    "description": "Delivered in a flat, unemotional tone, contrasting with the absurdity of the joke."
+                },
+                {
+                    "type": "Slapstick",
+                    "description": "Exaggerated, over-the-top physical movements, mock violence, and bodily harm for comedic effect."
+                },
+                {
+                    "type": "Physical Comedy",
+                    "description": "Any form of humor involving movement, gestures, or funny facial expressions."
+                },
+                {
+                    "type": "One-Liner",
+                    "description": "A concise joke that is delivered in a single line, often with a clever or unexpected punchline."
+                },
+                {
+                    "type": "Anecdotal Humor",
+                    "description": "Humor that relies on telling a funny, personal story, whether true or embellished."
+                },
+                {
+                    "type": "Farce",
+                    "description": "Comedy based on highly improbable situations, exaggerated characters, and fast-paced action."
+                },
+                {
+                    "type": "Stand-up Comedy",
+                    "description": "A form of comedy delivered live by a comedian to an audience."
+                },
+                {
+                    "type": "Banter",
+                    "description": "Witty, spontaneous, and informal conversational humor."
+                },
+                {
+                    "type": "Burlesque",
+                    "description": "Humor that ridicules by imitating with caricature or exaggerated characterization."
+                },
+                {
+                    "type": "Screwball",
+                    "description": "Humor that deals with unlikely situations and responses to those situations, with exaggerated characters and fast-paced action."
+                }
+            ]
+        },
+        {
+            "category": "Rhetorical Devices & Techniques",
+            "items": [
+                {
+                    "type": "Hyperbole",
+                    "description": "Humor based on extravagant exaggeration and oversized characterization."
+                },
+                {
+                    "type": "Paraprosdokian",
+                    "description": "A figure of speech in which the latter part of a sentence is surprising and unexpected, forcing a reinterpretation of the first part."
+                },
+                {
+                    "type": "Aphorism",
+                    "description": "The use of witty or wise sayings for comedic effect."
+                },
+                {
+                    "type": "Euphemism",
+                    "description": "Using a mild or indirect word in a humorous way to refer to something unpleasant or embarrassing."
+                },
+                {
+                    "type": "Pun-Related Patterns",
+                    "description": "Linguistic patterns and devices that involve plays on words."
+                },
+                {
+                    "type": "Exaggeration",
+                    "description": "Magnifying or overstating something beyond its normal proportions for comic effect."
+                }
+            ]
+        }
+    ]
+}

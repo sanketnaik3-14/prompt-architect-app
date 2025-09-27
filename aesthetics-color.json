@@ -1,0 +1,151 @@
+{
+    "Red": {
+        "description": "Aesthetics characterized by the color red, often associated with passion, love, anger, and intensity.",
+        "members": [
+            "Cokecore",
+            "Devilcore",
+            "Lovecore",
+            "Medical",
+            "Rococo",
+            "Tomato Girl",
+            "Vampire"
+        ]
+    },
+    "Orange": {
+        "description": "Aesthetics that feature the color orange, often evoking warmth, energy, and nostalgia.",
+        "members": [
+            "Atomic Age",
+            "Cozy",
+            "Dark Academia",
+            "Groovy",
+            "Light Academia",
+            "Retro"
+        ]
+    },
+    "Yellow": {
+        "description": "Aesthetics defined by the color yellow, typically associated with happiness, warmth, and creativity.",
+        "members": [
+            "Art Hoe",
+            "Dandelion",
+            "Honeycore",
+            "Old Money",
+            "Star"
+        ]
+    },
+    "Green": {
+        "description": "Aesthetics that heavily feature the color green, often linked to nature, life, and sometimes the surreal.",
+        "members": [
+            "Dark Naturalism",
+            "Forestpunk",
+            "Goblincore",
+            "Greencore",
+            "Jungle",
+            "Liminal Space",
+            "Mosscore",
+            "Slimepunk",
+            "Solarpunk",
+            "Tennis",
+            "Zombie"
+        ]
+    },
+    "Blue": {
+        "description": "Aesthetics characterized by the color blue, which can evoke feelings of calmness, sadness, or wonder.",
+        "members": [
+            "Blueberry",
+            "Coastal Grandma",
+            "Frutiger Aero",
+            "Minimalist",
+            "Nautical",
+            "Ocean Academia",
+            "Poolcore",
+            "Seapunk",
+            "Weather"
+        ]
+    },
+    "Purple": {
+        "description": "Aesthetics that use the color purple, often associated with royalty, mystery, and technology.",
+        "members": [
+            "Cyberdelic",
+            "Diva",
+            "Glowwave",
+            "Rave",
+            "Synthwave",
+            "Vaporwave",
+            "Whimsigoth",
+            "Witch House"
+        ]
+    },
+    "Pink": {
+        "description": "Aesthetics defined by the color pink, typically linked to femininity, sweetness, and romance.",
+        "members": [
+            "Barbiecore",
+            "Coquette",
+            "Dollcore",
+            "Girly",
+            "Kawaii",
+            "Lovecore",
+            "Pastel",
+            "Pink Academia",
+            "Pink Princess",
+            "Pink Sugar",
+            "Rococo",
+            "Softie",
+            "Sweet Lolita",
+            "Yume Kawaii"
+        ]
+    },
+    "Brown": {
+        "description": "Aesthetics that feature the color brown, often evoking a sense of warmth, earthiness, and intellectualism.",
+        "members": [
+            "Autumn",
+            "Bronze Age",
+            "Caffe Mocha",
+            "Coffeehouse",
+            "Cozy",
+            "Dark Academia",
+            "Dark Naturalism",
+            "Goblincore",
+            "Old Money",
+            "Steampunk",
+            "Scriptorum",
+            "Tattered"
+        ]
+    },
+    "Greyscale": {
+        "description": "Aesthetics based on a palette of black, white, and shades of grey, often creating a dramatic, nostalgic, or minimalist feel.",
+        "members": [
+            "Black and White",
+            "Christian Girl Autumn",
+            "Classic Academia",
+            "Corporate",
+            "Cyber Goth",
+            "Darkest Academia",
+            "Film Noir",
+            "Glitch",
+            "Gothic",
+            "Health Goth",
+            "Horror",
+            "Industrial",
+            "Mall Goth",
+            "Minimalist",
+            "Old Hollywood",
+            "Silver",
+            "Spooky",
+            "Vantablack"
+        ]
+    },
+    "Other": {
+        "description": "Aesthetics defined by color properties beyond a single hue, such as metallics, iridescence, or a full spectrum of colors.",
+        "members": [
+            "Auroracore",
+            "Bling",
+            "Golden",
+            "Glow",
+            "Iridescent",
+            "Neon",
+            "Rainbowcore",
+            "Silver",
+            "Tacky"
+        ]
+    }
+}

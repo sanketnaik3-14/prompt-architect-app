@@ -1,0 +1,2348 @@
+{
+    "man_made_objects": [
+        {
+            "category": "Analog Tech",
+            "items": [
+                "Cassette tape",
+                "Rotary phone",
+                "CRT television",
+                "Vinyl record",
+                "Floppy disk",
+                "Typewriter"
+            ]
+        },
+        {
+            "category": "Tools of a Trade",
+            "items": [
+                "A luthier's chisel",
+                "A cartographer's compass",
+                "A calligrapher's nib",
+                "A chemist's beaker",
+                "A potter's wheel",
+                "A glassblower's pipe"
+            ]
+        },
+        {
+            "category": "Architectural Elements",
+            "items": [
+                "Gargoyle",
+                "Flying buttress",
+                "Art Deco doorway",
+                "Brutalist concrete facade",
+                "Stained glass window",
+                "Corinthian column"
+            ]
+        },
+        {
+            "category": "Modes of Transportation",
+            "items": [
+                "Automobile",
+                "Train",
+                "Bicycle",
+                "Airplane",
+                "Sailing ship",
+                "Hot air balloon"
+            ]
+        },
+        {
+            "category": "Household Items",
+            "items": [
+                "Wooden chair",
+                "Electric lamp",
+                "Toaster",
+                "Porcelain plate",
+                "Woolen blanket",
+                "Digital clock"
+            ]
+        },
+        {
+            "category": "Communication Devices",
+            "items": [
+                "Smartphone",
+                "Satellite dish",
+                "Fiber optic cable",
+                "Printing press",
+                "Telegraph machine",
+                "Postal stamp"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Celestial Bodies",
+            "items": [
+                "Star",
+                "Planet",
+                "Moon",
+                "Comet",
+                "Nebula",
+                "Black hole"
+            ]
+        },
+        {
+            "category": "Biological Life",
+            "items": [
+                "Elephant",
+                "Oak tree",
+                "Mushroom",
+                "Bacteria",
+                "Coral reef",
+                "Monarch butterfly"
+            ]
+        },
+        {
+            "category": "Geological Formations",
+            "items": [
+                "Mountain",
+                "River",
+                "Desert",
+                "Glacier",
+                "Geyser",
+                "Canyon"
+            ]
+        },
+        {
+            "category": "Elements and Minerals",
+            "items": [
+                "Gold",
+                "Granite",
+                "Diamond",
+                "Water",
+                "Quartz crystal",
+                "Petroleum"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Ideas and Knowledge",
+            "items": [
+                "Theory of relativity",
+                "Democracy",
+                "Philosophy",
+                "Software algorithm",
+                "Musical composition",
+                "Language syntax"
+            ]
+        },
+        {
+            "category": "Emotions",
+            "items": [
+                "Love",
+                "Fear",
+                "Joy",
+                "Sadness",
+                "Anger",
+                "Surprise"
+            ]
+        },
+        {
+            "category": "Rules and Principles",
+            "items": [
+                "Laws of physics",
+                "Code of ethics",
+                "Mathematical axioms",
+                "Legal statutes",
+                "Traffic regulations"
+            ]
+        },
+        {
+            "category": "Phenomena and Processes",
+            "items": [
+                "Gravity",
+                "Photosynthesis",
+                "Magnetism",
+                "Thermodynamics",
+                "Evolution",
+                "Inflation"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Scientific Equipment",
+            "items": [
+                "Telescope",
+                "Microscope",
+                "Bunsen burner",
+                "Centrifuge",
+                "Particle accelerator",
+                "Spectrometer"
+            ]
+        },
+        {
+            "category": "Musical Instruments",
+            "items": [
+                "Piano",
+                "Guitar",
+                "Drum kit",
+                "Violin",
+                "Saxophone",
+                "Synthesizer"
+            ]
+        },
+        {
+            "category": "Clothing and Accessories",
+            "items": [
+                "Silk scarf",
+                "Leather belt",
+                "Denim jacket",
+                "Wristwatch",
+                "High-heeled shoe",
+                "Pair of eyeglasses"
+            ]
+        },
+        {
+            "category": "Printed Materials",
+            "items": [
+                "Hardcover book",
+                "Magazine",
+                "Newspaper",
+                "Map",
+                "Photographic print",
+                "Passport"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Diatom",
+                "Virus",
+                "Yeast cell",
+                "Pollen grain",
+                "Plankton",
+                "Single-celled amoeba"
+            ]
+        },
+        {
+            "category": "Meteorological Phenomena",
+            "items": [
+                "Hurricane",
+                "Tornado",
+                "Rainbow",
+                "Lightning bolt",
+                "Hailstone",
+                "Aurora borealis"
+            ]
+        },
+        {
+            "category": "Body Parts",
+            "items": [
+                "Eyelash",
+                "Fingernail",
+                "Tooth",
+                "Hair follicle",
+                "Human heart",
+                "Skeleton"
+            ]
+        },
+        {
+            "category": "Biomes and Ecosystems",
+            "items": [
+                "Rainforest",
+                "Savanna",
+                "Tundra",
+                "Wetland",
+                "Deep-sea vent",
+                "Coral reef"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Mathematics",
+            "items": [
+                "Calculus",
+                "Algebraic variable",
+                "Geometric shape",
+                "Statistical probability",
+                "Prime number",
+                "Infinite set"
+            ]
+        },
+        {
+            "category": "Social Constructs",
+            "items": [
+                "Money",
+                "Marriage",
+                "Citizenship",
+                "Human rights",
+                "Social class",
+                "Education system"
+            ]
+        },
+        {
+            "category": "Units of Measurement",
+            "items": [
+                "Meter",
+                "Kilogram",
+                "Second",
+                "Celsius degree",
+                "Decibel",
+                "Pascal"
+            ]
+        },
+        {
+            "category": "Literary Elements",
+            "items": [
+                "Metaphor",
+                "Hyperbole",
+                "Rhyme scheme",
+                "Plot twist",
+                "Foreshadowing",
+                "Character archetype"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Office and School Supplies",
+            "items": [
+                "Ballpoint pen",
+                "Spiral-bound notebook",
+                "Stapler",
+                "Highlighter",
+                "Whiteboard",
+                "Locker"
+            ]
+        },
+        {
+            "category": "Household Appliances",
+            "items": [
+                "Refrigerator",
+                "Microwave oven",
+                "Washing machine",
+                "Coffee maker",
+                "Vacuum cleaner",
+                "Blender"
+            ]
+        },
+        {
+            "category": "Food and Drink Items",
+            "items": [
+                "Bag of chips",
+                "Bottle of soda",
+                "Canned soup",
+                "Chocolate bar",
+                "Plastic water bottle",
+                "Glass of orange juice"
+            ]
+        },
+        {
+            "category": "Toys and Games",
+            "items": [
+                "Board game",
+                "Action figure",
+                "Video game console",
+                "Building blocks",
+                "Jump rope",
+                "Bicycle"
+            ]
+        },
+        {
+            "category": "Medical Equipment",
+            "items": [
+                "Stethoscope",
+                "Syringe",
+                "Band-aid",
+                "Wheelchair",
+                "Crutches",
+                "X-ray machine"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Marine Life",
+            "items": [
+                "Whale",
+                "Dolphin",
+                "Sea turtle",
+                "Jellyfish",
+                "Octopus",
+                "Coral"
+            ]
+        },
+        {
+            "category": "Insects and Arachnids",
+            "items": [
+                "Ant",
+                "Spider",
+                "Butterfly",
+                "Bee",
+                "Mosquito",
+                "Scorpion"
+            ]
+        },
+        {
+            "category": "Flora",
+            "items": [
+                "Rose bush",
+                "Fern",
+                "Moss",
+                "Sunflower",
+                "Cactus",
+                "Mushroom"
+            ]
+        },
+        {
+            "category": "Fungi",
+            "items": [
+                "Amanita mushroom",
+                "Yeast",
+                "Mold",
+                "Truffle",
+                "Penicillium"
+            ]
+        },
+        {
+            "category": "Weather and Climate",
+            "items": [
+                "Cloud",
+                "Raindrop",
+                "Snowflake",
+                "Tornado",
+                "Hurricane",
+                "Rainbow"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Mathematics",
+            "items": [
+                "Equation",
+                "Formula",
+                "Theorem",
+                "Algorithm",
+                "Variable",
+                "Constant"
+            ]
+        },
+        {
+            "category": "Philosophy",
+            "items": [
+                "Existentialism",
+                "Utilitarianism",
+                "Epistemology",
+                "Metaphysics",
+                "Stoicism",
+                "Hedonism"
+            ]
+        },
+        {
+            "category": "Social Sciences",
+            "items": [
+                "Culture",
+                "Society",
+                "Economy",
+                "Politics",
+                "Sociology",
+                "Psychology"
+            ]
+        },
+        {
+            "category": "Arts and Literature",
+            "items": [
+                "Novel",
+                "Poem",
+                "Painting",
+                "Sculpture",
+                "Symphony",
+                "Ballet"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Construction and Infrastructure",
+            "items": [
+                "Skyscraper",
+                "Dam",
+                "Sewer system",
+                "Tunnel",
+                "Canal",
+                "Streetlight"
+            ]
+        },
+        {
+            "category": "Art and Artifacts",
+            "items": [
+                "Painting",
+                "Sculpture",
+                "Ceramic vase",
+                "Weaving",
+                "Engraving",
+                "Digital art file"
+            ]
+        },
+        {
+            "category": "Recreation and Sports",
+            "items": [
+                "Football",
+                "Skateboard",
+                "Bowling pin",
+                "Chess set",
+                "Hockey stick",
+                "Kayak"
+            ]
+        },
+        {
+            "category": "Containers and Packaging",
+            "items": [
+                "Cardboard box",
+                "Glass jar",
+                "Plastic bag",
+                "Aluminum can",
+                "Shipping container",
+                "Cork"
+            ]
+        },
+        {
+            "category": "Measuring and Timekeeping",
+            "items": [
+                "Sundial",
+                "Hourglass",
+                "Ruler",
+                "Thermometer",
+                "Protractor",
+                "Stopwatch"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Geological Features",
+            "items": [
+                "Cave",
+                "Volcano",
+                "Sand dune",
+                "Fjord",
+                "Stalactite",
+                "Geode"
+            ]
+        },
+        {
+            "category": "Plant Parts",
+            "items": [
+                "Leaf",
+                "Seed",
+                "Root",
+                "Flower petal",
+                "Tree bark",
+                "Pistil"
+            ]
+        },
+        {
+            "category": "Terrestrial Animals",
+            "items": [
+                "Wolf",
+                "Bear",
+                "Kangaroo",
+                "Armadillo",
+                "Hedgehog",
+                "Komodo dragon"
+            ]
+        },
+        {
+            "category": "Water Forms",
+            "items": [
+                "Waterfall",
+                "Lake",
+                "River delta",
+                "Hot spring",
+                "Iceberg",
+                "Estuary"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Crystal",
+                "Obsidian",
+                "Limestone",
+                "Jade",
+                "Feldspar",
+                "Basalt"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Time and History",
+            "items": [
+                "Century",
+                "Moment",
+                "Renaissance",
+                "Future",
+                "Era",
+                "Decade"
+            ]
+        },
+        {
+            "category": "Human Behavior",
+            "items": [
+                "Altruism",
+                "Patience",
+                "Courage",
+                "Compassion",
+                "Honesty",
+                "Grief"
+            ]
+        },
+        {
+            "category": "Units of Currency",
+            "items": [
+                "Dollar",
+                "Euro",
+                "Yen",
+                "Bitcoin",
+                "Credit",
+                "Bartering"
+            ]
+        },
+        {
+            "category": "Literary Genres",
+            "items": [
+                "Science fiction",
+                "Biography",
+                "Fantasy",
+                "Poetry",
+                "Satire",
+                "Tragedy"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Construction Materials",
+            "items": [
+                "Brick",
+                "Cement",
+                "Drywall",
+                "Plywood",
+                "Insulation",
+                "Concrete block"
+            ]
+        },
+        {
+            "category": "Electronic Components",
+            "items": [
+                "Microchip",
+                "Transistor",
+                "Capacitor",
+                "Resistor",
+                "Circuit board",
+                "LED"
+            ]
+        },
+        {
+            "category": "Household Furnishings",
+            "items": [
+                "Sofa",
+                "Dining table",
+                "Curtains",
+                "Rug",
+                "Bookcase",
+                "Mattress"
+            ]
+        },
+        {
+            "category": "Textiles and Fabrics",
+            "items": [
+                "Cotton cloth",
+                "Silk thread",
+                "Wool sweater",
+                "Polyester fibers",
+                "Linen napkin",
+                "Denim jeans"
+            ]
+        },
+        {
+            "category": "Security and Safety Devices",
+            "items": [
+                "Smoke detector",
+                "Fire extinguisher",
+                "Padlock",
+                "Alarm system",
+                "Safe",
+                "Life jacket"
+            ]
+        },
+        {
+            "category": "Personal Hygiene Products",
+            "items": [
+                "Toothbrush",
+                "Soap bar",
+                "Shampoo bottle",
+                "Toilet paper",
+                "Nail clippers",
+                "Hairbrush"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Mammals",
+            "items": [
+                "Lion",
+                "Monkey",
+                "Horse",
+                "Bat",
+                "Dolphin",
+                "Human being"
+            ]
+        },
+        {
+            "category": "Birds",
+            "items": [
+                "Eagle",
+                "Penguin",
+                "Hummingbird",
+                "Ostrich",
+                "Owl",
+                "Pigeon"
+            ]
+        },
+        {
+            "category": "Reptiles and Amphibians",
+            "items": [
+                "Snake",
+                "Frog",
+                "Lizard",
+                "Crocodile",
+                "Turtle",
+                "Salamander"
+            ]
+        },
+        {
+            "category": "Fish",
+            "items": [
+                "Salmon",
+                "Tuna",
+                "Shark",
+                "Goldfish",
+                "Eel",
+                "Catfish"
+            ]
+        },
+        {
+            "category": "Gases",
+            "items": [
+                "Oxygen",
+                "Helium",
+                "Carbon dioxide",
+                "Nitrogen",
+                "Methane",
+                "Ozone"
+            ]
+        },
+        {
+            "category": "Celestial Phenomena",
+            "items": [
+                "Eclipse",
+                "Meteor shower",
+                "Supernova",
+                "Solar flare",
+                "Cosmic microwave background",
+                "Quasar"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Computer Science",
+            "items": [
+                "Algorithm",
+                "Data structure",
+                "Encryption",
+                "Networking protocol",
+                "Object-oriented programming",
+                "Artificial intelligence"
+            ]
+        },
+        {
+            "category": "Economics",
+            "items": [
+                "Supply and demand",
+                "Inflation",
+                "Gross Domestic Product (GDP)",
+                "Recession",
+                "Capitalism",
+                "Investment"
+            ]
+        },
+        {
+            "category": "Political Science",
+            "items": [
+                "Democracy",
+                "Monarchy",
+                "Totalitarianism",
+                "Bureaucracy",
+                "Treaty",
+                "Foreign policy"
+            ]
+        },
+        {
+            "category": "Spirituality and Religion",
+            "items": [
+                "Karma",
+                "Enlightenment",
+                "Divine intervention",
+                "Sin",
+                "Ritual",
+                "Miracle"
+            ]
+        },
+        {
+            "category": "Psychology",
+            "items": [
+                "Consciousness",
+                "Motivation",
+                "Cognitive dissonance",
+                "Subconscious mind",
+                "Perception",
+                "Memory"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Vehicles",
+            "items": [
+                "Submarine",
+                "Helicopter",
+                "Motorcycle",
+                "Spaceship",
+                "Subway train",
+                "Ambulance"
+            ]
+        },
+        {
+            "category": "Kitchenware",
+            "items": [
+                "Spatula",
+                "Whisk",
+                "Measuring cup",
+                "Cookie cutter",
+                "Frying pan",
+                "Coffee grinder"
+            ]
+        },
+        {
+            "category": "Musical Equipment",
+            "items": [
+                "Microphone",
+                "Speaker",
+                "Electric keyboard",
+                "Mixing board",
+                "Headphones",
+                "Clarinet"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Screwdriver",
+                "Hammer",
+                "Wrench",
+                "Drill",
+                "Tape measure",
+                "Level"
+            ]
+        },
+        {
+            "category": "Outdoor Gear",
+            "items": [
+                "Tent",
+                "Sleeping bag",
+                "Lantern",
+                "Backpack",
+                "Compass",
+                "Fishing rod"
+            ]
+        },
+        {
+            "category": "Medical and Healthcare",
+            "items": [
+                "Hospital bed",
+                "X-ray machine",
+                "MRI scanner",
+                "Hearing aid",
+                "Dentures",
+                "Defibrillator"
+            ]
+        },
+        {
+            "category": "Software",
+            "items": [
+                "Operating system",
+                "Web browser",
+                "Spreadsheet program",
+                "Video game",
+                "Word processor",
+                "Mobile app"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Weather Phenomena",
+            "items": [
+                "Lightning strike",
+                "Tornado",
+                "Hailstone",
+                "Sleet",
+                "Fog bank",
+                "Sunrise"
+            ]
+        },
+        {
+            "category": "Plants and Organisms",
+            "items": [
+                "Lichen",
+                "Kelp",
+                "Sequoia tree",
+                "Orchid",
+                "Venus flytrap",
+                "Bioluminescent algae"
+            ]
+        },
+        {
+            "category": "Minerals and Crystals",
+            "items": [
+                "Emerald",
+                "Ruby",
+                "Sapphire",
+                "Obsidian",
+                "Calcite",
+                "Pyrite"
+            ]
+        },
+        {
+            "category": "Invertebrates",
+            "items": [
+                "Earthworm",
+                "Caterpillar",
+                "Grasshopper",
+                "Snail",
+                "Starfish",
+                "Squid"
+            ]
+        },
+        {
+            "category": "Geological Formations",
+            "items": [
+                "Canyon",
+                "Plateau",
+                "Volcanic crater",
+                "Sandstone arch",
+                "Limestone cave",
+                "Salt flat"
+            ]
+        },
+        {
+            "category": "Bodies of Water",
+            "items": [
+                "Lake",
+                "River",
+                "Creek",
+                "Lagoon",
+                "Estuary",
+                "Geyser"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Emotion and Psychology",
+            "items": [
+                "Anxiety",
+                "Gratitude",
+                "Curiosity",
+                "Nostalgia",
+                "Grief",
+                "Empathy"
+            ]
+        },
+        {
+            "category": "Science and Theory",
+            "items": [
+                "Thermodynamics",
+                "Quantum mechanics",
+                "Evolution",
+                "The scientific method",
+                "Gravity",
+                "Relativity"
+            ]
+        },
+        {
+            "category": "Social and Cultural Concepts",
+            "items": [
+                "Justice",
+                "Freedom",
+                "Equality",
+                "Tradition",
+                "Mythology",
+                "Language"
+            ]
+        },
+        {
+            "category": "Units and Measures",
+            "items": [
+                "Decibel",
+                "Joule",
+                "Volt",
+                "Hertz",
+                "Pixel",
+                "Byte"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Clothing",
+            "items": [
+                "T-shirt",
+                "Pants",
+                "Jacket",
+                "Dress",
+                "Socks",
+                "Shoes"
+            ]
+        },
+        {
+            "category": "Furniture",
+            "items": [
+                "Desk",
+                "Bed",
+                "Dresser",
+                "Bookshelf",
+                "Stool",
+                "Nightstand"
+            ]
+        },
+        {
+            "category": "Building Materials",
+            "items": [
+                "Concrete",
+                "Steel beam",
+                "Glass pane",
+                "Roofing shingle",
+                "Nail",
+                "Screw"
+            ]
+        },
+        {
+            "category": "Electronics",
+            "items": [
+                "Digital camera",
+                "Drone",
+                "Video game console",
+                "E-reader",
+                "Smartwatch",
+                "Wireless earbuds"
+            ]
+        },
+        {
+            "category": "Documents and Records",
+            "items": [
+                "Passport",
+                "Birth certificate",
+                "Library card",
+                "Currency note",
+                "Postcard",
+                "Movie ticket"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Plant Life",
+            "items": [
+                "Fern",
+                "Moss",
+                "Algae",
+                "Mushroom",
+                "Pinecone",
+                "Seed pod"
+            ]
+        },
+        {
+            "category": "Minerals and Gems",
+            "items": [
+                "Amethyst",
+                "Topaz",
+                "Opal",
+                "Agate",
+                "Sandstone",
+                "Granite"
+            ]
+        },
+        {
+            "category": "Marine Life",
+            "items": [
+                "Jellyfish",
+                "Coral",
+                "Clam",
+                "Crab",
+                "Seaweed",
+                "Starfish"
+            ]
+        },
+        {
+            "category": "Atmospheric Elements",
+            "items": [
+                "Snowflake",
+                "Raindrop",
+                "Hailstone",
+                "Cloud",
+                "Wind current",
+                "Lightning bolt"
+            ]
+        },
+        {
+            "category": "Celestial Objects",
+            "items": [
+                "Asteroid",
+                "Comet",
+                "Meteor",
+                "Galaxy",
+                "Supernova remnant",
+                "Black hole"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Emotions",
+            "items": [
+                "Joy",
+                "Sadness",
+                "Fear",
+                "Anger",
+                "Surprise",
+                "Disgust"
+            ]
+        },
+        {
+            "category": "Humanities",
+            "items": [
+                "Philosophy",
+                "Art",
+                "History",
+                "Linguistics",
+                "Ethics",
+                "Jurisprudence"
+            ]
+        },
+        {
+            "category": "Social Structures",
+            "items": [
+                "Society",
+                "Government",
+                "Family",
+                "Community",
+                "Religion",
+                "Economy"
+            ]
+        },
+        {
+            "category": "Science and Theory",
+            "items": [
+                "Gravity",
+                "Thermodynamics",
+                "Evolution",
+                "Quantum mechanics",
+                "Relativity",
+                "Probability"
+            ]
+        },
+        {
+            "category": "Mathematics",
+            "items": [
+                "Algebra",
+                "Calculus",
+                "Geometry",
+                "Statistics",
+                "Prime numbers",
+                "Pi"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Construction and Infrastructure",
+            "items": [
+                "Skyscraper",
+                "Dam",
+                "Sewer system",
+                "Tunnel",
+                "Canal",
+                "Streetlight",
+                "Bridge",
+                "Road",
+                "Aqueduct",
+                "Lighthouse"
+            ]
+        },
+        {
+            "category": "Art and Artifacts",
+            "items": [
+                "Painting",
+                "Sculpture",
+                "Ceramic vase",
+                "Weaving",
+                "Engraving",
+                "Digital art file",
+                "Mosaic",
+                "Tapestry",
+                "Calligraphy scroll",
+                "Fresco"
+            ]
+        },
+        {
+            "category": "Recreation and Sports",
+            "items": [
+                "Football",
+                "Skateboard",
+                "Bowling pin",
+                "Chess set",
+                "Hockey stick",
+                "Kayak",
+                "Tennis racket",
+                "Billiard table",
+                "Dartboard",
+                "Surfboard"
+            ]
+        },
+        {
+            "category": "Containers and Packaging",
+            "items": [
+                "Cardboard box",
+                "Glass jar",
+                "Plastic bag",
+                "Aluminum can",
+                "Shipping container",
+                "Cork",
+                "Sack",
+                "Bottle cap",
+                "Food carton",
+                "Jewelry box"
+            ]
+        },
+        {
+            "category": "Measuring and Timekeeping",
+            "items": [
+                "Sundial",
+                "Hourglass",
+                "Ruler",
+                "Thermometer",
+                "Protractor",
+                "Stopwatch",
+                "Compass",
+                "Speedometer",
+                "Level",
+                "Barometer"
+            ]
+        },
+        {
+            "category": "Clothing",
+            "items": [
+                "T-shirt",
+                "Pants",
+                "Jacket",
+                "Dress",
+                "Socks",
+                "Shoes",
+                "Hat",
+                "Gloves",
+                "Belt",
+                "Scarf"
+            ]
+        },
+        {
+            "category": "Furniture",
+            "items": [
+                "Desk",
+                "Bed",
+                "Dresser",
+                "Bookshelf",
+                "Stool",
+                "Nightstand",
+                "Sofa",
+                "Coffee table",
+                "Wardrobe",
+                "Armchair"
+            ]
+        },
+        {
+            "category": "Building Materials",
+            "items": [
+                "Concrete",
+                "Steel beam",
+                "Glass pane",
+                "Roofing shingle",
+                "Nail",
+                "Screw",
+                "Brick",
+                "Drywall",
+                "Insulation",
+                "Tile"
+            ]
+        },
+        {
+            "category": "Electronics",
+            "items": [
+                "Digital camera",
+                "Drone",
+                "Video game console",
+                "E-reader",
+                "Smartwatch",
+                "Wireless earbuds",
+                "Bluetooth speaker",
+                "Tablet computer",
+                "Webcam",
+                "Projector"
+            ]
+        },
+        {
+            "category": "Documents and Records",
+            "items": [
+                "Passport",
+                "Birth certificate",
+                "Library card",
+                "Currency note",
+                "Postcard",
+                "Movie ticket",
+                "Driver's license",
+                "Tax form",
+                "Manuscript",
+                "Concert program"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Screwdriver",
+                "Hammer",
+                "Wrench",
+                "Drill",
+                "Tape measure",
+                "Level",
+                "Saw",
+                "Pliers",
+                "Vice grip",
+                "Sander"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Plant Life",
+            "items": [
+                "Fern",
+                "Moss",
+                "Algae",
+                "Mushroom",
+                "Pinecone",
+                "Seed pod",
+                "Tree stump",
+                "Bamboo shoot",
+                "Clover",
+                "Dandelion"
+            ]
+        },
+        {
+            "category": "Minerals and Gems",
+            "items": [
+                "Amethyst",
+                "Topaz",
+                "Opal",
+                "Agate",
+                "Sandstone",
+                "Granite",
+                "Obsidian",
+                "Jade",
+                "Ruby",
+                "Sapphire"
+            ]
+        },
+        {
+            "category": "Marine Life",
+            "items": [
+                "Jellyfish",
+                "Coral",
+                "Clam",
+                "Crab",
+                "Seaweed",
+                "Starfish",
+                "Octopus",
+                "Dolphin",
+                "Seahorse",
+                "Sea cucumber"
+            ]
+        },
+        {
+            "category": "Atmospheric Elements",
+            "items": [
+                "Snowflake",
+                "Raindrop",
+                "Hailstone",
+                "Cloud",
+                "Wind current",
+                "Lightning bolt",
+                "Rainbow",
+                "Aurora borealis",
+                "Mist",
+                "Tornado"
+            ]
+        },
+        {
+            "category": "Celestial Objects",
+            "items": [
+                "Asteroid",
+                "Comet",
+                "Meteor",
+                "Galaxy",
+                "Supernova remnant",
+                "Black hole",
+                "Star cluster",
+                "Planet ring",
+                "Meteorite",
+                "Neutron star"
+            ]
+        },
+        {
+            "category": "Weather Phenomena",
+            "items": [
+                "Lightning strike",
+                "Tornado",
+                "Hailstone",
+                "Sleet",
+                "Fog bank",
+                "Sunrise",
+                "Blizzard",
+                "Heatwave",
+                "Monsoon",
+                "Dust storm"
+            ]
+        },
+        {
+            "category": "Plant and Organisms",
+            "items": [
+                "Lichen",
+                "Kelp",
+                "Sequoia tree",
+                "Orchid",
+                "Venus flytrap",
+                "Bioluminescent algae",
+                "Fungus",
+                "Bacteria",
+                "Plankton",
+                "Virus"
+            ]
+        },
+        {
+            "category": "Invertebrates",
+            "items": [
+                "Earthworm",
+                "Caterpillar",
+                "Grasshopper",
+                "Snail",
+                "Starfish",
+                "Squid",
+                "Ant",
+                "Spider",
+                "Bee",
+                "Mosquito"
+            ]
+        },
+        {
+            "category": "Geological Formations",
+            "items": [
+                "Canyon",
+                "Plateau",
+                "Volcanic crater",
+                "Sandstone arch",
+                "Limestone cave",
+                "Salt flat",
+                "Mountain range",
+                "River delta",
+                "Geyser",
+                "Island"
+            ]
+        },
+        {
+            "category": "Bodies of Water",
+            "items": [
+                "Lake",
+                "River",
+                "Creek",
+                "Lagoon",
+                "Estuary",
+                "Geyser",
+                "Ocean",
+                "Waterfall",
+                "Glacier",
+                "Hot spring"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Emotions",
+            "items": [
+                "Joy",
+                "Sadness",
+                "Fear",
+                "Anger",
+                "Surprise",
+                "Disgust",
+                "Love",
+                "Hate",
+                "Anxiety",
+                "Gratitude"
+            ]
+        },
+        {
+            "category": "Humanities",
+            "items": [
+                "Philosophy",
+                "Art",
+                "History",
+                "Linguistics",
+                "Ethics",
+                "Jurisprudence",
+                "Literature",
+                "Sociology",
+                "Anthropology",
+                "Archaeology"
+            ]
+        },
+        {
+            "category": "Social Structures",
+            "items": [
+                "Society",
+                "Government",
+                "Family",
+                "Community",
+                "Religion",
+                "Economy",
+                "Education system",
+                "Legal system",
+                "Political party",
+                "Class system"
+            ]
+        },
+        {
+            "category": "Science and Theory",
+            "items": [
+                "Gravity",
+                "Thermodynamics",
+                "Evolution",
+                "Quantum mechanics",
+                "Relativity",
+                "Probability",
+                "Logic",
+                "Scientific method",
+                "Theory",
+                "Hypothesis"
+            ]
+        },
+        {
+            "category": "Mathematics",
+            "items": [
+                "Algebra",
+                "Calculus",
+                "Geometry",
+                "Statistics",
+                "Prime numbers",
+                "Pi",
+                "Fractal",
+                "Algorithm",
+                "Equation",
+                "Set theory"
+            ]
+        },
+        {
+            "category": "Computer Science",
+            "items": [
+                "Algorithm",
+                "Data structure",
+                "Encryption",
+                "Networking protocol",
+                "Object-oriented programming",
+                "Artificial intelligence",
+                "Machine learning",
+                "Cybersecurity",
+                "Big data",
+                "Database"
+            ]
+        },
+        {
+            "category": "Economics",
+            "items": [
+                "Supply and demand",
+                "Inflation",
+                "Gross Domestic Product (GDP)",
+                "Recession",
+                "Capitalism",
+                "Investment",
+                "Monopoly",
+                "Taxation",
+                "Interest rate",
+                "Trade"
+            ]
+        },
+        {
+            "category": "Political Science",
+            "items": [
+                "Democracy",
+                "Monarchy",
+                "Totalitarianism",
+                "Bureaucracy",
+                "Treaty",
+                "Foreign policy",
+                "Diplomacy",
+                "Revolution",
+                "Sovereignty",
+                "Constitution"
+            ]
+        },
+        {
+            "category": "Spirituality and Religion",
+            "items": [
+                "Karma",
+                "Enlightenment",
+                "Divine intervention",
+                "Sin",
+                "Ritual",
+                "Miracle",
+                "Meditation",
+                "Prayer",
+                "Transcendence",
+                "Reincarnation"
+            ]
+        },
+        {
+            "category": "Psychology",
+            "items": [
+                "Consciousness",
+                "Motivation",
+                "Cognitive dissonance",
+                "Subconscious mind",
+                "Perception",
+                "Memory",
+                "Empathy",
+                "Anxiety",
+                "Depression",
+                "Intelligence"
+            ]
+        }
+    ]
+}
+
+{
+    "man_made_objects": [
+        {
+            "category": "Household Items",
+            "items": [
+                "Spoon",
+                "Fork",
+                "Knife",
+                "Plate",
+                "Bowl",
+                "Mug",
+                "Glass",
+                "Towel",
+                "Sponge",
+                "Broom",
+                "Dustpan"
+            ]
+        },
+        {
+            "category": "Office and School Supplies",
+            "items": [
+                "Pen",
+                "Pencil",
+                "Eraser",
+                "Paper clip",
+                "Stapler",
+                "Highlighter",
+                "Whiteboard",
+                "Marker",
+                "Index card",
+                "Binder",
+                "Calculator"
+            ]
+        },
+        {
+            "category": "Vehicles",
+            "items": [
+                "Car",
+                "Truck",
+                "Motorcycle",
+                "Bicycle",
+                "Bus",
+                "Train",
+                "Airplane",
+                "Helicopter",
+                "Boat",
+                "Submarine",
+                "Spaceship"
+            ]
+        },
+        {
+            "category": "Clothing",
+            "items": [
+                "T-shirt",
+                "Pants",
+                "Jacket",
+                "Dress",
+                "Socks",
+                "Shoes",
+                "Hat",
+                "Gloves",
+                "Belt",
+                "Scarf",
+                "Swimsuit"
+            ]
+        },
+        {
+            "category": "Furniture",
+            "items": [
+                "Desk",
+                "Bed",
+                "Dresser",
+                "Bookshelf",
+                "Stool",
+                "Nightstand",
+                "Sofa",
+                "Coffee table",
+                "Wardrobe",
+                "Armchair",
+                "Ottoman"
+            ]
+        },
+        {
+            "category": "Electronics",
+            "items": [
+                "Digital camera",
+                "Drone",
+                "Video game console",
+                "E-reader",
+                "Smartwatch",
+                "Wireless earbuds",
+                "Bluetooth speaker",
+                "Tablet computer",
+                "Webcam",
+                "Projector",
+                "Router"
+            ]
+        },
+        {
+            "category": "Building Materials",
+            "items": [
+                "Concrete",
+                "Steel beam",
+                "Glass pane",
+                "Roofing shingle",
+                "Nail",
+                "Screw",
+                "Brick",
+                "Drywall",
+                "Insulation",
+                "Tile",
+                "Plywood"
+            ]
+        },
+        {
+            "category": "Construction and Infrastructure",
+            "items": [
+                "Skyscraper",
+                "Dam",
+                "Sewer system",
+                "Tunnel",
+                "Canal",
+                "Streetlight",
+                "Bridge",
+                "Road",
+                "Aqueduct",
+                "Lighthouse",
+                "Wind turbine"
+            ]
+        },
+        {
+            "category": "Art and Artifacts",
+            "items": [
+                "Painting",
+                "Sculpture",
+                "Ceramic vase",
+                "Weaving",
+                "Engraving",
+                "Digital art file",
+                "Mosaic",
+                "Tapestry",
+                "Calligraphy scroll",
+                "Fresco",
+                "Artifact"
+            ]
+        },
+        {
+            "category": "Recreation and Sports",
+            "items": [
+                "Football",
+                "Skateboard",
+                "Bowling pin",
+                "Chess set",
+                "Hockey stick",
+                "Kayak",
+                "Tennis racket",
+                "Billiard table",
+                "Dartboard",
+                "Surfboard",
+                "Golf club"
+            ]
+        },
+        {
+            "category": "Containers and Packaging",
+            "items": [
+                "Cardboard box",
+                "Glass jar",
+                "Plastic bag",
+                "Aluminum can",
+                "Shipping container",
+                "Cork",
+                "Sack",
+                "Bottle cap",
+                "Food carton",
+                "Jewelry box",
+                "Lunchbox"
+            ]
+        },
+        {
+            "category": "Measuring and Timekeeping",
+            "items": [
+                "Sundial",
+                "Hourglass",
+                "Ruler",
+                "Thermometer",
+                "Protractor",
+                "Stopwatch",
+                "Compass",
+                "Speedometer",
+                "Level",
+                "Barometer",
+                "Scale"
+            ]
+        },
+        {
+            "category": "Kitchenware",
+            "items": [
+                "Spatula",
+                "Whisk",
+                "Measuring cup",
+                "Cookie cutter",
+                "Frying pan",
+                "Coffee grinder",
+                "Toaster",
+                "Microwave oven",
+                "Blender",
+                "Refrigerator",
+                "Dishwasher"
+            ]
+        },
+        {
+            "category": "Outdoor Gear",
+            "items": [
+                "Tent",
+                "Sleeping bag",
+                "Lantern",
+                "Backpack",
+                "Compass",
+                "Fishing rod",
+                "Binoculars",
+                "Water bottle",
+                "First-aid kit",
+                "Pocket knife",
+                "Matches"
+            ]
+        },
+        {
+            "category": "Medical and Healthcare",
+            "items": [
+                "Hospital bed",
+                "X-ray machine",
+                "MRI scanner",
+                "Hearing aid",
+                "Dentures",
+                "Defibrillator",
+                "Stethoscope",
+                "Wheelchair",
+                "Crutches",
+                "Syringe",
+                "Band-aid"
+            ]
+        },
+        {
+            "category": "Software",
+            "items": [
+                "Operating system",
+                "Web browser",
+                "Spreadsheet program",
+                "Video game",
+                "Word processor",
+                "Mobile app",
+                "Database",
+                "Antivirus software",
+                "Video editor",
+                "Music streaming service",
+                "Social media platform"
+            ]
+        }
+    ],
+    "natural_objects": [
+        {
+            "category": "Plant Life",
+            "items": [
+                "Fern",
+                "Moss",
+                "Algae",
+                "Mushroom",
+                "Pinecone",
+                "Seed pod",
+                "Tree stump",
+                "Bamboo shoot",
+                "Clover",
+                "Dandelion",
+                "Kelp"
+            ]
+        },
+        {
+            "category": "Minerals and Gems",
+            "items": [
+                "Amethyst",
+                "Topaz",
+                "Opal",
+                "Agate",
+                "Sandstone",
+                "Granite",
+                "Obsidian",
+                "Jade",
+                "Ruby",
+                "Sapphire",
+                "Diamond"
+            ]
+        },
+        {
+            "category": "Marine Life",
+            "items": [
+                "Jellyfish",
+                "Coral",
+                "Clam",
+                "Crab",
+                "Seaweed",
+                "Starfish",
+                "Octopus",
+                "Dolphin",
+                "Seahorse",
+                "Sea cucumber",
+                "Whale"
+            ]
+        },
+        {
+            "category": "Atmospheric Elements",
+            "items": [
+                "Snowflake",
+                "Raindrop",
+                "Hailstone",
+                "Cloud",
+                "Wind current",
+                "Lightning bolt",
+                "Rainbow",
+                "Aurora borealis",
+                "Mist",
+                "Tornado",
+                "Hurricane"
+            ]
+        },
+        {
+            "category": "Celestial Objects",
+            "items": [
+                "Asteroid",
+                "Comet",
+                "Meteor",
+                "Galaxy",
+                "Supernova remnant",
+                "Black hole",
+                "Star cluster",
+                "Planet ring",
+                "Meteorite",
+                "Neutron star",
+                "Pulsar"
+            ]
+        },
+        {
+            "category": "Weather Phenomena",
+            "items": [
+                "Lightning strike",
+                "Tornado",
+                "Hailstone",
+                "Sleet",
+                "Fog bank",
+                "Sunrise",
+                "Blizzard",
+                "Heatwave",
+                "Monsoon",
+                "Dust storm",
+                "Flood"
+            ]
+        },
+        {
+            "category": "Invertebrates",
+            "items": [
+                "Earthworm",
+                "Caterpillar",
+                "Grasshopper",
+                "Snail",
+                "Starfish",
+                "Squid",
+                "Ant",
+                "Spider",
+                "Bee",
+                "Mosquito",
+                "Butterfly"
+            ]
+        },
+        {
+            "category": "Geological Formations",
+            "items": [
+                "Canyon",
+                "Plateau",
+                "Volcanic crater",
+                "Sandstone arch",
+                "Limestone cave",
+                "Salt flat",
+                "Mountain range",
+                "River delta",
+                "Geyser",
+                "Island",
+                "Fjord"
+            ]
+        },
+        {
+            "category": "Bodies of Water",
+            "items": [
+                "Lake",
+                "River",
+                "Creek",
+                "Lagoon",
+                "Estuary",
+                "Geyser",
+                "Ocean",
+                "Waterfall",
+                "Glacier",
+                "Hot spring",
+                "Iceberg"
+            ]
+        },
+        {
+            "category": "Mammals",
+            "items": [
+                "Lion",
+                "Monkey",
+                "Horse",
+                "Bat",
+                "Dolphin",
+                "Human being",
+                "Elephant",
+                "Bear",
+                "Kangaroo",
+                "Armadillo",
+                "Whale"
+            ]
+        },
+        {
+            "category": "Birds",
+            "items": [
+                "Eagle",
+                "Penguin",
+                "Hummingbird",
+                "Ostrich",
+                "Owl",
+                "Pigeon",
+                "Duck",
+                "Flamingo",
+                "Toucan",
+                "Parrot",
+                "Crow"
+            ]
+        },
+        {
+            "category": "Reptiles and Amphibians",
+            "items": [
+                "Snake",
+                "Frog",
+                "Lizard",
+                "Crocodile",
+                "Turtle",
+                "Salamander",
+                "Gecko",
+                "Toad",
+                "Iguana",
+                "Chameleon",
+                "Komodo dragon"
+            ]
+        },
+        {
+            "category": "Fish",
+            "items": [
+                "Salmon",
+                "Tuna",
+                "Shark",
+                "Goldfish",
+                "Eel",
+                "Catfish",
+                "Swordfish",
+                "Piranha",
+                "Anglerfish",
+                "Clownfish",
+                "Guppy"
+            ]
+        }
+    ],
+    "abstract_concepts": [
+        {
+            "category": "Emotions",
+            "items": [
+                "Joy",
+                "Sadness",
+                "Fear",
+                "Anger",
+                "Surprise",
+                "Disgust",
+                "Love",
+                "Hate",
+                "Anxiety",
+                "Gratitude",
+                "Guilt"
+            ]
+        },
+        {
+            "category": "Humanities",
+            "items": [
+                "Philosophy",
+                "Art",
+                "History",
+                "Linguistics",
+                "Ethics",
+                "Jurisprudence",
+                "Literature",
+                "Sociology",
+                "Anthropology",
+                "Archaeology",
+                "Poetry"
+            ]
+        },
+        {
+            "category": "Social Structures",
+            "items": [
+                "Society",
+                "Government",
+                "Family",
+                "Community",
+                "Religion",
+                "Economy",
+                "Education system",
+                "Legal system",
+                "Political party",
+                "Class system",
+                "Bureaucracy"
+            ]
+        },
+        {
+            "category": "Science and Theory",
+            "items": [
+                "Gravity",
+                "Thermodynamics",
+                "Evolution",
+                "Quantum mechanics",
+                "Relativity",
+                "Probability",
+                "Logic",
+                "Scientific method",
+                "Theory",
+                "Hypothesis",
+                "Magnetism"
+            ]
+        },
+        {
+            "category": "Mathematics",
+            "items": [
+                "Algebra",
+                "Calculus",
+                "Geometry",
+                "Statistics",
+                "Prime numbers",
+                "Pi",
+                "Fractal",
+                "Algorithm",
+                "Equation",
+                "Set theory",
+                "Infinite set"
+            ]
+        },
+        {
+            "category": "Computer Science",
+            "items": [
+                "Algorithm",
+                "Data structure",
+                "Encryption",
+                "Networking protocol",
+                "Object-oriented programming",
+                "Artificial intelligence",
+                "Machine learning",
+                "Cybersecurity",
+                "Big data",
+                "Database",
+                "Neural network"
+            ]
+        },
+        {
+            "category": "Economics",
+            "items": [
+                "Supply and demand",
+                "Inflation",
+                "Gross Domestic Product (GDP)",
+                "Recession",
+                "Capitalism",
+                "Investment",
+                "Monopoly",
+                "Taxation",
+                "Interest rate",
+                "Trade",
+                "Currency"
+            ]
+        },
+        {
+            "category": "Political Science",
+            "items": [
+                "Democracy",
+                "Monarchy",
+                "Totalitarianism",
+                "Bureaucracy",
+                "Treaty",
+                "Foreign policy",
+                "Diplomacy",
+                "Revolution",
+                "Sovereignty",
+                "Constitution",
+                "Legislation"
+            ]
+        },
+        {
+            "category": "Spirituality and Religion",
+            "items": [
+                "Karma",
+                "Enlightenment",
+                "Divine intervention",
+                "Sin",
+                "Ritual",
+                "Miracle",
+                "Meditation",
+                "Prayer",
+                "Transcendence",
+                "Reincarnation",
+                "Soul"
+            ]
+        },
+        {
+            "category": "Psychology",
+            "items": [
+                "Consciousness",
+                "Motivation",
+                "Cognitive dissonance",
+                "Subconscious mind",
+                "Perception",
+                "Memory",
+                "Empathy",
+                "Anxiety",
+                "Depression",
+                "Intelligence",
+                "Personality"
+            ]
+        },
+        {
+            "category": "Concepts of Time and History",
+            "items": [
+                "Century",
+                "Moment",
+                "Renaissance",
+                "Future",
+                "Era",
+                "Decade",
+                "Past",
+                "Present",
+                "Momentum",
+                "Paradigm shift",
+                "Legacy"
+            ]
+        },
+        {
+            "category": "Human Behavior",
+            "items": [
+                "Altruism",
+                "Patience",
+                "Courage",
+                "Compassion",
+                "Honesty",
+                "Grief",
+                "Integrity",
+                "Resilience",
+                "Persuasion",
+                "Loyalty",
+                "Ambition"
+            ]
+        },
+        {
+            "category": "Literary Elements",
+            "items": [
+                "Metaphor",
+                "Hyperbole",
+                "Rhyme scheme",
+                "Plot twist",
+                "Foreshadowing",
+                "Character archetype",
+                "Narrative",
+                "Symbolism",
+                "Genre",
+                "Prose",
+                "Alliteration"
+            ]
+        }
+    ]
+}

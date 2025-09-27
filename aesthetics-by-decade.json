@@ -1,0 +1,168 @@
+{
+    "1900s": {
+        "description": "Aesthetics from the Edwardian era, marked by the influence of Art Nouveau and the final years of the Belle Époque.",
+        "members": [
+            "Art Nouveau",
+            "Belle Époque",
+            "Edwardian",
+            "Gibson Girl"
+        ]
+    },
+    "1910s": {
+        "description": "Aesthetics from a decade defined by World War I, the decline of old empires, and the rise of early modernism.",
+        "members": [
+            "Dada"
+        ]
+    },
+    "1920s": {
+        "description": "Aesthetics from the Roaring Twenties, a decade of economic prosperity, cultural dynamism, and social change, characterized by jazz, flappers, and Art Deco.",
+        "members": [
+            "Art Deco",
+            "Flapper",
+            "Old Hollywood",
+            "Roaring 20s"
+        ]
+    },
+    "1930s": {
+        "description": "Aesthetics from the decade of the Great Depression, marked by a more conservative style, the glamour of Hollywood's Golden Age, and Streamline Moderne design.",
+        "members": [
+            "Old Hollywood",
+            "Streamline Moderne"
+        ]
+    },
+    "1940s": {
+        "description": "Aesthetics from the decade dominated by World War II, characterized by utilitarian fashion, swing music, Film Noir, and the dawn of the Atomic Age.",
+        "members": [
+            "Atomic Age",
+            "Film Noir"
+        ]
+    },
+    "1950s": {
+        "description": "Aesthetics from the post-war era, characterized by optimism, rock and roll, Mid-century modern design, and distinct youth subcultures like greasers and rockabilly.",
+        "members": [
+            "Atomic Age",
+            "Beatnik",
+            "Googie",
+            "Greaser",
+            "Mid-Century Modern",
+            "Pin-Up",
+            "Rockabilly",
+            "Space Age",
+            "Teddy Boy"
+        ]
+    },
+    "1960s": {
+        "description": "Aesthetics from a decade of significant cultural and social change, including the rise of hippie and mod subcultures, psychedelic rock, and the Space Race.",
+        "members": [
+            "Beatnik",
+            "Camp",
+            "Groovy",
+            "Hippie",
+            "Mod",
+            "Psychedelic",
+            "Space Age"
+        ]
+    },
+    "1970s": {
+        "description": "Aesthetics from a decade known for disco music, the rise of punk rock, bohemian and glam rock fashion, and a warm, earthy color palette.",
+        "members": [
+            "Biker",
+            "City Pop",
+            "Disco",
+            "Glam Rock",
+            "Groovy",
+            "Hippie",
+            "Punk",
+            "Soft Rock"
+        ]
+    },
+    "1980s": {
+        "description": "Aesthetics from a decade of excess, known for its bold fashion, neon colors, synth-pop music, and the rise of personal computing and video games.",
+        "members": [
+            "80s Workout",
+            "Afrofuturism",
+            "City Pop",
+            "Cyberpunk",
+            "Glam Metal",
+            "Goth",
+            "Hip-Hop",
+            "Mallgoth",
+            "Memphis Design",
+            "New Wave",
+            "Post-Punk",
+            "Preppy",
+            "Sloane Ranger",
+            "Synthwave",
+            "Vaporwave"
+        ]
+    },
+    "1990s": {
+        "description": "Aesthetics from a decade defined by grunge music, hip-hop culture, rave parties, the rise of the internet, and a diverse range of fashion trends.",
+        "members": [
+            "90s Core",
+            "Afrofuturism",
+            "Cyber Goth",
+            "Cyberpunk",
+            "Goth",
+            "Grunge",
+            "Health Goth",
+            "Hip-Hop",
+            "Kawaii",
+            "Lo-Fi",
+            "Mallgoth",
+            "Old Web",
+            "Rave",
+            "Skater",
+            "Vaporwave",
+            "Whimsigoth",
+            "Y2K"
+        ]
+    },
+    "2000s": {
+        "description": "Aesthetics from the first decade of the new millennium, often referred to as 'Y2K,' characterized by a mix of futuristic and pop-culture-driven fashion, the rise of reality TV, and pop-punk music.",
+        "members": [
+            "00s Core",
+            "Cyber Goth",
+            "Emo",
+            "Frutiger Aero",
+            "Indie Sleaze",
+            "McBling",
+            "Scene",
+            "Scenecore",
+            "Skater",
+            "Surf Crush",
+            "Urban",
+            "Y2K"
+        ]
+    },
+    "2010s": {
+        "description": "Aesthetics from a decade defined by the dominance of social media, influencer culture, indie music, hipster trends, and the rise of minimalist design.",
+        "members": [
+            "2014 Tumblr",
+            "E-Girl/E-Boy",
+            "Hipster",
+            "Indie",
+            "Instagoth",
+            "Minimalism",
+            "Normcore",
+            "Seapunk",
+            "Soft Grunge",
+            "Vaporwave",
+            "VSCO"
+        ]
+    },
+    "2020s": {
+        "description": "Aesthetics from the current decade, heavily influenced by internet culture, nostalgia for previous eras, and the rise of micro-trends on platforms like TikTok.",
+        "members": [
+            "Baddie",
+            "Barbiecore",
+            "Cottagecore",
+            "Craftcore",
+            "Dark Academia",
+            "E-Girl/E-Boy",
+            "Gorpcore",
+            "Light Academia",
+            "Weirdcore"
+        ]
+    }
+}

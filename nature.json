@@ -1,0 +1,787 @@
+{
+    "natural_world_elements": [
+        {
+            "category": "Flora (Plants)",
+            "items": [
+                "Bonsai tree",
+                "Luminescent fungi",
+                "Carnivorous plant",
+                "Moss",
+                "Fern",
+                "Kelp forest",
+                "Mangrove tree",
+                "Desert bloom",
+                "Arctic lichen",
+                "Redwood tree",
+                "Rafflesia flower",
+                "Venus flytrap"
+            ]
+        },
+        {
+            "category": "Fauna (Animals)",
+            "items": [
+                "Deep-sea creatures",
+                "Bioluminescent jellyfish",
+                "Anatomical studies of insects",
+                "Mythological beasts",
+                "Migratory birds",
+                "Predatory insects",
+                "Coral reef inhabitants",
+                "Desert reptiles",
+                "Arctic mammals",
+                "Endangered species",
+                "Fossilized animals",
+                "Invertebrates"
+            ]
+        },
+        {
+            "category": "Geological & Atmospheric",
+            "items": [
+                "Geode cross-section",
+                "Basalt columns",
+                "Glaciers",
+                "Lenticular clouds",
+                "A lightning strike",
+                "Volcanic eruption",
+                "Earthquake tremor",
+                "Aurora borealis",
+                "Rainbow",
+                "Mirage",
+                "Sand dune",
+                "Limestone cave"
+            ]
+        },
+        {
+            "category": "Aquatic and Oceanic",
+            "items": [
+                "Seahorse",
+                "Clownfish",
+                "Coral reef",
+                "Whale pod",
+                "Wave patterns",
+                "Oceanic currents",
+                "Hot spring",
+                "River delta",
+                "Tsunami",
+                "Iceberg",
+                "Brackish water",
+                "Deep-sea vent"
+            ]
+        },
+        {
+            "category": "Terrestrial Features",
+            "items": [
+                "Mountain peak",
+                "Canyon wall",
+                "Sandstone arch",
+                "Valley floor",
+                "Prairie grass",
+                "Forest canopy",
+                "Waterfall",
+                "Fjord",
+                "Plateau",
+                "Mesa",
+                "Swamp",
+                "Oasis"
+            ]
+        },
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Diatom",
+                "Virus",
+                "Bacteria colony",
+                "Yeast cell",
+                "Pollen grain",
+                "Microscopic parasites",
+                "Algae",
+                "Plankton",
+                "Protist",
+                "Fungal spores",
+                "Mite"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Crystal formation",
+                "Granite slab",
+                "Obsidian rock",
+                "Jade stone",
+                "Quartz crystal",
+                "Fossilized amber",
+                "Meteorite",
+                "Limestone",
+                "Basalt",
+                "Sandstone",
+                "Shale",
+                "Flint"
+            ]
+        }
+    ]
+}
+
+{
+    "natural_world_elements": [
+        {
+            "category": "Flora (Plants)",
+            "items": [
+                "Giant water lily",
+                "Sensitive plant",
+                "Baobab tree",
+                "Bamboo forest",
+                "Orchid",
+                "Cattail",
+                "Pitcher plant",
+                "Mangrove tree",
+                "Cactus flower",
+                "Sequoia tree",
+                "Pampas grass",
+                "Himalayan poppy"
+            ]
+        },
+        {
+            "category": "Fauna (Animals)",
+            "items": [
+                "Platypus",
+                "Axolotl",
+                "Deep-sea anglerfish",
+                "Komodo dragon",
+                "Tarsier",
+                "Flying squirrel",
+                "Pangolin",
+                "Electric eel",
+                "Giant squid",
+                "Red panda",
+                "Narwhal",
+                "Sloth"
+            ]
+        },
+        {
+            "category": "Geological & Atmospheric",
+            "items": [
+                "Columnar basalt formations",
+                "Volcanic caldera",
+                "Fossilized dinosaur bone",
+                "Obsidian arrowhead",
+                "Sand dune ripples",
+                "Salt flat",
+                "Petrified forest",
+                "Limestone karst",
+                "Soddy storm clouds",
+                "Sundog",
+                "Ball lightning",
+                "Waterspout"
+            ]
+        },
+        {
+            "category": "Aquatic and Oceanic",
+            "items": [
+                "Bioluminescent algae bloom",
+                "Hydrothermal vent",
+                "Coral bleaching event",
+                "Tsunami wave",
+                "Whirlpool",
+                "Iceberg calving",
+                "Tidal bore",
+                "Deep ocean trench",
+                "Kelp forest",
+                "Reef ecosystem",
+                "Brackish marsh",
+                "Estuarine system"
+            ]
+        },
+        {
+            "category": "Terrestrial Features",
+            "items": [
+                "Meteor crater",
+                "Sinkhole",
+                "Desert oasis",
+                "Glacial moraine",
+                "River oxbow lake",
+                "Floodplain",
+                "Thermal pool",
+                "Cinder cone volcano",
+                "Mud volcano",
+                "Forest floor",
+                "Jungle canopy",
+                "Cave system"
+            ]
+        },
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Tardigrade",
+                "Rotifer",
+                "Paramecium",
+                "Euglena",
+                "Amoeba",
+                "Radiolarian",
+                "Dinoflagellate",
+                "Cyanobacteria",
+                "Mycorrhizal fungi",
+                "Lichen",
+                "Pollen grain",
+                "Bacterial spore"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Sodalite",
+                "Pyrite",
+                "Azurite",
+                "Geode",
+                "Fossilized ammonite",
+                "Obsidian",
+                "Pumice stone",
+                "Slate",
+                "Marble",
+                "Garnet",
+                "Opal",
+                "Turquoise"
+            ]
+        }
+    ]
+}
+
+{
+    "natural_world_elements": [
+        {
+            "category": "Flora (Plants)",
+            "items": [
+                "Giant water lily",
+                "Sensitive plant (Mimosa pudica)",
+                "Baobab tree",
+                "Bamboo forest",
+                "Orchid",
+                "Cattail",
+                "Pitcher plant",
+                "Mangrove tree",
+                "Cactus flower",
+                "Sequoia tree",
+                "Pampas grass",
+                "Himalayan poppy",
+                "Giant kelp",
+                "Cyprus tree",
+                "Dwarf willow",
+                "Desert lily"
+            ]
+        },
+        {
+            "category": "Fauna (Animals)",
+            "items": [
+                "Platypus",
+                "Axolotl",
+                "Deep-sea anglerfish",
+                "Komodo dragon",
+                "Tarsier",
+                "Flying squirrel",
+                "Pangolin",
+                "Electric eel",
+                "Giant squid",
+                "Red panda",
+                "Narwhal",
+                "Sloth",
+                "Fossa",
+                "Manatee",
+                "Bison",
+                "Wombat"
+            ]
+        },
+        {
+            "category": "Geological & Atmospheric",
+            "items": [
+                "Columnar basalt formations",
+                "Volcanic caldera",
+                "Fossilized dinosaur bone",
+                "Obsidian arrowhead",
+                "Sand dune ripples",
+                "Salt flat",
+                "Petrified forest",
+                "Limestone karst",
+                "Soddy storm clouds",
+                "Sundog",
+                "Ball lightning",
+                "Waterspout",
+                "Geyser field",
+                "Cave system",
+                "Sinkhole",
+                "Floodplain"
+            ]
+        },
+        {
+            "category": "Aquatic and Oceanic",
+            "items": [
+                "Bioluminescent algae bloom",
+                "Hydrothermal vent",
+                "Coral bleaching event",
+                "Tsunami wave",
+                "Whirlpool",
+                "Iceberg calving",
+                "Tidal bore",
+                "Deep ocean trench",
+                "Kelp forest",
+                "Reef ecosystem",
+                "Brackish marsh",
+                "Estuarine system",
+                "Submarine canyon",
+                "Oceanic gyre",
+                "Abyssal plain",
+                "Mid-ocean ridge"
+            ]
+        },
+        {
+            "category": "Terrestrial Features",
+            "items": [
+                "Meteor crater",
+                "Desert oasis",
+                "Glacial moraine",
+                "River oxbow lake",
+                "Thermal pool",
+                "Cinder cone volcano",
+                "Mud volcano",
+                "Forest floor",
+                "Jungle canopy",
+                "Mountain pass",
+                "Canyon rim",
+                "Mesa",
+                "Plateau",
+                "Pampas",
+                "Steppe"
+            ]
+        },
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Tardigrade",
+                "Rotifer",
+                "Paramecium",
+                "Euglena",
+                "Amoeba",
+                "Radiolarian",
+                "Dinoflagellate",
+                "Cyanobacteria",
+                "Mycorrhizal fungi",
+                "Lichen",
+                "Pollen grain",
+                "Bacterial spore",
+                "Desmid",
+                "Gastrotrich",
+                "Copepod",
+                "Cladocera"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Sodalite",
+                "Pyrite",
+                "Azurite",
+                "Geode",
+                "Fossilized ammonite",
+                "Obsidian",
+                "Pumice stone",
+                "Slate",
+                "Marble",
+                "Garnet",
+                "Opal",
+                "Turquoise",
+                "Chalcedony",
+                "Malachite",
+                "Fluorite",
+                "Quartz crystal"
+            ]
+        }
+    ]
+}
+
+{
+    "natural_world_elements": [
+        {
+            "category": "Flora (Plants)",
+            "items": [
+                "Giant kelp",
+                "Cyprus tree",
+                "Dwarf willow",
+                "Desert lily",
+                "Quaking aspen grove",
+                "Cypress swamp",
+                "Epiphytic orchid",
+                "Saguaro cactus",
+                "Salt-tolerant marsh grasses",
+                "Sundew",
+                "Bottle brush plant",
+                "Gingko tree"
+            ]
+        },
+        {
+            "category": "Fauna (Animals)",
+            "items": [
+                "Platypus",
+                "Axolotl",
+                "Deep-sea anglerfish",
+                "Komodo dragon",
+                "Tarsier",
+                "Flying squirrel",
+                "Pangolin",
+                "Electric eel",
+                "Giant squid",
+                "Red panda",
+                "Narwhal",
+                "Sloth",
+                "Fossa",
+                "Manatee",
+                "Bison",
+                "Wombat",
+                "Opossum",
+                "Armadillo",
+                "Naked mole-rat",
+                "Snow leopard",
+                "Okapi",
+                "Tasmanian devil"
+            ]
+        },
+        {
+            "category": "Geological & Atmospheric",
+            "items": [
+                "Columnar basalt formations",
+                "Volcanic caldera",
+                "Fossilized dinosaur bone",
+                "Obsidian arrowhead",
+                "Sand dune ripples",
+                "Salt flat",
+                "Petrified forest",
+                "Limestone karst",
+                "Soddy storm clouds",
+                "Sundog",
+                "Ball lightning",
+                "Waterspout",
+                "Geyser field",
+                "Cave system",
+                "Sinkhole",
+                "Floodplain",
+                "Lava flow",
+                "Ash cloud",
+                "Seismic wave",
+                "Frost heave",
+                "Mudslide",
+                "Rock slide"
+            ]
+        },
+        {
+            "category": "Aquatic and Oceanic",
+            "items": [
+                "Bioluminescent algae bloom",
+                "Hydrothermal vent",
+                "Coral bleaching event",
+                "Tsunami wave",
+                "Whirlpool",
+                "Iceberg calving",
+                "Tidal bore",
+                "Deep ocean trench",
+                "Kelp forest",
+                "Reef ecosystem",
+                "Brackish marsh",
+                "Estuarine system",
+                "Submarine canyon",
+                "Oceanic gyre",
+                "Abyssal plain",
+                "Mid-ocean ridge",
+                "Marine snow",
+                "Plankton bloom",
+                "Deep-sea currents",
+                "Oceanic thermocline",
+                "Reef lagoon"
+            ]
+        },
+        {
+            "category": "Terrestrial Features",
+            "items": [
+                "Meteor crater",
+                "Desert oasis",
+                "Glacial moraine",
+                "River oxbow lake",
+                "Thermal pool",
+                "Cinder cone volcano",
+                "Mud volcano",
+                "Forest floor",
+                "Jungle canopy",
+                "Mountain pass",
+                "Canyon rim",
+                "Mesa",
+                "Plateau",
+                "Pampas",
+                "Steppe",
+                "Savanna",
+                "Tundra",
+                "Desert pavement",
+                "Rock formation",
+                "Sand dunes",
+                "Delta"
+            ]
+        },
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Tardigrade",
+                "Rotifer",
+                "Paramecium",
+                "Euglena",
+                "Amoeba",
+                "Radiolarian",
+                "Dinoflagellate",
+                "Cyanobacteria",
+                "Mycorrhizal fungi",
+                "Lichen",
+                "Pollen grain",
+                "Bacterial spore",
+                "Desmid",
+                "Gastrotrich",
+                "Copepod",
+                "Cladocera",
+                "Yeast culture",
+                "Spirulina",
+                "Volvox colony",
+                "Diatom bloom"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Sodalite",
+                "Pyrite",
+                "Azurite",
+                "Geode",
+                "Fossilized ammonite",
+                "Obsidian",
+                "Pumice stone",
+                "Slate",
+                "Marble",
+                "Garnet",
+                "Opal",
+                "Turquoise",
+                "Chalcedony",
+                "Malachite",
+                "Fluorite",
+                "Quartz crystal",
+                "Limestone",
+                "Sandstone",
+                "Basalt",
+                "Gneiss",
+                "Schist",
+                "Granite"
+            ]
+        }
+    ]
+}
+
+{
+    "natural_world_elements": [
+        {
+            "category": "Flora (Plants)",
+            "items": [
+                "Giant kelp",
+                "Cyprus tree",
+                "Dwarf willow",
+                "Desert lily",
+                "Quaking aspen grove",
+                "Cypress swamp",
+                "Epiphytic orchid",
+                "Saguaro cactus",
+                "Salt-tolerant marsh grasses",
+                "Sundew",
+                "Bottle brush plant",
+                "Gingko tree",
+                "Giant sequoia",
+                "Corpse flower (Amorphophallus titanum)",
+                "Water hyacinth",
+                "Mangrove root system"
+            ]
+        },
+        {
+            "category": "Fauna (Animals)",
+            "items": [
+                "Platypus",
+                "Axolotl",
+                "Deep-sea anglerfish",
+                "Komodo dragon",
+                "Tarsier",
+                "Flying squirrel",
+                "Pangolin",
+                "Electric eel",
+                "Giant squid",
+                "Red panda",
+                "Narwhal",
+                "Sloth",
+                "Fossa",
+                "Manatee",
+                "Bison",
+                "Wombat",
+                "Opossum",
+                "Armadillo",
+                "Naked mole-rat",
+                "Snow leopard",
+                "Okapi",
+                "Tasmanian devil",
+                "Dolphin",
+                "Hummingbird",
+                "Chameleon",
+                "Pangolin"
+            ]
+        },
+        {
+            "category": "Geological & Atmospheric",
+            "items": [
+                "Columnar basalt formations",
+                "Volcanic caldera",
+                "Fossilized dinosaur bone",
+                "Obsidian arrowhead",
+                "Sand dune ripples",
+                "Salt flat",
+                "Petrified forest",
+                "Limestone karst",
+                "Soddy storm clouds",
+                "Sundog",
+                "Ball lightning",
+                "Waterspout",
+                "Geyser field",
+                "Cave system",
+                "Sinkhole",
+                "Floodplain",
+                "Lava flow",
+                "Ash cloud",
+                "Seismic wave",
+                "Frost heave",
+                "Mudslide",
+                "Rock slide",
+                "Meteor crater",
+                "Aurora borealis",
+                "Lenticular clouds",
+                "Rainbow",
+                "Dust storm"
+            ]
+        },
+        {
+            "category": "Aquatic and Oceanic",
+            "items": [
+                "Bioluminescent algae bloom",
+                "Hydrothermal vent",
+                "Coral bleaching event",
+                "Tsunami wave",
+                "Whirlpool",
+                "Iceberg calving",
+                "Tidal bore",
+                "Deep ocean trench",
+                "Kelp forest",
+                "Reef ecosystem",
+                "Brackish marsh",
+                "Estuarine system",
+                "Submarine canyon",
+                "Oceanic gyre",
+                "Abyssal plain",
+                "Mid-ocean ridge",
+                "Marine snow",
+                "Plankton bloom",
+                "Deep-sea currents",
+                "Oceanic thermocline",
+                "Reef lagoon",
+                "Underwater cave",
+                "Cold seep",
+                "Brine pool",
+                "Whale fall"
+            ]
+        },
+        {
+            "category": "Terrestrial Features",
+            "items": [
+                "Meteor crater",
+                "Desert oasis",
+                "Glacial moraine",
+                "River oxbow lake",
+                "Thermal pool",
+                "Cinder cone volcano",
+                "Mud volcano",
+                "Forest floor",
+                "Jungle canopy",
+                "Mountain pass",
+                "Canyon rim",
+                "Mesa",
+                "Plateau",
+                "Pampas",
+                "Steppe",
+                "Savanna",
+                "Tundra",
+                "Desert pavement",
+                "Rock formation",
+                "Sand dunes",
+                "Delta",
+                "Butte",
+                "Erg (sand sea)",
+                "Drumlin field",
+                "Esker",
+                "Cirque"
+            ]
+        },
+        {
+            "category": "Microscopic Life",
+            "items": [
+                "Tardigrade",
+                "Rotifer",
+                "Paramecium",
+                "Euglena",
+                "Amoeba",
+                "Radiolarian",
+                "Dinoflagellate",
+                "Cyanobacteria",
+                "Mycorrhizal fungi",
+                "Lichen",
+                "Pollen grain",
+                "Bacterial spore",
+                "Desmid",
+                "Gastrotrich",
+                "Copepod",
+                "Cladocera",
+                "Yeast culture",
+                "Spirulina",
+                "Volvox colony",
+                "Diatom bloom",
+                "Virus",
+                "Nanoarchaeum"
+            ]
+        },
+        {
+            "category": "Minerals and Rocks",
+            "items": [
+                "Sodalite",
+                "Pyrite",
+                "Azurite",
+                "Geode",
+                "Fossilized ammonite",
+                "Obsidian",
+                "Pumice stone",
+                "Slate",
+                "Marble",
+                "Garnet",
+                "Opal",
+                "Turquoise",
+                "Chalcedony",
+                "Malachite",
+                "Fluorite",
+                "Quartz crystal",
+                "Limestone",
+                "Sandstone",
+                "Basalt",
+                "Gneiss",
+                "Schist",
+                "Granite",
+                "Bauxite",
+                "Halite",
+                "Gypsum",
+                "Mica",
+                "Topaz",
+                "Peridot"
+            ]
+        }
+    ]
+}

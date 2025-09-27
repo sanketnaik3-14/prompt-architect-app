@@ -1,0 +1,129 @@
+{
+    "Alternative Music": {
+        "description": "A category of rock music that emerged from the independent music underground of the 1980s and became widely popular in the 1990s.",
+        "members": [
+            "Alternative Rock",
+            "Britpop",
+            "Dream Pop",
+            "Emo",
+            "Goth",
+            "Grunge",
+            "Indie",
+            "Riot Grrrl",
+            "Shoegaze"
+        ]
+    },
+    "Classical Music": {
+        "description": "Art music produced or rooted in the traditions of Western culture, including both liturgical and secular music.",
+        "members": [
+            "Baroque",
+            "Chamber Music",
+            "Classical",
+            "Opera",
+            "Romanticism"
+        ]
+    },
+    "Country Music": {
+        "description": "A genre of popular music that originated with blues, old-time music, and various types of American folk music including Appalachian, Cajun, and the cowboy Western music styles of Red Dirt, New Mexico, and Texas country.",
+        "members": [
+            "Country"
+        ]
+    },
+    "Electronic Music": {
+        "description": "Music that employs electronic musical instruments, digital instruments, or circuitry-based music technology in its creation.",
+        "members": [
+            "Ambient",
+            "Breakcore",
+            "Chillwave",
+            "Chiptune",
+            "Dance-Pop",
+            "Drum and Bass",
+            "Dubstep",
+            "Electro",
+            "Eurodance",
+            "Future Funk",
+            "Hardcore",
+            "House",
+            "IDM",
+            "Synthwave",
+            "Techno",
+            "Trance",
+            "Vaporwave"
+        ]
+    },
+    "Experimental Music": {
+        "description": "A general label for any music that pushes existing boundaries and genre definitions.",
+        "members": [
+            "Experimental"
+        ]
+    },
+    "Folk Music": {
+        "description": "A type of traditional and contemporary music that encompasses a wide variety of genres, including traditional folk music and the genre that evolved from it during the 20th-century folk revival.",
+        "members": [
+            "Folk"
+        ]
+    },
+    "Hip Hop Music": {
+        "description": "A culture and art movement that was created by African Americans, Latino Americans and Caribbean Americans in the Bronx, New York City.",
+        "members": [
+            "Hip-Hop"
+        ]
+    },
+    "Indie Music": {
+        "description": "Music produced independently from commercial record labels or their subsidiaries, a process that may include an autonomous, do-it-yourself approach to recording and publishing.",
+        "members": [
+            "Indie"
+        ]
+    },
+    "Jazz Music": {
+        "description": "A music genre that originated in the African-American communities of New Orleans, Louisiana, in the late 19th and early 20th centuries, with its roots in blues and ragtime.",
+        "members": [
+            "Acid Jazz",
+            "Bebop",
+            "Big Band",
+            "Jazz",
+            "Swing"
+        ]
+    },
+    "Pop Music": {
+        "description": "A genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.",
+        "members": [
+            "Bubblegum Pop",
+            "Dance-Pop",
+            "Pop",
+            "Sunshine Pop"
+        ]
+    },
+    "R&B Music": {
+        "description": "A genre of popular music that originated in African-American communities in the 1940s.",
+        "members": [
+            "R&B"
+        ]
+    },
+    "Rock Music": {
+        "description": "A broad genre of popular music that originated as 'rock and roll' in the United States in the late 1940s and early 1950s, developing into a range of different styles in the mid-1960s and later.",
+        "members": [
+            "Classic Rock",
+            "Glam Rock",
+            "Hard Rock",
+            "Heavy Metal",
+            "Pop Punk",
+            "Pop Rock",
+            "Progressive Rock",
+            "Psychedelic Rock",
+            "Punk Rock",
+            "Rock",
+            "Rock and Roll"
+        ]
+    },
+    "World Music": {
+        "description": "A musical category encompassing many different styles of music from around the globe, which includes many genres of non-Western music including folk music, ethnic music, traditional music, indigenous music, neotraditional music, and music where more than one cultural tradition intermingle.",
+        "members": [
+            "Bossa Nova",
+            "Flamenco",
+            "K-Pop",
+            "Reggae",
+            "Samba"
+        ]
+    }
+}

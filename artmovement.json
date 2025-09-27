@@ -1,0 +1,144 @@
+{
+    "A": {
+        "description": "Art Movements starting with the letter A.",
+        "members": [
+            "Abstract Expressionism",
+            "Art Deco",
+            "Art Nouveau",
+            "Arts and Crafts"
+        ]
+    },
+    "B": {
+        "description": "Art Movements starting with the letter B.",
+        "members": [
+            "Baroque",
+            "Bauhaus"
+        ]
+    },
+    "C": {
+        "description": "Art Movements starting with the letter C.",
+        "members": [
+            "Classicism",
+            "Constructivism",
+            "Cubism"
+        ]
+    },
+    "D": {
+        "description": "Art Movements starting with the letter D.",
+        "members": [
+            "Dada",
+            "De Stijl"
+        ]
+    },
+    "E": {
+        "description": "Art Movements starting with the letter E.",
+        "members": [
+            "Expressionism"
+        ]
+    },
+    "F": {
+        "description": "Art Movements starting with the letter F.",
+        "members": [
+            "Fauvism",
+            "Fluxus",
+            "Futurism"
+        ]
+    },
+    "G": {
+        "description": "Art Movements starting with the letter G.",
+        "members": [
+            "Gothic"
+        ]
+    },
+    "H": {
+        "description": "Art Movements starting with the letter H.",
+        "members": [
+            "Harlem Renaissance",
+            "Hudson River School"
+        ]
+    },
+    "I": {
+        "description": "Art Movements starting with the letter I.",
+        "members": [
+            "Impressionism"
+        ]
+    },
+    "K": {
+        "description": "Art Movements starting with the letter K.",
+        "members": [
+            "Kinetic Art"
+        ]
+    },
+    "L": {
+        "description": "Art Movements starting with the letter L.",
+        "members": [
+            "Lowbrow"
+        ]
+    },
+    "M": {
+        "description": "Art Movements starting with the letter M.",
+        "members": [
+            "Mannerism",
+            "Memphis Group",
+            "Minimalism",
+            "Modernism"
+        ]
+    },
+    "N": {
+        "description": "Art Movements starting with the letter N.",
+        "members": [
+            "Neoclassicism",
+            "Neon"
+        ]
+    },
+    "O": {
+        "description": "Art Movements starting with the letter O.",
+        "members": [
+            "Op Art"
+        ]
+    },
+    "P": {
+        "description": "Art Movements starting with the letter P.",
+        "members": [
+            "Pop Art",
+            "Post-Impressionism",
+            "Postmodernism"
+        ]
+    },
+    "R": {
+        "description": "Art Movements starting with the letter R.",
+        "members": [
+            "Realism",
+            "Renaissance",
+            "Rococo",
+            "Romanticism"
+        ]
+    },
+    "S": {
+        "description": "Art Movements starting with the letter S.",
+        "members": [
+            "Stuckism",
+            "Suprematism",
+            "Surrealism",
+            "Symbolism"
+        ]
+    },
+    "T": {
+        "description": "Art Movements starting with the letter T.",
+        "members": [
+            "Tonalism"
+        ]
+    },
+    "V": {
+        "description": "Art Movements starting with the letter V.",
+        "members": [
+            "Victorian"
+        ]
+    },
+    "W": {
+        "description": "Art Movements starting with the letter W.",
+        "members": [
+            "Whimsical"
+        ]
+    }
+}

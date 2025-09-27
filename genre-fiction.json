@@ -1,0 +1,82 @@
+{
+    "B": {
+        "description": "Genre Fiction starting with the letter B.",
+        "members": [
+            "Biopunk",
+            "Bizarro Fiction"
+        ]
+    },
+    "C": {
+        "description": "Genre Fiction starting with the letter C.",
+        "members": [
+            "Chap Hop",
+            "Christian",
+            "Comedy",
+            "Cyberpunk"
+        ]
+    },
+    "D": {
+        "description": "Genre Fiction starting with the letter D.",
+        "members": [
+            "Dark Fantasy",
+            "Dieselpunk",
+            "Dystopian"
+        ]
+    },
+    "F": {
+        "description": "Genre Fiction starting with the letter F.",
+        "members": [
+            "Fairy Tale",
+            "Fantasy",
+            "Film Noir",
+            "Folk Tale"
+        ]
+    },
+    "G": {
+        "description": "Genre Fiction starting with the letter G.",
+        "members": [
+            "Giallo"
+        ]
+    },
+    "H": {
+        "description": "Genre Fiction starting with the letter H.",
+        "members": [
+            "Horror"
+        ]
+    },
+    "P": {
+        "description": "Genre Fiction starting with the letter P.",
+        "members": [
+            "Paranormal Romance",
+            "Pirate",
+            "Post-Apocalyptic"
+        ]
+    },
+    "S": {
+        "description": "Genre Fiction starting with the letter S.",
+        "members": [
+            "Science Fantasy",
+            "Science Fiction",
+            "Slice of Life",
+            "Solarpunk",
+            "Southern Gothic",
+            "Space Opera",
+            "Steampunk",
+            "Superhero"
+        ]
+    },
+    "T": {
+        "description": "Genre Fiction starting with the letter T.",
+        "members": [
+            "Techno-Thriller",
+            "Thriller"
+        ]
+    },
+    "W": {
+        "description": "Genre Fiction starting with the letter W.",
+        "members": [
+            "Western",
+            "Weird Fiction"
+        ]
+    }
+}
